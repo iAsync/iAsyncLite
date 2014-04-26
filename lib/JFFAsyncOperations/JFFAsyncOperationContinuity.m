@@ -176,9 +176,13 @@ JFFAsyncOperation sequenceOfAsyncOperationsWithAllResults(NSArray *blocks)
 {
     return accumulateSequenceResult(blocks, ^id(id waterfallResult, id loaderResult, NSError *loaderError) {
         
+        
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wgnu-conditional-omitted-operand"
         waterfallResult = loaderResult
         ?waterfallResult?:@[]
         :nil;
+#pragma clang diagnostic pop
         
         return [waterfallResult arrayByAddingObject:loaderResult];
     });
@@ -187,8 +191,11 @@ JFFAsyncOperation sequenceOfAsyncOperationsWithAllResults(NSArray *blocks)
 JFFAsyncOperation sequenceOfAsyncOperationsWithSuccessfullResults(NSArray *blocks)
 {
     return accumulateSequenceResult(blocks, ^id(id waterfallResult, id loaderResult, NSError *loaderError) {
-        
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wgnu-conditional-omitted-operand"
         waterfallResult = waterfallResult?:@[];
+#pragma clang diagnostic pop
         
         return loaderResult
         ?[waterfallResult arrayByAddingObject:loaderResult]
