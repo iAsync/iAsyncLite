@@ -1,6 +1,10 @@
 #import "JFFBlockOperation.h"
 
-#include <dispatch/dispatch.h>
+#import "JGCDAdditions.h"
+#import "JObjcExceptionWrapperError.h"
+#import "JCppExceptionWrapperError.h"
+#import "JUnknownCppExceptionWrapperError.h"
+
 
 @interface JFFBlockOperation ()
 
@@ -11,6 +15,7 @@
 
 @end
 
+
 @implementation JFFBlockOperation
 {
     dispatch_queue_t _currentQueue;
@@ -19,9 +24,9 @@
 
 - (void)dealloc
 {
-    NSAssert(!_didLoadDataBlock, @"should be nil");
-    NSAssert(!_progressBlock   , @"should be nil");
-    NSAssert(!_loadDataBlock   , @"should be nil");
+    NSParameterAssert( nil == self->_didLoadDataBlock );
+    NSParameterAssert( nil == self->_progressBlock    );
+    NSParameterAssert( nil == self->_loadDataBlock    );
 }
 
 - (instancetype)initWithLoadDataBlock:(JFFSyncOperationWithProgress)loadDataBlock
@@ -58,63 +63,113 @@
                                error:(NSError *)error
 {
     if (self.finishedOrCanceled)
+    {
         return;
+    }
     
-    _didLoadDataBlock(result, error);
+    self->_didLoadDataBlock(result, error);
     
     [self finalizeOperations];
 }
 
 - (void)progressWithInfo:(id)info
 {
-    if (_progressBlock)
-        _progressBlock(info);
+    if ( nil != self->_progressBlock )
+    {
+        self->_progressBlock(info);
+    }
 }
 
 - (void)cancel
 {
     if (self.finishedOrCanceled)
+    {
         return;
+    }
     
     [self finalizeOperations];
+}
+
+typedef void (*DispatchFunction)(dispatch_queue_t, dispatch_block_t);
+
+
+-(DispatchFunction)dispatchFunctionForCurrentConfiguration
+{
+    DispatchFunction dispatchAsyncMethod = NULL;
+    
+    BOOL isBarrierUsed = self->_barrier;
+    if ( isBarrierUsed )
+    {
+        dispatchAsyncMethod = dispatch_barrier_async;
+    }
+    else
+    {
+        dispatchAsyncMethod = dispatch_async;
+    }
+
+    return dispatchAsyncMethod;
 }
 
 - (void)performBackgroundOperationInQueue:(dispatch_queue_t)queue
                             loadDataBlock:(JFFSyncOperationWithProgress)loadDataBlock
 {
-    void (*dispatchAsyncMethod)(dispatch_queue_t, dispatch_block_t) = _barrier
-    ?&dispatch_barrier_async
-    :&dispatch_async;
+    DispatchFunction dispatchAsyncMethod = [ self dispatchFunctionForCurrentConfiguration ];
+
     
-    dispatchAsyncMethod(queue, ^{
+    dispatchAsyncMethod(queue, ^void(){
         if (self.finishedOrCanceled)
+        {
             return;
+        }
         
-        NSError *error;
-        id opResult;
-        @try {
-            JFFAsyncOperationProgressHandler progressCallback = ^(id info) {
-                //TODO to garante that finish will called after progress
-                dispatch_async(_currentQueue, ^ {
-                    [self progressWithInfo:info];
-                });
-            };
-            @autoreleasepool {
+        NSError *error = nil;
+        id opResult = nil;
+        
+        
+        try
+        {
+            @try
+            {
+                JFFAsyncOperationProgressHandler progressCallback = ^(id info)
+                {
+                    //TODO to garante that finish will called after progress
+                    dispatch_async(_currentQueue, ^void()
+                    {
+                        [self progressWithInfo:info];
+                    });
+                };
+                @autoreleasepool
+                {
+                    opResult = loadDataBlock(&error, progressCallback);
+                    NSAssert(((opResult != nil) ^ (error != nil)), @"result xor error should be loaded");
+                }
+            }
+            @catch (NSException *ex)
+            {
+                NSLog(@"critical error: %@", ex);
+                opResult = nil;
                 
-                opResult = loadDataBlock(&error, progressCallback);
-                NSAssert(((opResult != nil) ^ (error != nil)), @"result xor error should be loaded");
+                JObjcExceptionWrapperError* marshalledException = [ [ JObjcExceptionWrapperError alloc ] initWithObjcException: ex ];
+                
+                error = marshalledException;
             }
         }
-        @catch (NSException *ex) {
-            NSLog(@"critical error: %@", ex);
-            opResult = nil;
-            NSString *description = [[NSString alloc] initWithFormat:@"exception: %@, reason: %@",
-                                     ex.name,
-                                     ex.reason];
-            error = [JFFError newErrorWithDescription:description];
+        catch ( const std::exception& cppEx )
+        {
+            JCppExceptionWrapperError* marshalledException = [ [ JCppExceptionWrapperError alloc ] initWithStdException: &cppEx ];
+            error = marshalledException;
+            
+            // suppressing all exceptions
         }
+        catch (...)
+        {
+            error = [ JUnknownCppExceptionWrapperError new ];
+            // suppressing all exceptions
+        }
+
         
-        dispatch_async(_currentQueue, ^ {
+        dispatch_async(_currentQueue, ^void()
+        {
             [self didFinishOperationWithResult:opResult error:error];
         });
     });
