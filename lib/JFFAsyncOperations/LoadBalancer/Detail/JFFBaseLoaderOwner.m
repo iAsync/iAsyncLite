@@ -40,19 +40,21 @@
     
     JFFAsyncOperationProgressHandler progressCallback = ^(id progress) {
         
-        if (_progressCallback)
-            _progressCallback(progress);
+        if (self->_progressCallback)
+        {
+            self->_progressCallback(progress);
+        }
     };
     
     JFFCancelAsyncOperationHandler cancelCallback = ^(BOOL canceled) {
         
         if (canceled) {
-            [_queue didFinishActiveLoader:self];
+            [self->_queue didFinishActiveLoader:self];
         }
         
-        if (_cancelCallback) {
-            JFFCancelAsyncOperationHandler cancelCallback = _cancelCallback;
-            _cancelCallback = nil;
+        if (self->_cancelCallback) {
+            JFFCancelAsyncOperationHandler cancelCallback = self->_cancelCallback;
+            self->_cancelCallback = nil;
             
             if ( cancelCallback )
             {
@@ -65,10 +67,12 @@
     
     JFFDidFinishAsyncOperationHandler doneCallback = ^(id result, NSError *error) {
         
-        [_queue didFinishActiveLoader:self];
+        [self->_queue didFinishActiveLoader:self];
         
-        if (_doneCallback)
-            _doneCallback(result, error);
+        if (self->_doneCallback)
+        {
+            self->_doneCallback(result, error);
+        }
         
         [self clear];
     };

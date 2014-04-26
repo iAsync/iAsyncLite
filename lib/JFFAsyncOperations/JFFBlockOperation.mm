@@ -11,7 +11,7 @@
 @property (nonatomic, copy) JFFSyncOperationWithProgress      loadDataBlock;
 @property (nonatomic, copy) JFFDidFinishAsyncOperationHandler didLoadDataBlock;
 @property (nonatomic, copy) JFFAsyncOperationProgressHandler  progressBlock;
-@property BOOL finishedOrCanceled;
+@property (atomic) BOOL finishedOrCanceled;
 
 @end
 
@@ -133,7 +133,7 @@ typedef void (*DispatchFunction)(dispatch_queue_t, dispatch_block_t);
                 JFFAsyncOperationProgressHandler progressCallback = ^(id info)
                 {
                     //TODO to garante that finish will called after progress
-                    dispatch_async(_currentQueue, ^void()
+                    dispatch_async(self->_currentQueue, ^void()
                     {
                         [self progressWithInfo:info];
                     });
@@ -168,7 +168,7 @@ typedef void (*DispatchFunction)(dispatch_queue_t, dispatch_block_t);
         }
 
         
-        dispatch_async(_currentQueue, ^void()
+        dispatch_async(self->_currentQueue, ^void()
         {
             [self didFinishOperationWithResult:opResult error:error];
         });

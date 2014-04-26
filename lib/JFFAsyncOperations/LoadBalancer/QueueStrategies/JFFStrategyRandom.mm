@@ -6,7 +6,10 @@
 
 - (JFFBaseLoaderOwner *)firstPendingLoader
 {
-    int index = rand() % [_queueState->_pendingLoaders count];
+    NSUInteger pendingLoadersCount = [self->_queueState->_pendingLoaders count];
+    int castedLoadersCount = static_cast<int>( pendingLoadersCount );
+    
+    int index = rand() % castedLoadersCount;
     NSUInteger castedIndex = static_cast<NSUInteger>(index);
     
     JFFBaseLoaderOwner *result = _queueState->_pendingLoaders[castedIndex];

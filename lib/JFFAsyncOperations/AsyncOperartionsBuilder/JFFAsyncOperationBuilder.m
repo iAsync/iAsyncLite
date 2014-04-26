@@ -4,7 +4,7 @@
 
 @interface JFFComplitionHandlerNotifier : NSObject
 
-@property (copy) JFFDidFinishAsyncOperationHandler completionHandler;
+@property (atomic, copy) JFFDidFinishAsyncOperationHandler completionHandler;
 
 - (void)notifyCallbackWithResult:(id)result error:(NSError *)error;
 

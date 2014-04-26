@@ -102,7 +102,7 @@
         loaderHolder.cancelCallback   = cancelCallback;
         loaderHolder.doneCallback     = doneCallback;
         
-        [_pendingLoaders addObject:loaderHolder];
+        [self->_pendingLoaders addObject:loaderHolder];
         
         [self performPendingLoaders];
         
@@ -119,7 +119,7 @@
             if (canceled) {
                 if (!loaderHolder.cancelLoader) {
                     //TODO self owning here fix?
-                    [_pendingLoaders removeObject:loaderHolder];
+                    [self->_pendingLoaders removeObject:loaderHolder];
                 }
             } else {
                 loaderHolder.progressCallback = nil;
