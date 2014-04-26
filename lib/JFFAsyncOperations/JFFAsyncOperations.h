@@ -18,3 +18,6 @@
 
 #import <JFFAsyncOperations/AsyncOperartionsBuilder/JFFAsyncOperationInterface.h>
 #import <JFFAsyncOperations/AsyncOperartionsBuilder/JFFAsyncOperationBuilder.h>
+
+
+#import <JFFAsyncOperations/Errors/JObjcExceptionWrapperError.h>

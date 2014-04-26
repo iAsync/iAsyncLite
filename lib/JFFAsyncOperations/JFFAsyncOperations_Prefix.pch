@@ -1,9 +1,28 @@
+
+// Pure C
+#include <assert.h>
+#include <dispatch/dispatch.h>
+
+// C++
+#ifdef __cplusplus
+    #import <stdexcept>
+#endif
+
+// Objective-C
 #ifdef __OBJC__
+    #import "JExceptionMarshallingErrorCode.h"
+
     #import <JFFUtils/JFFUtils.h>
 
     #import <Foundation/Foundation.h>
     #include <objc/objc.h>
+    #import <objc/message.h>
+
+    // Objective-C++
+    #ifdef __cplusplus
+    #endif
+
 #endif
 
-#include <assert.h>
+
 
