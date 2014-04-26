@@ -5,12 +5,13 @@
 
 #import "NSObject+PropertyExtractor.h"
 
-#import <JFFUtils/MemoryManagement/JFFMemoryMgmt.h>
+#import "JFFMemoryMgmt.h"
 
-#import <objc/message.h>
 
 //#define JFF_LOG_INFO( ... )
-#define JFF_LOG_INFO( ... ) [ JFFLogger logInfoWithFormat: __VA_ARGS__ ]
+//#define JFF_LOG_INFO( ... ) [ JFFLogger logInfoWithFormat: __VA_ARGS__ ]
+
+#define JFF_LOG_INFO( ... ) NSLog( __VA_ARGS__ )
 
 typedef id (*PropertyGetterMsgSendFunction)( id, SEL );
 typedef void (*PropertySetterMsgSendFunction)( id, SEL, id );
