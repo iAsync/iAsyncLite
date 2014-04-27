@@ -26,6 +26,8 @@
 		7EA0C5F4190D04CC00DCB91D /* NSString+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0C5F2190D04CC00DCB91D /* NSString+Search.m */; };
 		7EABFD30190D167700D3CCC6 /* NSObjectInstancesCountTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD2F190D167700D3CCC6 /* NSObjectInstancesCountTest.m */; };
 		7EABFD34190D174700D3CCC6 /* NumberOfCharacterFromStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD33190D174700D3CCC6 /* NumberOfCharacterFromStringTest.m */; };
+		7EABFD55190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD54190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7EABFD63190D1F4D00D3CCC6 /* NSObject+InstancesCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD62190D1F4D00D3CCC6 /* NSObject+InstancesCount.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7EF2D985190D105300A412FA /* EmptyStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D984190D105300A412FA /* EmptyStringTest.m */; };
 		7EF2D987190D112400A412FA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF2D986190D112400A412FA /* libc++.dylib */; };
 		7EF2D989190D11CF00A412FA /* JFFSimpleBlockHolderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D988190D11CF00A412FA /* JFFSimpleBlockHolderTest.m */; };
@@ -33,8 +35,6 @@
 		7EF2D98D190D11F600A412FA /* JFFRuntimeAddiotionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D98C190D11F600A412FA /* JFFRuntimeAddiotionsTest.m */; };
 		7EF2D991190D121900A412FA /* NSObject+OwnershipsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D990190D121900A412FA /* NSObject+OwnershipsTest.m */; };
 		7EF2D993190D124F00A412FA /* TypeSignatureTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D992190D124F00A412FA /* TypeSignatureTest.m */; };
-		7EF2D997190D13F500A412FA /* NSObject+InstancesCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D996190D13F500A412FA /* NSObject+InstancesCount.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7EF2D99A190D148000A412FA /* NSObject+RuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D999190D148000A412FA /* NSObject+RuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +95,10 @@
 		7EA0C5F2190D04CC00DCB91D /* NSString+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Search.m"; sourceTree = "<group>"; };
 		7EABFD2F190D167700D3CCC6 /* NSObjectInstancesCountTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectInstancesCountTest.m; sourceTree = "<group>"; };
 		7EABFD33190D174700D3CCC6 /* NumberOfCharacterFromStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberOfCharacterFromStringTest.m; sourceTree = "<group>"; };
+		7EABFD53190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RuntimeExtensions.h"; sourceTree = "<group>"; };
+		7EABFD54190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RuntimeExtensions.m"; sourceTree = "<group>"; };
+		7EABFD61190D1F4D00D3CCC6 /* NSObject+InstancesCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+InstancesCount.h"; sourceTree = "<group>"; };
+		7EABFD62190D1F4D00D3CCC6 /* NSObject+InstancesCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+InstancesCount.m"; sourceTree = "<group>"; };
 		7EF2D984190D105300A412FA /* EmptyStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyStringTest.m; sourceTree = "<group>"; };
 		7EF2D986190D112400A412FA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		7EF2D988190D11CF00A412FA /* JFFSimpleBlockHolderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFSimpleBlockHolderTest.m; sourceTree = "<group>"; };
@@ -102,10 +106,6 @@
 		7EF2D98C190D11F600A412FA /* JFFRuntimeAddiotionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFRuntimeAddiotionsTest.m; sourceTree = "<group>"; };
 		7EF2D990190D121900A412FA /* NSObject+OwnershipsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OwnershipsTest.m"; sourceTree = "<group>"; };
 		7EF2D992190D124F00A412FA /* TypeSignatureTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeSignatureTest.m; sourceTree = "<group>"; };
-		7EF2D995190D13F500A412FA /* NSObject+InstancesCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+InstancesCount.h"; sourceTree = "<group>"; };
-		7EF2D996190D13F500A412FA /* NSObject+InstancesCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+InstancesCount.m"; sourceTree = "<group>"; };
-		7EF2D998190D148000A412FA /* NSObject+RuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RuntimeExtensions.h"; sourceTree = "<group>"; };
-		7EF2D999190D148000A412FA /* NSObject+RuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RuntimeExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				7E7336B6190C134300AE47B9 /* JFFUtils-Prefix.pch */,
+				7EABFD52190D1E9400D3CCC6 /* UnitTestHelpers */,
 				7E7336B4190C134300AE47B9 /* JFFUtils */,
 				7E7336C8190C134300AE47B9 /* JFFUtilsTests */,
 				7E7336B1190C134300AE47B9 /* Frameworks */,
@@ -180,7 +181,6 @@
 		7E7336C8190C134300AE47B9 /* JFFUtilsTests */ = {
 			isa = PBXGroup;
 			children = (
-				7EF2D994190D13E900A412FA /* InstanceCount */,
 				7EF2D992190D124F00A412FA /* TypeSignatureTest.m */,
 				7EF2D990190D121900A412FA /* NSObject+OwnershipsTest.m */,
 				7EABFD2F190D167700D3CCC6 /* NSObjectInstancesCountTest.m */,
@@ -270,15 +270,15 @@
 			path = Runtime;
 			sourceTree = SOURCE_ROOT;
 		};
-		7EF2D994190D13E900A412FA /* InstanceCount */ = {
+		7EABFD52190D1E9400D3CCC6 /* UnitTestHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				7EF2D998190D148000A412FA /* NSObject+RuntimeExtensions.h */,
-				7EF2D999190D148000A412FA /* NSObject+RuntimeExtensions.m */,
-				7EF2D995190D13F500A412FA /* NSObject+InstancesCount.h */,
-				7EF2D996190D13F500A412FA /* NSObject+InstancesCount.m */,
+				7EABFD61190D1F4D00D3CCC6 /* NSObject+InstancesCount.h */,
+				7EABFD62190D1F4D00D3CCC6 /* NSObject+InstancesCount.m */,
+				7EABFD53190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.h */,
+				7EABFD54190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.m */,
 			);
-			path = InstanceCount;
+			path = UnitTestHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,8 +370,10 @@
 				7E7336E1190C13FB00AE47B9 /* NSArray+IsEmpty.m in Sources */,
 				7E7336E0190C13FB00AE47B9 /* NSArray+BlocksAdditions.m in Sources */,
 				7E9B13EA190C48A1004DD39A /* NSString+PropertyName.m in Sources */,
+				7EABFD63190D1F4D00D3CCC6 /* NSObject+InstancesCount.m in Sources */,
 				7E9B13F1190C49F6004DD39A /* NSObject+OnDeallocBlock.m in Sources */,
 				7E9B13F4190C4A90004DD39A /* NSObject+Ownerships.m in Sources */,
+				7EABFD55190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.m in Sources */,
 				7EA0C5F3190D04CC00DCB91D /* NSString+IsEmpty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,10 +386,8 @@
 				7EF2D98B190D11E400A412FA /* JFFOnDeallocBlockOwnerTest.m in Sources */,
 				7EF2D98D190D11F600A412FA /* JFFRuntimeAddiotionsTest.m in Sources */,
 				7EABFD30190D167700D3CCC6 /* NSObjectInstancesCountTest.m in Sources */,
-				7EF2D997190D13F500A412FA /* NSObject+InstancesCount.m in Sources */,
 				7EF2D989190D11CF00A412FA /* JFFSimpleBlockHolderTest.m in Sources */,
 				7EF2D985190D105300A412FA /* EmptyStringTest.m in Sources */,
-				7EF2D99A190D148000A412FA /* NSObject+RuntimeExtensions.m in Sources */,
 				7EABFD34190D174700D3CCC6 /* NumberOfCharacterFromStringTest.m in Sources */,
 				7EF2D991190D121900A412FA /* NSObject+OwnershipsTest.m in Sources */,
 			);
@@ -463,7 +463,6 @@
 					..,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -640,7 +639,6 @@
 					..,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Coverage;

@@ -84,7 +84,7 @@
             finalError = error;
         });
         
-        NSError* failError = [JFFError newErrorWithDescription:@"error1"];
+        NSError* failError = [ MockErrorBuilder getMockError ];
         firstLoader.loaderFinishBlock.didFinishBlock( nil, failError );
         
         GHAssertFalse(binderCalled, @"OK" );

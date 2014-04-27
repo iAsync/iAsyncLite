@@ -73,11 +73,23 @@
                 doneCallback(result, error);
         };
         
-        if (self.finishAtLoading || self.failAtLoading) {
+        if (self.finishAtLoading || self.failAtLoading)
+        {
             if (self.finishAtLoading)
+            {
                 self.loaderFinishBlock.didFinishBlock([NSNull null], nil);
+            }
             else
-                self.loaderFinishBlock.didFinishBlock(nil, [JFFError newErrorWithDescription:@"some error"]);
+            {
+                NSDictionary* descriptionDict = @{ NSLocalizedDescriptionKey : @"some error"  };
+                NSError* errorForCallback =
+                [ NSError errorWithDomain: @"org.iasync-lite.test-tools"
+                                     code: 1
+                                 userInfo: descriptionDict ];
+                
+                self.loaderFinishBlock.didFinishBlock(nil, errorForCallback);
+            }
+            
             return JFFStubCancelAsyncOperationBlock;
         }
         
@@ -87,7 +99,9 @@
             weakSelf.canceled   = YES;
             weakSelf.cancelFlag = canceled;
             if (cancelCallback)
+            {
                 cancelCallback(canceled);
+            }
         };
         return self.loaderCancelBlock.onceCancelBlock;
     } copy];

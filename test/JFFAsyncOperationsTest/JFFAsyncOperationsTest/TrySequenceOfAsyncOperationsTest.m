@@ -16,6 +16,7 @@
     [JFFAsyncOperationManager enableInstancesCounting];
 }
 
+
 -(void)testTrySequenceOfAsyncOperations
 {
     NSUInteger originalInstanceCount1 = [JFFCancelAsyncOperationBlockHolder    instancesCount];
@@ -49,7 +50,7 @@
         GHAssertFalse( secondLoader.finished, @"Second loader not finished yet" );
         GHAssertFalse( sequenceLoaderFinished_, @"Sequence loader not finished yet" );
 
-        firstLoader.loaderFinishBlock.didFinishBlock( nil, [ JFFError newErrorWithDescription: @"some error" ] );
+        firstLoader.loaderFinishBlock.didFinishBlock( nil, [ MockErrorBuilder getMockError ] );
         
         GHAssertTrue( firstLoader.finished, @"First loader finished already" );
         GHAssertFalse( secondLoader.finished, @"Second loader not finished yet" );
@@ -120,7 +121,7 @@
         GHAssertFalse( firstLoader_.canceled, @"still not canceled" );
         GHAssertFalse( secondLoader_.canceled, @"still not canceled" );
 
-        firstLoader_.loaderFinishBlock.didFinishBlock( nil, [ JFFError newErrorWithDescription: @"some error" ] );
+        firstLoader_.loaderFinishBlock.didFinishBlock( nil, [ MockErrorBuilder getMockError ] );
 
         GHAssertFalse( firstLoader_.canceled, @"still not canceled" );
         GHAssertFalse( secondLoader_.canceled, @"still not canceled" );
@@ -346,7 +347,7 @@
         
         loader(progressCallback, cancelCallback, doneCallback);
         
-        firstLoader.loaderFinishBlock.didFinishBlock(nil, [JFFError newErrorWithDescription:@"test"]);
+        firstLoader.loaderFinishBlock.didFinishBlock(nil, [ MockErrorBuilder getMockError ] );
         
         GHAssertFalse(progressCallbackCalled, nil);
         GHAssertEqualObjects(@YES, cancelCallbackCallFlag, nil);

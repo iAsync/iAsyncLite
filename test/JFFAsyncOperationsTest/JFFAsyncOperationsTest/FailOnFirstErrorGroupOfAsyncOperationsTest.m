@@ -90,7 +90,7 @@
         GHAssertFalse( mainCanceled_, @"Group loader not canceled yet" );
         GHAssertFalse( mainFinished_, @"Group loader finished" );
 
-        secondLoader_.loaderFinishBlock.didFinishBlock( nil, [ JFFError newErrorWithDescription: @"some error" ] );
+        secondLoader_.loaderFinishBlock.didFinishBlock( nil, [ MockErrorBuilder getMockError ] );
 
         GHAssertTrue ( secondLoader_.finished, @"Second loader finished already" );
         GHAssertTrue ( firstLoader_.canceled, @"First loader not finished yet" );
@@ -135,7 +135,7 @@
         GHAssertFalse( mainCanceled_, @"Group loader not canceled yet" );
         GHAssertFalse( mainFinished_, @"Group loader finished" );
 
-        firstLoader_.loaderFinishBlock.didFinishBlock( nil, [ JFFError newErrorWithDescription: @"some error" ] );
+        firstLoader_.loaderFinishBlock.didFinishBlock( nil, [ MockErrorBuilder getMockError ] );
 
         GHAssertTrue( firstLoader_.finished, @"First loader finished already" );
         GHAssertTrue( secondLoader_.canceled, @"Second loader not finished yet" );

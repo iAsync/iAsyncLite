@@ -282,7 +282,7 @@
         
         loader_( nil, nil, nil );
         
-        firstLoader.loaderFinishBlock.didFinishBlock( nil, [JFFError newErrorWithDescription:@"some error"]);
+        firstLoader.loaderFinishBlock.didFinishBlock( nil, [ MockErrorBuilder getMockError ] );
     }
     
     GHAssertTrue(0 == [JFFCancelAsyncOperationBlockHolder    instancesCount], @"OK");
