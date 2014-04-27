@@ -1,72 +1,75 @@
+#ifndef __JASYNC_OPERATION_CONSTRUCTOR_FUNCTIONS_H__
+#define __JASYNC_OPERATION_CONSTRUCTOR_FUNCTIONS_H__
+
 #import <JFFAsyncOperations/JFFAsyncOperationsBlockDefinitions.h>
 #import <JFFUtils/Blocks/JFFUtilsBlockDefinitions.h>
 
 #include <objc/objc.h>
+#include <objc/objc-api.h>
+
 
 @class NSArray;
+@class NSError;
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 ///////////////////////// ADD OBSERVERS OF ASYNC OP. RESULT ////////////////////////
 
-    JFFAsyncOperation asyncOperationWithResult(id result);
-    JFFAsyncOperation asyncOperationWithError(NSError *error);
-    JFFAsyncOperation asyncOperationWithCancelFlag(BOOL canceled);
-    JFFAsyncOperation neverFinishAsyncOperation(void);
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithResult(id result);
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithError(NSError *error);
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithCancelFlag(BOOL canceled);
+OBJC_EXTERN    JFFAsyncOperation neverFinishAsyncOperation(void);
     
-    JFFAsyncOperation asyncOperationWithSyncOperationInCurrentQueue(JFFSyncOperation block);
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithSyncOperationInCurrentQueue(JFFSyncOperation block);
     
     //finish_callback_block_ called before loader_'s JFFDidFinishAsyncOperationHandler
-    JFFAsyncOperation asyncOperationWithFinishCallbackBlock(JFFAsyncOperation loader,
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithFinishCallbackBlock(JFFAsyncOperation loader,
                                                             JFFDidFinishAsyncOperationHandler finishCallbackBlock);
     
     //finish_callback_hook_ called instead loader_'s JFFDidFinishAsyncOperationHandler
-    JFFAsyncOperation asyncOperationWithFinishHookBlock(JFFAsyncOperation loader,
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithFinishHookBlock(JFFAsyncOperation loader,
                                                         JFFDidFinishAsyncOperationHook finishCallbackHook);
     
-    JFFAsyncOperation asyncOperationWithStartAndFinishBlocks(JFFAsyncOperation loader,
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithStartAndFinishBlocks(JFFAsyncOperation loader,
                                                              JFFSimpleBlock startBlock,
                                                              JFFDidFinishAsyncOperationHandler finishCallback);
     
-    JFFAsyncOperation asyncOperationWithOptionalStartAndFinishBlocks(JFFAsyncOperation loader,
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithOptionalStartAndFinishBlocks(JFFAsyncOperation loader,
                                                                      JFFSimpleBlock startBlock,
                                                                      JFFDidFinishAsyncOperationHandler finishCallback);
     
-    JFFAsyncOperation asyncOperationWithStartAndDoneBlocks(JFFAsyncOperation loader,
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithStartAndDoneBlocks(JFFAsyncOperation loader,
                                                            JFFSimpleBlock startBlock,
                                                            JFFSimpleBlock doneBlock);
     
-    JFFAsyncOperation asyncOperationWithAnalyzer(id data, JFFAnalyzer analyzer);
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithAnalyzer(id data, JFFAnalyzer analyzer);
     
-    JFFAsyncOperationBinder asyncOperationBinderWithAnalyzer(JFFAnalyzer analyzer);
+OBJC_EXTERN    JFFAsyncOperationBinder asyncOperationBinderWithAnalyzer(JFFAnalyzer analyzer);
     
-    typedef id (^JFFChangedResultBuilder)(id result);
-    JFFAsyncOperation asyncOperationWithChangedResult(JFFAsyncOperation loader,
+typedef id (^JFFChangedResultBuilder)(id result);
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithChangedResult(JFFAsyncOperation loader,
                                                       JFFChangedResultBuilder resultBuilder);
-    JFFAsyncOperation asyncOperationWithChangedProgress(JFFAsyncOperation loader,
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithChangedProgress(JFFAsyncOperation loader,
                                                         JFFChangedResultBuilder resultBuilder);
     
-    JFFAsyncOperation asyncOperationResultAsProgress(JFFAsyncOperation loader);
+OBJC_EXTERN    JFFAsyncOperation asyncOperationResultAsProgress(JFFAsyncOperation loader);
     
-    typedef NSError *(^JFFChangedErrorBuilder)(NSError *error);
-    JFFAsyncOperation asyncOperationWithChangedError(JFFAsyncOperation loader,
+typedef NSError *(^JFFChangedErrorBuilder)(NSError *error);
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithChangedError(JFFAsyncOperation loader,
                                                      JFFChangedErrorBuilder errorBuilder);
     
-    JFFAsyncOperation asyncOperationWithResultOrError(JFFAsyncOperation loader,
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithResultOrError(JFFAsyncOperation loader,
                                                       id result,
                                                       NSError *error);
     
-    JFFAsyncOperation ignorePregressLoader(JFFAsyncOperation loader);
-    JFFAsyncOperationBinder ignorePregressBinder(JFFAsyncOperationBinder binder);
+OBJC_EXTERN    JFFAsyncOperation ignorePregressLoader(JFFAsyncOperation loader);
+OBJC_EXTERN    JFFAsyncOperationBinder ignorePregressBinder(JFFAsyncOperationBinder binder);
     
-    JFFAsyncOperation loaderWithAdditionalParalelLoaders(JFFAsyncOperation original, JFFAsyncOperation additionalLoader, ...) NS_REQUIRES_NIL_TERMINATION;
+OBJC_EXTERN    JFFAsyncOperation loaderWithAdditionalParalelLoaders(JFFAsyncOperation original, JFFAsyncOperation additionalLoader, ...) NS_REQUIRES_NIL_TERMINATION;
     
     ///////////////////////////////////// SEQUENCE /////////////////////////////////////
     
-    JFFAnalyzer analyzerAsSequenceOfAnalyzers(JFFAnalyzer firstAnalyzer, ...) NS_REQUIRES_NIL_TERMINATION;
+OBJC_EXTERN    JFFAnalyzer analyzerAsSequenceOfAnalyzers(JFFAnalyzer firstAnalyzer, ...) NS_REQUIRES_NIL_TERMINATION;
 
-#ifdef __cplusplus
-} /* closing brace for extern "C" */
-#endif
+
+#endif //__JASYNC_OPERATION_CONSTRUCTOR_FUNCTIONS_H__
+

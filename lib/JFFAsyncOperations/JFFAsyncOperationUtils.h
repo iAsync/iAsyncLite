@@ -1,21 +1,22 @@
+#ifndef __JASYNC_OPERATION_WITH_QUEUE_CONSTRUCTOR_FUNCTIONS_H__
+#define __JASYNC_OPERATION_WITH_QUEUE_CONSTRUCTOR_FUNCTIONS_H__
+
 #import <JFFAsyncOperations/JFFAsyncOperationsBlockDefinitions.h>
+#include <objc/objc-api.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
-    JFFAsyncOperation asyncOperationWithSyncOperation(JFFSyncOperation loadDataBlock);
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithSyncOperation(JFFSyncOperation loadDataBlock);
     
-    JFFAsyncOperation asyncOperationWithSyncOperationAndQueue(JFFSyncOperation loadDataBlock,
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithSyncOperationAndQueue(JFFSyncOperation loadDataBlock,
                                                               const char *queueName);
     
-    JFFAsyncOperation asyncOperationWithSyncOperationAndConfigurableQueue(JFFSyncOperation loadDataBlock, const char *queueName, BOOL isSerialQueue);
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithSyncOperationAndConfigurableQueue(JFFSyncOperation loadDataBlock, const char *queueName, BOOL isSerialQueue);
     
-    JFFAsyncOperation barrierAsyncOperationWithSyncOperationAndQueue(JFFSyncOperation loadDataBlock,
+OBJC_EXTERN    JFFAsyncOperation barrierAsyncOperationWithSyncOperationAndQueue(JFFSyncOperation loadDataBlock,
                                                                      const char *queueName);
     
-    JFFAsyncOperation asyncOperationWithSyncOperationWithProgressBlock(JFFSyncOperationWithProgress progressLoadDataBlock);
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithSyncOperationWithProgressBlock(JFFSyncOperationWithProgress progressLoadDataBlock);
 
-#ifdef __cplusplus
-} /* closing brace for extern "C" */
-#endif
+
+#endif //__JASYNC_OPERATION_WITH_QUEUE_CONSTRUCTOR_FUNCTIONS_H__
+

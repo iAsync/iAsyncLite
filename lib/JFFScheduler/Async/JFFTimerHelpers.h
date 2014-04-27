@@ -1,27 +1,22 @@
 #import <JFFAsyncOperations/JFFAsyncOperationsBlockDefinitions.h>
 #import <Foundation/Foundation.h>
 
+#include <objc/objc-api.h>
+
 @interface JFFAsyncTimerResult : NSObject
 @end
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+OBJC_EXTERN    JFFAsyncOperation asyncOperationWithDelay(NSTimeInterval delay, NSTimeInterval leeway);
     
-    JFFAsyncOperation asyncOperationWithDelay(NSTimeInterval delay, NSTimeInterval leeway);
-    
-    JFFAsyncOperation asyncOperationAfterDelay(NSTimeInterval delay,
+OBJC_EXTERN    JFFAsyncOperation asyncOperationAfterDelay(NSTimeInterval delay,
                                                NSTimeInterval leeway,
                                                JFFAsyncOperation loader);
     
     ///////////////////////// AUTO REPEAT CIRCLE ////////////////////////
     
-    JFFAsyncOperation repeatAsyncOperation(JFFAsyncOperation loader,
+OBJC_EXTERN    JFFAsyncOperation repeatAsyncOperation(JFFAsyncOperation loader,
                                            JFFContinueLoaderWithResult continueLoaderBuilder,
                                            NSTimeInterval delay,
                                            NSTimeInterval leeway,
                                            NSInteger maxRepeatCount);
 
-#ifdef __cplusplus
-} /* closing brace for extern "C" */
-#endif
