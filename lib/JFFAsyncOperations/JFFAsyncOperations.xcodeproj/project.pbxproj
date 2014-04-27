@@ -200,6 +200,31 @@
 		7E8F212114F94C6100588C7D /* JFFAsyncOperationUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 65648C381392490F001E163C /* JFFAsyncOperationUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8F212314F94C6100588C7D /* JFFAsyncOperationContinuity.h in Headers */ = {isa = PBXBuildFile; fileRef = 651BE1651391928400DD6890 /* JFFAsyncOperationContinuity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8F212514F94C6100588C7D /* JFFAsyncOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 65648C5013924A77001E163C /* JFFAsyncOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E8F9955190D97B200C889C9 /* JFFBaseStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6DFB0D1718446600D86975 /* JFFBaseStrategy.m */; };
+		7E8F9956190D97B700C889C9 /* JFFBaseStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6DFB0D1718446600D86975 /* JFFBaseStrategy.m */; };
+		7EB941F1190D986600221617 /* JFFAsyncOperationBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0D88C21519F81F00EC4A92 /* JFFAsyncOperationBuilder.m */; };
+		7EB941F2190D986600221617 /* JFFObjectRelatedPropertyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D61CD2B13F2BC8A0003AC4A /* JFFObjectRelatedPropertyData.m */; };
+		7EB941F3190D986600221617 /* NSObject+PropertyExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D61CD3013F2BCE40003AC4A /* NSObject+PropertyExtractor.m */; };
+		7EB941F4190D986600221617 /* JFFPropertyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9827F813F2B9D5009DD73B /* JFFPropertyPath.m */; };
+		7EB941F5190D986600221617 /* JFFPropertyExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D98280013F2BA10009DD73B /* JFFPropertyExtractor.m */; };
+		7EB941F6190D986600221617 /* NSObject+AsyncPropertyReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9827FA13F2B9D5009DD73B /* NSObject+AsyncPropertyReader.m */; };
+		7EB941F7190D986600221617 /* NSArray+AsyncMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5CDE6174F54E100F2B600 /* NSArray+AsyncMap.m */; };
+		7EB941F8190D986600221617 /* NSDictionary+AsyncMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5CDEA174F551300F2B600 /* NSDictionary+AsyncMap.m */; };
+		7EB941F9190D986600221617 /* NSError+ResultOwnerships.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9528FB1500E67900C9B979 /* NSError+ResultOwnerships.m */; };
+		7EB941FA190D986600221617 /* JFFAsyncOperationAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B0E83A81563954B00825E3C /* JFFAsyncOperationAdapter.mm */; };
+		7EB941FB190D986600221617 /* JFFAsyncOperationsPredefinedBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B835B32142CBA2200FC004C /* JFFAsyncOperationsPredefinedBlocks.m */; };
+		7EB941FC190D986600221617 /* JFFBlockOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65648BD413924220001E163C /* JFFBlockOperation.mm */; };
+		7EB941FD190D986600221617 /* JFFAsyncOperationUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65648C391392490F001E163C /* JFFAsyncOperationUtils.mm */; };
+		7EB941FE190D986600221617 /* JFFAsyncOperationHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0FB886150604850056F14E /* JFFAsyncOperationHelpers.m */; };
+		7EB941FF190D986700221617 /* JFFAsyncOperationBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0D88C21519F81F00EC4A92 /* JFFAsyncOperationBuilder.m */; };
+		7EB94200190D986700221617 /* JFFObjectRelatedPropertyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D61CD2B13F2BC8A0003AC4A /* JFFObjectRelatedPropertyData.m */; };
+		7EB94201190D986700221617 /* NSObject+PropertyExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D61CD3013F2BCE40003AC4A /* NSObject+PropertyExtractor.m */; };
+		7EB94202190D986700221617 /* NSArray+AsyncMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5CDE6174F54E100F2B600 /* NSArray+AsyncMap.m */; };
+		7EB94203190D986700221617 /* NSDictionary+AsyncMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5CDEA174F551300F2B600 /* NSDictionary+AsyncMap.m */; };
+		7EB94204190D986700221617 /* NSError+ResultOwnerships.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9528FB1500E67900C9B979 /* NSError+ResultOwnerships.m */; };
+		7EB94205190D986700221617 /* JFFAsyncOperationAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B0E83A81563954B00825E3C /* JFFAsyncOperationAdapter.mm */; };
+		7EB94206190D986700221617 /* JFFAsyncOperationUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65648C391392490F001E163C /* JFFAsyncOperationUtils.mm */; };
+		7EB94207190D986700221617 /* JFFAsyncOperationHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0FB886150604850056F14E /* JFFAsyncOperationHelpers.m */; };
 		8D1B3D6F13B88A2700410ECB /* JFFDidFinishAsyncOperationBlockHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1B3D6D13B88A2700410ECB /* JFFDidFinishAsyncOperationBlockHolder.h */; };
 		8D61CD2C13F2BC8A0003AC4A /* JFFObjectRelatedPropertyData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D61CD2A13F2BC8A0003AC4A /* JFFObjectRelatedPropertyData.h */; };
 		8D61CD3113F2BCE40003AC4A /* NSObject+PropertyExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D61CD2F13F2BCE40003AC4A /* NSObject+PropertyExtractor.h */; };
@@ -862,25 +887,40 @@
 				5391036F14A88BB5007315A3 /* NSObject+AutoCancelAsyncOperation.m in Sources */,
 				5391037014A88BB5007315A3 /* JFFDidFinishAsyncOperationBlockHolder.m in Sources */,
 				5391037114A88BB5007315A3 /* JFFCancelAsyncOperationBlockHolder.m in Sources */,
+				7EB941F1190D986600221617 /* JFFAsyncOperationBuilder.m in Sources */,
+				7EB941F6190D986600221617 /* NSObject+AsyncPropertyReader.m in Sources */,
 				5391037214A88BB5007315A3 /* JFFAsyncOperationProgressBlockHolder.m in Sources */,
+				7EB941FC190D986600221617 /* JFFBlockOperation.mm in Sources */,
+				7EB941FE190D986600221617 /* JFFAsyncOperationHelpers.m in Sources */,
 				5391037314A88BB5007315A3 /* JFFAsyncOperationContinuity.m in Sources */,
+				7EB941FB190D986600221617 /* JFFAsyncOperationsPredefinedBlocks.m in Sources */,
 				5391037414A88BB5007315A3 /* JFFCallbacksBlocksHolder.m in Sources */,
 				4CF62FCD16FDBA3800DAE2BB /* JFFAsyncOperationLoadBalancer.m in Sources */,
 				7E7336FE190C207900AE47B9 /* JObjcExceptionWrapperError.mm in Sources */,
 				7E79065116E4981700CFC696 /* JFFStrategyFifo.m in Sources */,
+				7EB941FA190D986600221617 /* JFFAsyncOperationAdapter.mm in Sources */,
+				7EB941F2190D986600221617 /* JFFObjectRelatedPropertyData.m in Sources */,
 				7E79065916E4984400CFC696 /* JFFQueueState.m in Sources */,
+				7EB941F4190D986600221617 /* JFFPropertyPath.m in Sources */,
 				7E79066116E49DD900CFC696 /* JFFQueueStrategyFactory.m in Sources */,
+				7EB941F9190D986600221617 /* NSError+ResultOwnerships.m in Sources */,
 				7E79066916E49F8000CFC696 /* JFFStrategyStack.m in Sources */,
+				7EB941F8190D986600221617 /* NSDictionary+AsyncMap.m in Sources */,
 				7E79067116E4A49B00CFC696 /* JFFStrategyRandom.mm in Sources */,
 				7E088E18190C3DE500D8A029 /* JCppExceptionWrapperError.mm in Sources */,
 				7E088E21190C43B300D8A029 /* JUnknownCppExceptionWrapperError.mm in Sources */,
 				4CBBDBED17173B36004D670D /* JFFBaseLoaderOwner.m in Sources */,
+				7E8F9956190D97B700C889C9 /* JFFBaseStrategy.m in Sources */,
 				4CBBDCC317174217004D670D /* JFFLimitedLoadersQueue.m in Sources */,
+				7EB941F7190D986600221617 /* NSArray+AsyncMap.m in Sources */,
+				7EB941FD190D986600221617 /* JFFAsyncOperationUtils.mm in Sources */,
+				7EB941F3190D986600221617 /* NSObject+PropertyExtractor.m in Sources */,
 				4CBBDCC617174222004D670D /* JFFActiveLoaderData.m in Sources */,
 				7E7336E9190C1B0100AE47B9 /* JGCDAdditions.mm in Sources */,
 				7E7336A4190C11D700AE47B9 /* JFFMemoryMgmt.m in Sources */,
 				4CBBDCC917174226004D670D /* JFFAsyncOperationLoadBalancerContexts.m in Sources */,
 				4CBBDCCC1717422A004D670D /* JFFContextLoaders.m in Sources */,
+				7EB941F5190D986600221617 /* JFFPropertyExtractor.m in Sources */,
 				4CBBDCCF1717422E004D670D /* JFFPedingLoaderData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -896,27 +936,37 @@
 				7E8F20DF14F94C3100588C7D /* NSObject+AsyncPropertyReader.m in Sources */,
 				7E8F20E114F94C3100588C7D /* JFFCallbacksBlocksHolder.m in Sources */,
 				7E8F20E314F94C3100588C7D /* JFFCancelAsyncOperationBlockHolder.m in Sources */,
+				7EB94207190D986700221617 /* JFFAsyncOperationHelpers.m in Sources */,
 				7E8F20E514F94C3100588C7D /* JFFAsyncOperationProgressBlockHolder.m in Sources */,
+				7EB94202190D986700221617 /* NSArray+AsyncMap.m in Sources */,
+				7E8F9955190D97B200C889C9 /* JFFBaseStrategy.m in Sources */,
 				7E7336A5190C11D700AE47B9 /* JFFMemoryMgmt.m in Sources */,
 				7E8F20E714F94C3100588C7D /* JFFDidFinishAsyncOperationBlockHolder.m in Sources */,
 				7E8F20F414F94C3100588C7D /* JFFAsyncOperationsPredefinedBlocks.m in Sources */,
 				7E8F20F614F94C3100588C7D /* JFFBlockOperation.mm in Sources */,
+				7EB941FF190D986700221617 /* JFFAsyncOperationBuilder.m in Sources */,
 				7E8F20F814F94C3100588C7D /* NSObject+AutoCancelAsyncOperation.m in Sources */,
 				7E8F20FC14F94C3100588C7D /* JFFAsyncOperationContinuity.m in Sources */,
+				7EB94205190D986700221617 /* JFFAsyncOperationAdapter.mm in Sources */,
 				7E088E19190C3DE500D8A029 /* JCppExceptionWrapperError.mm in Sources */,
 				4CF62FCE16FDBA3800DAE2BB /* JFFAsyncOperationLoadBalancer.m in Sources */,
 				7E79065216E4981700CFC696 /* JFFStrategyFifo.m in Sources */,
 				7E79065A16E4984400CFC696 /* JFFQueueState.m in Sources */,
 				7E79066216E49DD900CFC696 /* JFFQueueStrategyFactory.m in Sources */,
+				7EB94203190D986700221617 /* NSDictionary+AsyncMap.m in Sources */,
 				7E79066A16E49F8000CFC696 /* JFFStrategyStack.m in Sources */,
 				7E79067216E4A49B00CFC696 /* JFFStrategyRandom.mm in Sources */,
 				4CBBDBEE17173B37004D670D /* JFFBaseLoaderOwner.m in Sources */,
 				4CBBDCC417174217004D670D /* JFFLimitedLoadersQueue.m in Sources */,
+				7EB94206190D986700221617 /* JFFAsyncOperationUtils.mm in Sources */,
+				7EB94200190D986700221617 /* JFFObjectRelatedPropertyData.m in Sources */,
 				7E7336EA190C1B0100AE47B9 /* JGCDAdditions.mm in Sources */,
+				7EB94201190D986700221617 /* NSObject+PropertyExtractor.m in Sources */,
 				4CBBDCC717174223004D670D /* JFFActiveLoaderData.m in Sources */,
 				4CBBDCCA17174227004D670D /* JFFAsyncOperationLoadBalancerContexts.m in Sources */,
 				4CBBDCCD1717422A004D670D /* JFFContextLoaders.m in Sources */,
 				4CBBDCD01717422E004D670D /* JFFPedingLoaderData.m in Sources */,
+				7EB94204190D986700221617 /* NSError+ResultOwnerships.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

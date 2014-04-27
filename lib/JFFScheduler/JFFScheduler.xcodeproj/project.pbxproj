@@ -28,6 +28,12 @@
 		7E8F203814F9486E00588C7D /* NSObject+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 651BE197139195E500DD6890 /* NSObject+Timer.m */; };
 		7E8F203914F9487B00588C7D /* JFFScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 651BE1031390559900DD6890 /* JFFScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8F203A14F9487B00588C7D /* NSObject+Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 651BE196139195E500DD6890 /* NSObject+Timer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB9420B190D992900221617 /* JFFTimerHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4182DD181E64A800FF3CA0 /* JFFTimerHelpers.m */; };
+		7EB9420C190D992900221617 /* JFFTimer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C4182E1181E6B6700FF3CA0 /* JFFTimer.mm */; };
+		7EB9420D190D992A00221617 /* JFFTimerHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4182DD181E64A800FF3CA0 /* JFFTimerHelpers.m */; };
+		7EB9420E190D992A00221617 /* JFFTimer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C4182E1181E6B6700FF3CA0 /* JFFTimer.mm */; };
+		7EB9420F190D992B00221617 /* JFFTimerHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4182DD181E64A800FF3CA0 /* JFFTimerHelpers.m */; };
+		7EB94210190D992B00221617 /* JFFTimer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C4182E1181E6B6700FF3CA0 /* JFFTimer.mm */; };
 		AA747D9F0F9514B9006C5449 /* JFFScheduler_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* JFFScheduler_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -411,6 +417,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB9420D190D992A00221617 /* JFFTimerHelpers.m in Sources */,
+				7EB9420E190D992A00221617 /* JFFTimer.mm in Sources */,
 				539103BF14A88BD6007315A3 /* NSObject+Timer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +427,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB9420B190D992900221617 /* JFFTimerHelpers.m in Sources */,
+				7EB9420C190D992900221617 /* JFFTimer.mm in Sources */,
 				65802B18148BFB920040A93A /* NSObject+Timer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +437,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB9420F190D992B00221617 /* JFFTimerHelpers.m in Sources */,
+				7EB94210190D992B00221617 /* JFFTimer.mm in Sources */,
 				7E8F203814F9486E00588C7D /* NSObject+Timer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,7 +663,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -679,7 +690,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
