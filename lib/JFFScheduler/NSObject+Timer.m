@@ -3,9 +3,9 @@
 #import "JFFTimer.h"
 
 #import <JFFUtils/NSString/NSString+Search.h>
-#import <JFFUtils/NSObject/NSObject+OnDeallocBlock.h>
 
-#include <objc/message.h>
+
+
 
 @implementation NSObject (Timer)
 

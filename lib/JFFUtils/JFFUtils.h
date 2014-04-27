@@ -10,6 +10,9 @@
 #import <JFFUtils/NSError/NSError+SetToPointer.h>
 #import <JFFUtils/NSObject/NSObject+OnDeallocBlock.h>
 
+
+#import <JFFUtils/NSString/NSString+Search.h>
+#import <JFFUtils/NSString/NSString+IsEmpty.h>
 #import <JFFUtils/NSString/NSString+PropertyName.h>
 
 

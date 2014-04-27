@@ -23,6 +23,8 @@
 		7E9B13F4190C4A90004DD39A /* NSObject+Ownerships.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13F3190C4A90004DD39A /* NSObject+Ownerships.m */; };
 		7E9B13F7190C4AE1004DD39A /* JFFOnDeallocBlockOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13F6190C4AE1004DD39A /* JFFOnDeallocBlockOwner.m */; };
 		7E9B13FB190C4B9E004DD39A /* JFFRuntimeAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13FA190C4B9E004DD39A /* JFFRuntimeAdditions.mm */; };
+		7EA0C5F3190D04CC00DCB91D /* NSString+IsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0C5F0190D04CC00DCB91D /* NSString+IsEmpty.m */; };
+		7EA0C5F4190D04CC00DCB91D /* NSString+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0C5F2190D04CC00DCB91D /* NSString+Search.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		7E9B13F6190C4AE1004DD39A /* JFFOnDeallocBlockOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFOnDeallocBlockOwner.m; sourceTree = "<group>"; };
 		7E9B13F9190C4B9E004DD39A /* JFFRuntimeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFRuntimeAdditions.h; sourceTree = "<group>"; };
 		7E9B13FA190C4B9E004DD39A /* JFFRuntimeAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JFFRuntimeAdditions.mm; sourceTree = "<group>"; };
+		7EA0C5EF190D04CC00DCB91D /* NSString+IsEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IsEmpty.h"; sourceTree = "<group>"; };
+		7EA0C5F0190D04CC00DCB91D /* NSString+IsEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IsEmpty.m"; sourceTree = "<group>"; };
+		7EA0C5F1190D04CC00DCB91D /* NSString+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Search.h"; sourceTree = "<group>"; };
+		7EA0C5F2190D04CC00DCB91D /* NSString+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Search.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +207,10 @@
 		7E9B13E7190C48A1004DD39A /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				7EA0C5EF190D04CC00DCB91D /* NSString+IsEmpty.h */,
+				7EA0C5F0190D04CC00DCB91D /* NSString+IsEmpty.m */,
+				7EA0C5F1190D04CC00DCB91D /* NSString+Search.h */,
+				7EA0C5F2190D04CC00DCB91D /* NSString+Search.m */,
 				7E9B13E8190C48A1004DD39A /* NSString+PropertyName.h */,
 				7E9B13E9190C48A1004DD39A /* NSString+PropertyName.m */,
 			);
@@ -313,11 +323,13 @@
 				7E9B13FB190C4B9E004DD39A /* JFFRuntimeAdditions.mm in Sources */,
 				7E9B13ED190C4918004DD39A /* JFFSimpleBlockHolder.m in Sources */,
 				7E7336EE190C1B9B00AE47B9 /* NSError+SetToPointer.m in Sources */,
+				7EA0C5F4190D04CC00DCB91D /* NSString+Search.m in Sources */,
 				7E7336E1190C13FB00AE47B9 /* NSArray+IsEmpty.m in Sources */,
 				7E7336E0190C13FB00AE47B9 /* NSArray+BlocksAdditions.m in Sources */,
 				7E9B13EA190C48A1004DD39A /* NSString+PropertyName.m in Sources */,
 				7E9B13F1190C49F6004DD39A /* NSObject+OnDeallocBlock.m in Sources */,
 				7E9B13F4190C4A90004DD39A /* NSObject+Ownerships.m in Sources */,
+				7EA0C5F3190D04CC00DCB91D /* NSString+IsEmpty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,5 @@
 #import "JFFTimer.h"
 
-#import <JFFUtils/Blocks/JFFSimpleBlockHolder.h>
-#import <JFFUtils/Runtime/JFFRuntimeAddiotions.h>
 
 @interface NSThread (JFFScheduler_Internal)
 
