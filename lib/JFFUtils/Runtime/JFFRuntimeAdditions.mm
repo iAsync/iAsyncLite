@@ -7,7 +7,11 @@ void enumerateAllClassesWithBlock(void(^block)(Class))
     NSCParameterAssert(block && "block is undefined");
     
     int numClasses = objc_getClassList(NULL, 0);
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wvla-extension"
     Class classes[numClasses];
+#pragma clang diagnostic pop
     
     numClasses = objc_getClassList(classes, numClasses);
     
@@ -15,9 +19,11 @@ void enumerateAllClassesWithBlock(void(^block)(Class))
         
         @autoreleasepool {
             
-            Class class = classes[index];
-            if (class_getClassMethod(class, @selector(conformsToProtocol:)))
-                block(class);
+            Class objcClass = classes[index];
+            if (class_getClassMethod(objcClass, @selector(conformsToProtocol:)))
+            {
+                block(objcClass);
+            }
         }
     }
 }
@@ -56,14 +62,15 @@ const char *block_getTypeEncoding(id block)
     struct JFF_Block_literal_1 *blockRef = (__bridge struct JFF_Block_literal_1 *)block;
     
     int flags = blockRef->flags;
+    CTBlockDescriptionFlags castedFlags = (CTBlockDescriptionFlags)flags;
     //unsigned long int size = blockRef->descriptor->size;
     
-    if (flags & CTBlockDescriptionFlagsHasSignature) {
+    if (castedFlags & CTBlockDescriptionFlagsHasSignature) {
         size_t signatureLocation = (size_t)blockRef->descriptor;
         signatureLocation += sizeof(unsigned long int);
         signatureLocation += sizeof(unsigned long int);
         
-        if (flags & CTBlockDescriptionFlagsHasCopyDispose) {
+        if (castedFlags & CTBlockDescriptionFlagsHasCopyDispose) {
             signatureLocation += sizeof(void(*)(void *dst, void *src));
             signatureLocation += sizeof(void (*)(void *src));
         }
@@ -106,10 +113,11 @@ void invokeMethosBlockWithArgsAndReturnValue(id targetObjectOrBlock,
         NSString *errorDescription = [[NSString alloc] initWithFormat:@"invalid signature: %s", signature];
         NSCAssert(strlen(signaturePtr) != 0, errorDescription);
     }
-    long long value;
+    
+    long long value = 0;
     sscanf(signaturePtr, "%lld", &value);
     
-    size_t startAddress = (size_t)args - value * 2;
+    long long startAddress = reinterpret_cast<long long>(args) - value * 2;
     
     /*for (NSUInteger indx = 0; indx < 40; ++indx) {
      
@@ -125,19 +133,24 @@ void invokeMethosBlockWithArgsAndReturnValue(id targetObjectOrBlock,
             NSString *errorDescription = [[NSString alloc] initWithFormat:@"invalid signature: %s", signaturePtr];
             NSCAssert(strlen(signaturePtr) != 0, errorDescription);
         }
-        long long value;
+        long long value = 0;
         sscanf(signaturePtr, "%lld", &value);
         
-        size_t currAddress = startAddress + value;
+        long long currAddress = startAddress + value;
         
-        [invocation setArgument:currAddress
-                        atIndex:index];
+        void* currAddressPtr = reinterpret_cast<void*>(currAddress);
+        NSInteger castedIndex = static_cast<NSInteger>(index);
+        
+        [invocation setArgument: currAddressPtr
+                        atIndex: castedIndex];
     }
     
     [invocation invokeWithTarget:targetObjectOrBlock];
     
     if (returnValuePtr != NULL)
+    {
         [invocation getReturnValue:returnValuePtr];
+    }
 }
 
 @interface JFFWeakGetterProxy : NSObject
@@ -236,7 +249,7 @@ void jClass_implementProperty(Class cls, NSString *propertyName)
     NSString *setterName = nil;
     NSString *encoding   = nil;
     
-    for (int i = 0; i < count; i++) {
+    for (unsigned int i = 0; i < count; ++i) {
         objc_property_attribute_t attribute = attributes[i];
         
         switch (attribute.name[0]) {
