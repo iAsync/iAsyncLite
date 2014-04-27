@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E522ABF190D82EE0018AF97 /* NSError+SetToPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E522ABD190D82EE0018AF97 /* NSError+SetToPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E522AC0190D82EE0018AF97 /* NSError+SetToPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E522ABE190D82EE0018AF97 /* NSError+SetToPointer.m */; };
+		7E522AC1190D82EE0018AF97 /* NSError+SetToPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E522ABE190D82EE0018AF97 /* NSError+SetToPointer.m */; };
 		7E7336B3190C134300AE47B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7336B2190C134300AE47B9 /* Foundation.framework */; };
 		7E7336C1190C134300AE47B9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7336C0190C134300AE47B9 /* XCTest.framework */; };
 		7E7336C2190C134300AE47B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7336B2190C134300AE47B9 /* Foundation.framework */; };
@@ -15,7 +18,6 @@
 		7E7336CD190C134300AE47B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E7336CB190C134300AE47B9 /* InfoPlist.strings */; };
 		7E7336E0190C13FB00AE47B9 /* NSArray+BlocksAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7336DD190C13FB00AE47B9 /* NSArray+BlocksAdditions.m */; };
 		7E7336E1190C13FB00AE47B9 /* NSArray+IsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7336DF190C13FB00AE47B9 /* NSArray+IsEmpty.m */; };
-		7E7336EE190C1B9B00AE47B9 /* NSError+SetToPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7336ED190C1B9B00AE47B9 /* NSError+SetToPointer.m */; };
 		7E9B13EA190C48A1004DD39A /* NSString+PropertyName.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13E9190C48A1004DD39A /* NSString+PropertyName.m */; };
 		7E9B13ED190C4918004DD39A /* JFFSimpleBlockHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13EC190C4918004DD39A /* JFFSimpleBlockHolder.m */; };
 		7E9B13F1190C49F6004DD39A /* NSObject+OnDeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13F0190C49F6004DD39A /* NSObject+OnDeallocBlock.m */; };
@@ -28,6 +30,35 @@
 		7EABFD34190D174700D3CCC6 /* NumberOfCharacterFromStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD33190D174700D3CCC6 /* NumberOfCharacterFromStringTest.m */; };
 		7EABFD55190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD54190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7EABFD63190D1F4D00D3CCC6 /* NSObject+InstancesCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD62190D1F4D00D3CCC6 /* NSObject+InstancesCount.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7EB3DD61190D7D6E00CC690D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7336B2190C134300AE47B9 /* Foundation.framework */; };
+		7EB3DD67190D7D6E00CC690D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EB3DD65190D7D6E00CC690D /* InfoPlist.strings */; };
+		7EB3DD74190D7F6900CC690D /* NSObject+InstancesCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD62190D1F4D00D3CCC6 /* NSObject+InstancesCount.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7EB3DD75190D7F6900CC690D /* NSObject+RuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD54190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7EB3DD76190D7F6900CC690D /* JFFOnDeallocBlockOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13F6190C4AE1004DD39A /* JFFOnDeallocBlockOwner.m */; };
+		7EB3DD77190D7F6900CC690D /* JFFSimpleBlockHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13EC190C4918004DD39A /* JFFSimpleBlockHolder.m */; };
+		7EB3DD78190D7F6900CC690D /* NSArray+BlocksAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7336DD190C13FB00AE47B9 /* NSArray+BlocksAdditions.m */; };
+		7EB3DD79190D7F6900CC690D /* NSArray+IsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7336DF190C13FB00AE47B9 /* NSArray+IsEmpty.m */; };
+		7EB3DD7B190D7F6900CC690D /* NSObject+OnDeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13F0190C49F6004DD39A /* NSObject+OnDeallocBlock.m */; };
+		7EB3DD7C190D7F6900CC690D /* NSObject+Ownerships.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13F3190C4A90004DD39A /* NSObject+Ownerships.m */; };
+		7EB3DD7D190D7F6900CC690D /* NSString+IsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0C5F0190D04CC00DCB91D /* NSString+IsEmpty.m */; };
+		7EB3DD7E190D7F6900CC690D /* NSString+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0C5F2190D04CC00DCB91D /* NSString+Search.m */; };
+		7EB3DD7F190D7F6900CC690D /* NSString+PropertyName.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13E9190C48A1004DD39A /* NSString+PropertyName.m */; };
+		7EB3DD80190D7F6900CC690D /* JFFRuntimeAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13FA190C4B9E004DD39A /* JFFRuntimeAdditions.mm */; };
+		7EB3DD81190D806C00CC690D /* NSObject+InstancesCount.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EABFD61190D1F4D00D3CCC6 /* NSObject+InstancesCount.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7EB3DD82190D806C00CC690D /* NSObject+RuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EABFD53190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7EB3DD83190D806C00CC690D /* JFFUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336D8190C136B00AE47B9 /* JFFUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB3DD84190D806C00CC690D /* JFFOnDeallocBlockOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13F5190C4AE1004DD39A /* JFFOnDeallocBlockOwner.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7EB3DD85190D806C00CC690D /* JFFSimpleBlockHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13EB190C4918004DD39A /* JFFSimpleBlockHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB3DD86190D806C00CC690D /* JFFUtilsBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336E2190C149B00AE47B9 /* JFFUtilsBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB3DD87190D806C00CC690D /* JUContainersHelperBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336DA190C13F200AE47B9 /* JUContainersHelperBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB3DD88190D806C00CC690D /* NSArray+BlocksAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336DC190C13FB00AE47B9 /* NSArray+BlocksAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB3DD89190D806C00CC690D /* NSArray+IsEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336DE190C13FB00AE47B9 /* NSArray+IsEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB3DD8B190D806C00CC690D /* NSObject+OnDeallocBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13EF190C49F6004DD39A /* NSObject+OnDeallocBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB3DD8C190D806C00CC690D /* NSObject+Ownerships.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13F2190C4A90004DD39A /* NSObject+Ownerships.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7EB3DD8D190D806C00CC690D /* NSString+IsEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA0C5EF190D04CC00DCB91D /* NSString+IsEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB3DD8E190D806C00CC690D /* NSString+Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA0C5F1190D04CC00DCB91D /* NSString+Search.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB3DD8F190D806D00CC690D /* NSString+PropertyName.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13E8190C48A1004DD39A /* NSString+PropertyName.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7EB3DD90190D806D00CC690D /* JFFRuntimeAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13F9190C4B9E004DD39A /* JFFRuntimeAdditions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7EF2D985190D105300A412FA /* EmptyStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D984190D105300A412FA /* EmptyStringTest.m */; };
 		7EF2D987190D112400A412FA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF2D986190D112400A412FA /* libc++.dylib */; };
 		7EF2D989190D11CF00A412FA /* JFFSimpleBlockHolderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D988190D11CF00A412FA /* JFFSimpleBlockHolderTest.m */; };
@@ -60,6 +91,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E522ABD190D82EE0018AF97 /* NSError+SetToPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+SetToPointer.h"; sourceTree = "<group>"; };
+		7E522ABE190D82EE0018AF97 /* NSError+SetToPointer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+SetToPointer.m"; sourceTree = "<group>"; };
 		7E7336AF190C134300AE47B9 /* libJFFUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJFFUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7336B2190C134300AE47B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E7336B6190C134300AE47B9 /* JFFUtils-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "JFFUtils-Prefix.pch"; path = "JFFUtils/JFFUtils-Prefix.pch"; sourceTree = "<group>"; };
@@ -75,8 +108,6 @@
 		7E7336DE190C13FB00AE47B9 /* NSArray+IsEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IsEmpty.h"; sourceTree = "<group>"; };
 		7E7336DF190C13FB00AE47B9 /* NSArray+IsEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IsEmpty.m"; sourceTree = "<group>"; };
 		7E7336E2190C149B00AE47B9 /* JFFUtilsBlockDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFFUtilsBlockDefinitions.h; sourceTree = "<group>"; };
-		7E7336EC190C1B9B00AE47B9 /* NSError+SetToPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+SetToPointer.h"; sourceTree = "<group>"; };
-		7E7336ED190C1B9B00AE47B9 /* NSError+SetToPointer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+SetToPointer.m"; sourceTree = "<group>"; };
 		7E9B13E8190C48A1004DD39A /* NSString+PropertyName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PropertyName.h"; sourceTree = "<group>"; };
 		7E9B13E9190C48A1004DD39A /* NSString+PropertyName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PropertyName.m"; sourceTree = "<group>"; };
 		7E9B13EB190C4918004DD39A /* JFFSimpleBlockHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFSimpleBlockHolder.h; sourceTree = "<group>"; };
@@ -99,6 +130,9 @@
 		7EABFD54190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RuntimeExtensions.m"; sourceTree = "<group>"; };
 		7EABFD61190D1F4D00D3CCC6 /* NSObject+InstancesCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+InstancesCount.h"; sourceTree = "<group>"; };
 		7EABFD62190D1F4D00D3CCC6 /* NSObject+InstancesCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+InstancesCount.m"; sourceTree = "<group>"; };
+		7EB3DD60190D7D6E00CC690D /* JFFUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = JFFUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB3DD64190D7D6E00CC690D /* JFFUtils-Framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JFFUtils-Framework-Info.plist"; sourceTree = "<group>"; };
+		7EB3DD66190D7D6E00CC690D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7EF2D984190D105300A412FA /* EmptyStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyStringTest.m; sourceTree = "<group>"; };
 		7EF2D986190D112400A412FA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		7EF2D988190D11CF00A412FA /* JFFSimpleBlockHolderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFSimpleBlockHolderTest.m; sourceTree = "<group>"; };
@@ -129,9 +163,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EB3DD5B190D7D6E00CC690D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB3DD61190D7D6E00CC690D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E522ABC190D82EE0018AF97 /* NSError */ = {
+			isa = PBXGroup;
+			children = (
+				7E522ABD190D82EE0018AF97 /* NSError+SetToPointer.h */,
+				7E522ABE190D82EE0018AF97 /* NSError+SetToPointer.m */,
+			);
+			path = NSError;
+			sourceTree = SOURCE_ROOT;
+		};
 		7E7336A6190C134300AE47B9 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +190,7 @@
 				7EABFD52190D1E9400D3CCC6 /* UnitTestHelpers */,
 				7E7336B4190C134300AE47B9 /* JFFUtils */,
 				7E7336C8190C134300AE47B9 /* JFFUtilsTests */,
+				7EB3DD62190D7D6E00CC690D /* JFFUtils-Framework */,
 				7E7336B1190C134300AE47B9 /* Frameworks */,
 				7E7336B0190C134300AE47B9 /* Products */,
 			);
@@ -149,6 +201,7 @@
 			children = (
 				7E7336AF190C134300AE47B9 /* libJFFUtils.a */,
 				7E7336BF190C134300AE47B9 /* JFFUtilsTests.xctest */,
+				7EB3DD60190D7D6E00CC690D /* JFFUtils.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,7 +223,7 @@
 				7E7336D8190C136B00AE47B9 /* JFFUtils.h */,
 				7E7336D9190C13F200AE47B9 /* Blocks */,
 				7E7336DB190C13FB00AE47B9 /* NSArray */,
-				7E7336EB190C1B9B00AE47B9 /* NSError */,
+				7E522ABC190D82EE0018AF97 /* NSError */,
 				7E9B13EE190C49F6004DD39A /* NSObject */,
 				7E9B13E7190C48A1004DD39A /* NSString */,
 				7E9B13F8190C4B9E004DD39A /* Runtime */,
@@ -227,15 +280,6 @@
 			path = NSArray;
 			sourceTree = SOURCE_ROOT;
 		};
-		7E7336EB190C1B9B00AE47B9 /* NSError */ = {
-			isa = PBXGroup;
-			children = (
-				7E7336EC190C1B9B00AE47B9 /* NSError+SetToPointer.h */,
-				7E7336ED190C1B9B00AE47B9 /* NSError+SetToPointer.m */,
-			);
-			path = NSError;
-			sourceTree = "<group>";
-		};
 		7E9B13E7190C48A1004DD39A /* NSString */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,7 +325,50 @@
 			path = UnitTestHelpers;
 			sourceTree = "<group>";
 		};
+		7EB3DD62190D7D6E00CC690D /* JFFUtils-Framework */ = {
+			isa = PBXGroup;
+			children = (
+				7EB3DD63190D7D6E00CC690D /* Supporting Files */,
+			);
+			path = "JFFUtils-Framework";
+			sourceTree = "<group>";
+		};
+		7EB3DD63190D7D6E00CC690D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EB3DD64190D7D6E00CC690D /* JFFUtils-Framework-Info.plist */,
+				7EB3DD65190D7D6E00CC690D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7EB3DD5C190D7D6E00CC690D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB3DD83190D806C00CC690D /* JFFUtils.h in Headers */,
+				7EB3DD85190D806C00CC690D /* JFFSimpleBlockHolder.h in Headers */,
+				7EB3DD86190D806C00CC690D /* JFFUtilsBlockDefinitions.h in Headers */,
+				7EB3DD87190D806C00CC690D /* JUContainersHelperBlocks.h in Headers */,
+				7EB3DD88190D806C00CC690D /* NSArray+BlocksAdditions.h in Headers */,
+				7E522ABF190D82EE0018AF97 /* NSError+SetToPointer.h in Headers */,
+				7EB3DD89190D806C00CC690D /* NSArray+IsEmpty.h in Headers */,
+				7EB3DD8B190D806C00CC690D /* NSObject+OnDeallocBlock.h in Headers */,
+				7EB3DD8D190D806C00CC690D /* NSString+IsEmpty.h in Headers */,
+				7EB3DD8E190D806C00CC690D /* NSString+Search.h in Headers */,
+				7EB3DD90190D806D00CC690D /* JFFRuntimeAdditions.h in Headers */,
+				7EB3DD84190D806C00CC690D /* JFFOnDeallocBlockOwner.h in Headers */,
+				7EB3DD8F190D806D00CC690D /* NSString+PropertyName.h in Headers */,
+				7EB3DD81190D806C00CC690D /* NSObject+InstancesCount.h in Headers */,
+				7EB3DD82190D806C00CC690D /* NSObject+RuntimeExtensions.h in Headers */,
+				7EB3DD8C190D806C00CC690D /* NSObject+Ownerships.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		7E7336AE190C134300AE47B9 /* JFFUtils */ = {
@@ -319,6 +406,26 @@
 			productReference = 7E7336BF190C134300AE47B9 /* JFFUtilsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7EB3DD5F190D7D6E00CC690D /* JFFUtils-Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EB3DD6F190D7D6E00CC690D /* Build configuration list for PBXNativeTarget "JFFUtils-Framework" */;
+			buildPhases = (
+				7EB3DD5A190D7D6E00CC690D /* Sources */,
+				7EB3DD5B190D7D6E00CC690D /* Frameworks */,
+				7EB3DD5C190D7D6E00CC690D /* Headers */,
+				7EB3DD5D190D7D6E00CC690D /* Resources */,
+				7EB3DD5E190D7D6E00CC690D /* [Framework] Fix headers */,
+				7EB3DD91190D811100CC690D /* [Framework] Build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JFFUtils-Framework";
+			productName = "JFFUtils-Framework";
+			productReference = 7EB3DD60190D7D6E00CC690D /* JFFUtils.framework */;
+			productType = "com.apple.product-type.framework.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -327,6 +434,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = dodikk;
+				TargetAttributes = {
+					7E7336BE190C134300AE47B9 = {
+						TestTargetID = 7EB3DD5F190D7D6E00CC690D;
+					};
+				};
 			};
 			buildConfigurationList = 7E7336AA190C134300AE47B9 /* Build configuration list for PBXProject "JFFUtils" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -342,6 +454,7 @@
 			targets = (
 				7E7336AE190C134300AE47B9 /* JFFUtils */,
 				7E7336BE190C134300AE47B9 /* JFFUtilsTests */,
+				7EB3DD5F190D7D6E00CC690D /* JFFUtils-Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -355,7 +468,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EB3DD5D190D7D6E00CC690D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB3DD67190D7D6E00CC690D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EB3DD5E190D7D6E00CC690D /* [Framework] Fix headers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Framework] Fix headers";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INLINED_PYHON_SCRIPT=\"import sys; import os.path; headerPathFromFind = sys.argv[2]; srcRoot = sys.argv[1]; headerPathFromFindWithoutFilename = os.path.dirname( headerPathFromFind ); relatedPathForDirectory = os.path.relpath( headerPathFromFindWithoutFilename, srcRoot ); print( relatedPathForDirectory );\"\n\n\nFIXED_SRC_ROOT=$SRCROOT\n\n# echo \"====SRCROOT : $SRCROOT=======\"\n# echo \"====FIXED_SRC_ROOT : $FIXED_SRC_ROOT=======\"\n\nLAUNCH_DIR=$PWD\ncd $SRCROOT\n#cd ..\n   HEADERS_ROOT=$PWD\ncd $LAUNCH_DIR\n\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$( ls -1 \"$FRAMEWORK_HEADERS_DIR\" )\n\n\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n\nFIND_RESULT=$( find \"$HEADERS_ROOT\" -name \"$PUBLIC_HEADER\" )\nRELATIVE_PATH=$( python -c \"$INLINED_PYHON_SCRIPT\" \"$HEADERS_ROOT\" \"$FIND_RESULT\" )\n\nmkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\nmv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\ndone\n\n";
+			showEnvVarsInLog = 0;
+		};
+		7EB3DD91190D811100CC690D /* [Framework] Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[Framework] Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n# Nothing for the slave script to do\nexit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n    eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\necho \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\nexit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nUFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nUFW_OTHER_PLATFORM=iphonesimulator\nelse\nUFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\nUFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\necho \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\nexit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\necho \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n# Make sure the other platform gets built\n\necho \"Build other platform\"\n\necho xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n\n\n# Build the fat static library binary\n\necho \"Create universal static library\"\n\necho \"libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\"libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\necho mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nmv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\nif [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\nthen\necho ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\nln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\nfi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n# Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n\necho \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n\necho rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\necho cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E7336AB190C134300AE47B9 /* Sources */ = {
@@ -365,12 +518,12 @@
 				7E9B13F7190C4AE1004DD39A /* JFFOnDeallocBlockOwner.m in Sources */,
 				7E9B13FB190C4B9E004DD39A /* JFFRuntimeAdditions.mm in Sources */,
 				7E9B13ED190C4918004DD39A /* JFFSimpleBlockHolder.m in Sources */,
-				7E7336EE190C1B9B00AE47B9 /* NSError+SetToPointer.m in Sources */,
 				7EA0C5F4190D04CC00DCB91D /* NSString+Search.m in Sources */,
 				7E7336E1190C13FB00AE47B9 /* NSArray+IsEmpty.m in Sources */,
 				7E7336E0190C13FB00AE47B9 /* NSArray+BlocksAdditions.m in Sources */,
 				7E9B13EA190C48A1004DD39A /* NSString+PropertyName.m in Sources */,
 				7EABFD63190D1F4D00D3CCC6 /* NSObject+InstancesCount.m in Sources */,
+				7E522AC0190D82EE0018AF97 /* NSError+SetToPointer.m in Sources */,
 				7E9B13F1190C49F6004DD39A /* NSObject+OnDeallocBlock.m in Sources */,
 				7E9B13F4190C4A90004DD39A /* NSObject+Ownerships.m in Sources */,
 				7EABFD55190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.m in Sources */,
@@ -393,6 +546,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EB3DD5A190D7D6E00CC690D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB3DD74190D7F6900CC690D /* NSObject+InstancesCount.m in Sources */,
+				7EB3DD75190D7F6900CC690D /* NSObject+RuntimeExtensions.m in Sources */,
+				7EB3DD76190D7F6900CC690D /* JFFOnDeallocBlockOwner.m in Sources */,
+				7EB3DD77190D7F6900CC690D /* JFFSimpleBlockHolder.m in Sources */,
+				7EB3DD78190D7F6900CC690D /* NSArray+BlocksAdditions.m in Sources */,
+				7EB3DD79190D7F6900CC690D /* NSArray+IsEmpty.m in Sources */,
+				7EB3DD7B190D7F6900CC690D /* NSObject+OnDeallocBlock.m in Sources */,
+				7EB3DD7C190D7F6900CC690D /* NSObject+Ownerships.m in Sources */,
+				7E522AC1190D82EE0018AF97 /* NSError+SetToPointer.m in Sources */,
+				7EB3DD7D190D7F6900CC690D /* NSString+IsEmpty.m in Sources */,
+				7EB3DD7E190D7F6900CC690D /* NSString+Search.m in Sources */,
+				7EB3DD7F190D7F6900CC690D /* NSString+PropertyName.m in Sources */,
+				7EB3DD80190D7F6900CC690D /* JFFRuntimeAdditions.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -408,6 +581,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				7E7336CC190C134300AE47B9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7EB3DD65190D7D6E00CC690D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EB3DD66190D7D6E00CC690D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -554,13 +735,9 @@
 				);
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "JFFUtilsTests/JFFUtilsTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					XCTest,
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -577,13 +754,9 @@
 				GCC_PREFIX_HEADER = "JFFUtils/JFFUtils-Prefix.pch";
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "JFFUtilsTests/JFFUtilsTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					XCTest,
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -671,16 +844,61 @@
 				);
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "JFFUtilsTests/JFFUtilsTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					XCTest,
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Coverage;
+		};
+		7EB3DD6C190D7D6E00CC690D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JFFUtils/JFFUtils-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JFFUtils-Framework/JFFUtils-Framework-Info.plist";
+				PRODUCT_NAME = JFFUtils;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		7EB3DD6D190D7D6E00CC690D /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JFFUtils/JFFUtils-Prefix.pch";
+				INFOPLIST_FILE = "JFFUtils-Framework/JFFUtils-Framework-Info.plist";
+				PRODUCT_NAME = JFFUtils;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Coverage;
+		};
+		7EB3DD6E190D7D6E00CC690D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JFFUtils/JFFUtils-Prefix.pch";
+				INFOPLIST_FILE = "JFFUtils-Framework/JFFUtils-Framework-Info.plist";
+				PRODUCT_NAME = JFFUtils;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -711,6 +929,16 @@
 				7E7336D6190C134300AE47B9 /* Debug */,
 				7EABFD28190D15B200D3CCC6 /* Coverage */,
 				7E7336D7190C134300AE47B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EB3DD6F190D7D6E00CC690D /* Build configuration list for PBXNativeTarget "JFFUtils-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EB3DD6C190D7D6E00CC690D /* Debug */,
+				7EB3DD6D190D7D6E00CC690D /* Coverage */,
+				7EB3DD6E190D7D6E00CC690D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
