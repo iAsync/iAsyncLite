@@ -76,11 +76,13 @@
     
     __block dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatchQueue);
     
-    int64_t delta = duration * NSEC_PER_SEC;
+    int64_t delta = static_cast<int64_t>( duration * NSEC_PER_SEC );
+    int64_t castedLeeway = static_cast<int64_t>( leeway * NSEC_PER_SEC );
+    
     dispatch_source_set_timer(timer,
                               dispatch_time(DISPATCH_TIME_NOW, delta),
                               delta,
-                              leeway * NSEC_PER_SEC);
+                              castedLeeway );
     
     __unsafe_unretained JFFTimer *unretainedSelf = self;
     
