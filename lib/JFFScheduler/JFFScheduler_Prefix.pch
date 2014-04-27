@@ -3,6 +3,7 @@
 
 
 #ifdef __OBJC__
+    #import <JFFUtils/Runtime/JFFRuntimeAdditions.h>
     #import <JFFUtils/JFFUtils.h>
 
     #import <Foundation/Foundation.h>
@@ -10,5 +11,6 @@
 
 
 #include <objc/message.h>
+#include <objc/objc-api.h>
 
 
