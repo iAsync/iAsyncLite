@@ -36,7 +36,9 @@
         
         cancel();
         if (handler)
+        {
             handler([JFFAsyncTimerResult new], nil);
+        }
     } duration:_duration leeway:_leeway];
 }
 
