@@ -2,9 +2,8 @@
 
 #import <Foundation/Foundation.h>
 
-@class
-JFFPropertyPath,
-JFFPropertyExtractor;
+@class JFFPropertyPath;
+@class JFFPropertyExtractor;
 
 typedef JFFPropertyExtractor *(^JFFPropertyExtractorFactoryBlock)(void);
 
