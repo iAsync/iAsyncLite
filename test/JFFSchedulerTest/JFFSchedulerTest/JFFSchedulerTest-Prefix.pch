@@ -9,6 +9,8 @@
 #endif
 
 #ifdef __OBJC__
+    #import <JFFUtils/UnitTestHelpers/NSObject+InstancesCount.h>
+
     #import <JFFUtils/JFFUtils.h>
     #import <GHUnitIOS/GHUnit.h>
 

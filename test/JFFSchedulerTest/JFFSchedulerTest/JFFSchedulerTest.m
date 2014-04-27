@@ -1,6 +1,7 @@
 
 #import <JFFScheduler/JFFTimer.h>
-#import <JFFTestTools/JFFTestTools.h>
+
+
 
 @interface JFFSchedulerTest : GHAsyncTestCase
 @end

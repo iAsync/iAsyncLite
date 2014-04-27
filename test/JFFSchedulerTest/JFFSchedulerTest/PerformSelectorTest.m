@@ -2,7 +2,6 @@
 #import <JFFScheduler/JFFTimer.h>
 #import <JFFScheduler/NSObject+Timer.h>
 
-#import <JFFTestTools/JFFTestTools.h>
 
 @interface JFFObjectToTestTimer : NSObject
 
