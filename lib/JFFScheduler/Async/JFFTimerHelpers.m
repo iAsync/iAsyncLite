@@ -1,21 +1,16 @@
 #import "JFFTimerHelpers.h"
 
 #import "JFFTimer.h"
+#import "JFFTimerHelpers.h"
 
-#import <JFFAsyncOperations/AsyncOperartionsBuilder/JFFAsyncOperationBuilder.h>
-#import <JFFAsyncOperations/AsyncOperartionsBuilder/JFFAsyncOperationInterface.h>
-
-
-#import <JFFAsyncOperations/JFFAsyncOperationContinuity.h>
-
-#import <JFFAsyncOperations/JFFAsyncOperationHelpers.h>
-#import <JFFScheduler/Async/JFFTimerHelpers.h>
 
 @implementation JFFAsyncTimerResult : NSObject
 @end
 
+
 @interface JFFAsyncOperationScheduler : NSObject <JFFAsyncOperationInterface>
 @end
+
 
 @implementation JFFAsyncOperationScheduler
 {
