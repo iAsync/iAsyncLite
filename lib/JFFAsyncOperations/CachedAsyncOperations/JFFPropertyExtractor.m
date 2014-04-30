@@ -32,11 +32,10 @@ static const PropertySetterMsgSendFunction FPropertySetter = (PropertySetterMsgS
     SEL _propertySetSelector;
 }
 
-@dynamic
-delegates,
-asyncLoader,
-didFinishBlock,
-cancelBlock;
+@dynamic delegates     ;
+@dynamic asyncLoader   ;
+@dynamic didFinishBlock;
+@dynamic cancelBlock   ;
 
 - (void)clearData
 {
