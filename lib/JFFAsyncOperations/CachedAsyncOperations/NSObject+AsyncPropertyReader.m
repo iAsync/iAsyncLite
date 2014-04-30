@@ -279,6 +279,10 @@ static JFFCancelAsyncOperation performNativeLoader(JFFPropertyExtractor *propert
 - (JFFAsyncOperation)asyncOperationForPropertyWithName:(NSString *)propertyName
                                         asyncOperation:(JFFAsyncOperation)asyncOperation
 {
+    //TODO20 test immediately cancel
+    //TODO20 test cancel calback for each observer
+
+    
     return [self asyncOperationForPropertyWithName:propertyName
                                     asyncOperation:asyncOperation
                             didFinishLoadDataBlock:nil];

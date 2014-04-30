@@ -1,18 +1,34 @@
 #import <JFFAsyncOperations/JFFAsyncOperationsBlockDefinitions.h>
-
 #import <Foundation/Foundation.h>
 
 @class JFFPropertyPath;
 @class JFFPropertyExtractor;
 
+
+/**
+ A block that constructs an object of the JFFPropertyExtractor class.
+ It implements the **"Factory"** design pattern.
+ */
 typedef JFFPropertyExtractor *(^JFFPropertyExtractorFactoryBlock)(void);
+
 
 @interface NSObject (AsyncPropertyReader)
 
-//TODO20 test immediately cancel
-//TODO20 test cancel calback for each observer
+/**
+ Binds the asynchronous operation with a given property.
+ The operation's result will be written to the property on successful execution.
+ 
+ @param propertyName A property to store the operation result.
+ Note : its name must match with the NSStringFromSelector() value.
+ 
+ @param asyncOperation An operation that does the data loading job.
+ 
+ 
+ @return A new operation that loads the data and stores the result into the corresponding property.
+ */
 - (JFFAsyncOperation)asyncOperationForPropertyWithName:(NSString *)propertyName
                                         asyncOperation:(JFFAsyncOperation)asyncOperation;
+
 
 - (JFFAsyncOperation)asyncOperationForPropertyWithName:(NSString *)propertyName
                                         asyncOperation:(JFFAsyncOperation)asyncOperation
