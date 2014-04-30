@@ -1,4 +1,6 @@
 #deployment
+
+deployment/appledoc
 build
 
 .DS_Store
