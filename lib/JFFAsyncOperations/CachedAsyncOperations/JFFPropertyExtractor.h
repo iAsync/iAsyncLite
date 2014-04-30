@@ -1,5 +1,4 @@
 #import <JFFAsyncOperations/JFFAsyncOperationsBlockDefinitions.h>
-
 #import <Foundation/Foundation.h>
 
 @class JFFPropertyPath;
@@ -7,6 +6,8 @@
 
 /**
  A class to hold the information about a property that is being asynchronously loaded.
+ 
+ Note : As an end user of iAsync, you should not instantiate objects of this class directly.
  */
 @interface JFFPropertyExtractor : NSObject
 
@@ -18,13 +19,16 @@
 @property ( nonatomic ) JFFPropertyPath* propertyPath;
 
 /**
- ???
+ An object the property has been declared on
  */
 @property ( nonatomic ) NSObject* object;
 
 
 
-//object related data
+/**
+ An array of JFFCallbacksBlocksHolder objects.
+ In case multiple operations have been called and merged into a single one, their callback blocks are stored in this array. Once the operation is cancelled or completed, the corresponding blocks are invoked for all delegate objects.
+ */
 @property (nonatomic) NSMutableArray *delegates;
 
 /**
@@ -43,10 +47,14 @@
 @property (nonatomic, copy) JFFDidFinishAsyncOperationHandler didFinishBlock;
 
 /**
+ Asynchronous operation result is stored in this object.
  */
 @property (nonatomic) id property;
 
 /**
+ Make the JFFPropertyExtractor object forget about the corresponding property and the object that owns the property.
+ 
+ Note : this method is used to cancel asynchronous operations.
  */
 - (void)clearData;
 
