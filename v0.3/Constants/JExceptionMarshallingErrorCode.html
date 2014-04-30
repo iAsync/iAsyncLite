@@ -76,6 +76,13 @@
                     
                     <h3 class="subsubtitle method-title">JExceptionMarshallingErrorCode</h3>
                     
+					
+					<div class="section section-overview">
+                        <p>Error codes that are used for exceptions marshalling.
+They will be used to create appropriate NSError objects.</p>
+					</div>
+					
+					
                     <div class="section">
                         <!-- display enum values -->
                         
@@ -101,6 +108,14 @@
                             <dt><a name="" title="JNoExceptionErrorCode"></a><code>JNoExceptionErrorCode</code></dt>
 <dd>
 
+
+<pre><code> No error has occured.
+</code></pre>
+
+    
+
+    
+
     
 	<p>
 		Declared In <code class="declared-in-ref">JExceptionMarshallingErrorCode.h</code>.
@@ -110,6 +125,15 @@
                             
                             <dt><a name="" title="JObjcExceptionErrorCode"></a><code>JObjcExceptionErrorCode</code></dt>
 <dd>
+
+
+<pre><code> A subclass of NSException has been thrown. 
+ See JObjcExceptionWrapperError class reference.
+</code></pre>
+
+    
+
+    
 
     
 	<p>
@@ -121,6 +145,15 @@
                             <dt><a name="" title="JStdCppExceptionErrorCode"></a><code>JStdCppExceptionErrorCode</code></dt>
 <dd>
 
+
+<pre><code> A subclass of std::exception has been thrown.
+ See JCppExceptionWrapperError class reference.
+</code></pre>
+
+    
+
+    
+
     
 	<p>
 		Declared In <code class="declared-in-ref">JExceptionMarshallingErrorCode.h</code>.
@@ -130,6 +163,15 @@
                             
                             <dt><a name="" title="JUnknownCppExceptionErrorCode"></a><code>JUnknownCppExceptionErrorCode</code></dt>
 <dd>
+
+
+<pre><code> An unknown exception has been thrown and suppressed by the ```catch(...)``` statement.
+ See JUnknownCppExceptionWrapperError class reference.
+</code></pre>
+
+    
+
+    
 
     
 	<p>
@@ -141,6 +183,17 @@
                         </dl>
                     </div>
                     
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <code class="declared-in-ref">JExceptionMarshallingErrorCode.h</code><br />
+                    </div>				
                     
                     
                     

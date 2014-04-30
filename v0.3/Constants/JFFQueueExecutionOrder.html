@@ -76,6 +76,12 @@
                     
                     <h3 class="subsubtitle method-title">JFFQueueExecutionOrder</h3>
                     
+					
+					<div class="section section-overview">
+                        <p>This enum describes the strategy of asynchronous operations processing by the JFFLimitedLoadersQueue class.</p>
+					</div>
+					
+					
                     <div class="section">
                         <!-- display enum values -->
                         
@@ -99,6 +105,15 @@
                             <dt><a name="" title="JQOrderFifo"></a><code>JQOrderFifo</code></dt>
 <dd>
 
+
+<pre><code> "First In - First Out" - FIFO.
+ The default queue order.
+</code></pre>
+
+    
+
+    
+
     
 	<p>
 		Declared In <code class="declared-in-ref">JFFQueueExecutionOrder.h</code>.
@@ -108,6 +123,15 @@
                             
                             <dt><a name="" title="JQOrderStack"></a><code>JQOrderStack</code></dt>
 <dd>
+
+
+<pre><code> "Last In - First Out" - LIFO.
+ The recently added operations have the highest priority.
+</code></pre>
+
+    
+
+    
 
     
 	<p>
@@ -119,6 +143,15 @@
                             <dt><a name="" title="JQOrderRandom"></a><code>JQOrderRandom</code></dt>
 <dd>
 
+
+<pre><code> The order does not matter. The tasks are executed in a random order.
+ A uniform distribution is used.
+</code></pre>
+
+    
+
+    
+
     
 	<p>
 		Declared In <code class="declared-in-ref">JFFQueueExecutionOrder.h</code>.
@@ -129,6 +162,17 @@
                         </dl>
                     </div>
                     
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <code class="declared-in-ref">JFFQueueExecutionOrder.h</code><br />
+                    </div>				
                     
                     
                     
