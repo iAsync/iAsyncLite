@@ -128,8 +128,9 @@ static const PropertySetterMsgSendFunction FPropertySetter = (PropertySetterMsgS
     JFF_LOG_INFO( @"===[END] %@", methodNameForLogging );
 }
 
-////////////////////////OBJECT RELATED DATA///////////////////////
 
+#pragma mark -
+#pragma mark OBJECT RELATED DATA
 - (JFFObjectRelatedPropertyData *)objectPropertyData
 {
     JFFObjectRelatedPropertyData *data = [self.object propertyDataForPropertPath:self.propertyPath];
