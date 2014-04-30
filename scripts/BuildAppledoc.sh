@@ -8,11 +8,14 @@ if [ -z "$APPLEDOC_EXE" ]; then
 fi
 
 
+SCRIPTS_ROOT_DIR=$PWD
 
+cd ..
 PROJECT_ROOT=$PWD
 
+
 DEPLOYMENT_DIR=${PROJECT_ROOT}/deployment
-SDK_LIBRARIES_ROOT=${PROJECT_ROOT}/ESLocale
+SDK_LIBRARIES_ROOT=${PROJECT_ROOT}/lib
 
 
 if [ -d "$DEPLOYMENT_DIR" ]; then
@@ -24,14 +27,16 @@ mkdir -p "$DEPLOYMENT_DIR"
 cd "$DEPLOYMENT_DIR"
 	which appledoc
 
-	${APPLEDOC_EXE}                                     \
-	 	--project-name "ESLocale"                       \
-		--project-company "dodikk"                      \
-		--company-id org.dodikk                         \
-        --no-repeat-first-par                           \
-        --exclude $SDK_LIBRARIES_ROOT/Calendar/Details  \
- 		--output .                                      \
-		"$SDK_LIBRARIES_ROOT"                           \
+	${APPLEDOC_EXE}                                     							   \
+	 	--project-name "iAsync-Lite"                      							   \
+		--project-company "dodikk"                      							   \
+		--company-id org.dodikk                         							   \
+        --no-repeat-first-par                                                          \
+        --exclude $SDK_LIBRARIES_ROOT/JFFAsyncOperations/CachedAsyncOperations/Detail  \
+		--exclude $SDK_LIBRARIES_ROOT/JFFAsyncOperations/Detail                        \
+		--exclude $SDK_LIBRARIES_ROOT/JFFAsyncOperations/LoadBalancer/Detail           \
+ 		--output .                                                                     \
+		"$SDK_LIBRARIES_ROOT"                                                          \
         | tee appledoc-log.txt
 
 
@@ -39,5 +44,5 @@ cd "$DEPLOYMENT_DIR"
 	echo DOCUMENTATION_PATH - $DOCUMENTATION_PATH
 	
 	cp -R "${DOCUMENTATION_PATH}" .
-	find . -name "*.docset" -exec zip -r ESLocale-doc.zip {} \;  -print 
+	find . -name "*.docset" -exec zip -r iAsync-Lite-doc.zip {} \;  -print 
 cd "$LAUNCH_DIR"
