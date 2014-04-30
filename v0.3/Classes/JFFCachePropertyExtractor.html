@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>JFFPropertyExtractor Class Reference</title>
+		<title>JFFCachePropertyExtractor Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">JFFPropertyExtractor Class Reference</h1>
+				<h1 class="hideInXcode">JFFCachePropertyExtractor Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -41,7 +41,9 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/objectPropertyData">&nbsp;&nbsp;&nbsp;&nbsp;- objectPropertyData</option>
+	<option value="//api/name/property">&nbsp;&nbsp;&nbsp;&nbsp;- property</option>
+	
+	<option value="//api/name/setProperty:">&nbsp;&nbsp;&nbsp;&nbsp;- setProperty:</option>
 	
 	
 	
@@ -69,7 +71,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectPropertyData">objectPropertyData</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/property">property</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setProperty:">setProperty:</a></span></li>
 	
 </ul></li>
 
@@ -78,7 +82,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="JFFPropertyExtractor Class Reference" name="top"></a>
+				<a title="JFFCachePropertyExtractor Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -87,7 +91,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">JFFPropertyExtractor Class Reference</h1>
+						<h1 class="title title-header">JFFCachePropertyExtractor Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -95,10 +99,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
+	<td class="specification-value"><a href="../Classes/JFFPropertyExtractor.html">JFFPropertyExtractor</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">JFFPropertyExtractor.h<br />JFFPropertyExtractor.m</td>
+	<td class="specification-value">NSObject+AsyncPropertyReader.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -118,7 +122,13 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/objectPropertyData">&ndash;&nbsp;objectPropertyData</a></code>
+		<code><a href="#//api/name/property">&ndash;&nbsp;property</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setProperty:">&ndash;&nbsp;setProperty:</a></code>
 	</span>
 	
 	
@@ -140,18 +150,18 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/objectPropertyData" title="objectPropertyData"></a>
-	<h3 class="subsubtitle method-title">objectPropertyData</h3>
+	<a name="//api/name/property" title="property"></a>
+	<h3 class="subsubtitle method-title">property</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>/////////////////////OBJECT RELATED DATA///////////////////////</p>
+		<p>Asynchronous operation result is stored in this <a href="#//api/name/object">object</a>.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (JFFObjectRelatedPropertyData *)objectPropertyData</code></div>
+	<div class="method-subsection method-declaration"><code>- (id)property</code></div>
 
     
 	
@@ -169,7 +179,43 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JFFPropertyExtractor.m</code><br />
+		<code class="declared-in-ref">JFFPropertyExtractor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setProperty:" title="setProperty:"></a>
+	<h3 class="subsubtitle method-title">setProperty:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asynchronous operation result is stored in this <a href="#//api/name/object">object</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setProperty:(id)<em>propertyPath</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JFFPropertyExtractor.h</code><br />
 	</div>				
 	
 	
