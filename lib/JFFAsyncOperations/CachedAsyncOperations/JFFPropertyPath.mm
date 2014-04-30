@@ -2,15 +2,26 @@
 
 @implementation JFFPropertyPath
 
+- (instancetype)init __attribute__((noreturn))
+{
+    throw std::runtime_error("Unsupported initializer");
+}
+
 - (instancetype)initWithName:(NSString *)name
                          key:(id<NSCopying, NSObject>)key
+__attribute__((nonnull (1)))
 {
-    self = [super init];
+    NSParameterAssert( nil != name );
+    self = [ super init ];
     
-    if (self) {
-        _name = name;
-        _key  = key;
+    
+    if ( nil == self) {
+        return nil;
     }
+
+    self->_name = name;
+    self->_key  = key;
+
     
     return self;
 }
