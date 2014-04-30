@@ -36,6 +36,9 @@ cd "$DEPLOYMENT_DIR"
 		--exclude $SDK_LIBRARIES_ROOT/JFFAsyncOperations/Detail                        \
 		--exclude $SDK_LIBRARIES_ROOT/JFFAsyncOperations/LoadBalancer/Detail           \
         --ignore "*.m"                                                                 \
+        --ignore "*.mm"                                                                \
+        --ignore "*.c"                                                                 \
+        --ignore "*.cpp"                                                               \
  		--output .                                                                     \
 		"$SDK_LIBRARIES_ROOT"                                                          \
         | tee appledoc-log.txt
