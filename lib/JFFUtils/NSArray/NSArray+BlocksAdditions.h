@@ -24,17 +24,28 @@
 /**
    Creates a new NSArray of length N containing the values returned by the block.
  
-   @param N  - size of the new array
-   @param block - a block that builds new objects to fill array with
+   @param N  Size of the new array
+   @param block A block that builds new objects to fill array with. 
+   Note : The producer block cannot return nil. In this case the function will crash.
  
-   @return - a new NSArray instance
+   @return A new NSArray instance
  */
-+ (instancetype)arrayWithSize:(NSUInteger)size
++ (instancetype)arrayWithSize:(NSUInteger)N
                      producer:(JFFProducerBlock)block;
 
-//Calls block once for number from 0(zero) to (size_ - 1)
-//Creates a new NSArray containing the values returned by the block.
-+ (instancetype)arrayWithCapacity:(NSUInteger)size
+
+
+/**
+   Creates a new NSArray of length [0..N] containing the values returned by the block.
+ 
+   @param N  The maximal size of the new array
+   @param block A block that builds new objects to fill array with
+   Note : The producer block may return nil. It sill be ignored and the size of the array will be smaller than N.
+
+   @return A new NSArray instance
+   Note : the array does not contain NSNull gaps.
+ */
++ (instancetype)arrayWithCapacity:(NSUInteger)N
              ignoringNilsProducer:(JFFProducerBlock)block;
 
 
@@ -53,6 +64,7 @@ Invokes block once for each element of self.
 Creates a new NSArray containing the values returned by the block.
  
  @param block - a block that perfroms the transform of element in this array to element in the new array.
+ Note : the mapping block should not return nil. Otherwise the function will crash.
  
  @return a new NSArray of mapped objects
  
@@ -60,18 +72,49 @@ Creates a new NSArray containing the values returned by the block.
 - (instancetype)map:(JFFMappingBlock)block;
 
 
-//Invokes block once for each element of self.
-//Creates a new NSArray containing the values returned by the block.
-//if error happens it is suppressed
+
+
+/** Invokes block once for each element of self. Creates a new NSArray
+containing the values returned by the block. If the block returns nil
+its value is ignored and not pushed to the target aray.
+ 
+ @param block - a block that perfroms the transform of element in this array to element in the new array.
+ Note : the mapping block may return nil.
+
+ @return A new NSArray of mapped objects. 
+ Note : the array does not contain NSNull gaps.
+ */
 - (instancetype)forceMap:(JFFMappingBlock)block;
 
-//Invokes block once for each element of self.
-//Creates a new NSArray containing the values returned by the block.
-//or return nil if error happens
+
+/**
+Invokes block once for each element of self.
+Creates a new NSArray containing the values returned by the block.
+ 
+ @param block A block that perfroms the transform of element in this array to element in the new array.
+ Note : in case the mapping block returns nil.
+ 
+ @param outError A pointer to the NSError out parameter object. 
+
+ @return a new NSArray of mapped objects. If an error occurs, the result of the entire function is nil.
+ */
 - (instancetype)map:(JFFMappingWithErrorBlock)block
               error:(NSError *__autoreleasing *)outError;
 
--(instancetype)mapIgnoringNilError:( JFFMappingWithErrorBlock )block error:( NSError** )outError;
+
+/**
+Invokes block once for each element of self.
+Creates a new NSArray containing the values returned by the block.
+ 
+ @param block A block that perfroms the transform of element in this array to element in the new array.
+ Note : in case the mapping block returns nil.
+ 
+ @param outError A pointer to the NSError out parameter object. 
+
+ @return a new NSArray of mapped objects. If an error occurs, the result of the entire function is nil.
+ */
+-(instancetype)mapIgnoringNilError:( JFFMappingWithErrorBlock )bloc
+                             error:( NSError** )outError;
 
 
 
@@ -79,7 +122,7 @@ Creates a new NSArray containing the values returned by the block.
 //Creates a new NSArray containing the values returned by the block. Passes index of element in block as argument.
 //or return nil if error happens
 - (instancetype)mapWithIndex:(JFFMappingWithErrorAndIndexBlock)block
-                       error:(NSError *__autoreleasing *)outError;
+                       error:(out NSError *__autoreleasing *)outError;
 
 //Invokes block once for each element of self.
 //Creates a new NSDictionary containing the values and keys returned by the block.
