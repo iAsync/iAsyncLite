@@ -134,9 +134,9 @@
 {
     __block NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:[self count]];
     
-    __block NSError *error;
+    __block NSError *error = nil;
     
-    [self enumerateObjectsUsingBlock: ^(id object, NSUInteger idx, BOOL *stop) {
+    [self enumerateObjectsUsingBlock: ^void(id object, NSUInteger idx, BOOL *stop) {
         id newObject = block(object, idx, &error);
         if (newObject) {
             [result addObject: newObject];
@@ -146,8 +146,10 @@
         }
     }];
     
-    if (outError)
+    if (NULL != outError)
+    {
         *outError = error;
+    }
     
     return [result copy];
 }
