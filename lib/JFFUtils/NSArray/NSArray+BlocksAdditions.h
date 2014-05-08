@@ -92,7 +92,7 @@ Invokes block once for each element of self.
 Creates a new NSArray containing the values returned by the block.
  
  @param block A block that perfroms the transform of element in this array to element in the new array.
- Note : in case the mapping block returns nil.
+ Note : in case the mapping block returns nil the entire result is nil.
  
  @param outError A pointer to the NSError out parameter object. 
 
@@ -106,23 +106,32 @@ Creates a new NSArray containing the values returned by the block.
 Invokes block once for each element of self.
 Creates a new NSArray containing the values returned by the block.
  
- @param block A block that perfroms the transform of element in this array to element in the new array.
- Note : in case the mapping block returns nil.
+ @param block A block that perfroms the transform of element in this
+array to element in the new array.  Note : in case the mapping block
+returns nil the result will contain less records.
  
  @param outError A pointer to the NSError out parameter object. 
 
- @return a new NSArray of mapped objects. If an error occurs, the result of the entire function is nil.
+ @return a new NSArray of mapped objects. 
+ If an error occurs, the result of the entire function is nil.
  */
 -(instancetype)mapIgnoringNilError:( JFFMappingWithErrorBlock )bloc
                              error:( NSError** )outError;
 
 
 
-//Invokes block once for each element of self.
-//Creates a new NSArray containing the values returned by the block. Passes index of element in block as argument.
-//or return nil if error happens
-- (instancetype)mapWithIndex:(JFFMappingWithErrorAndIndexBlock)block
-                       error:(out NSError *__autoreleasing *)outError;
+/** Same as [NSArray map:error:]. The mapping block takes the element
+index into account.
+
+ Note : in case the mapping block returns nil the entire result is nil.
+ 
+ @param outError A pointer to the NSError out parameter object. 
+
+ @return a new NSArray of mapped objects. If an error occurs, the result of the entire function is nil.
+*/
+(instancetype)mapWithIndex:(JFFMappingWithErrorAndIndexBlock)block
+                     error:(out NSError *__autoreleasing *)outError;
+
 
 //Invokes block once for each element of self.
 //Creates a new NSDictionary containing the values and keys returned by the block.
@@ -140,6 +149,14 @@ Creates a new NSArray containing those elements for which the block returns a YE
  */
 - (instancetype)select:(JFFPredicateBlock)predicate;
 
+
+/**
+Same as [NSArray select:] but the predicate block takes the element index into account.
+ 
+ @param predicate A predicate. It takes an object and returns YES if the object matches a certain condition.
+ 
+ @return A new NSArray of objects that fit predicate requirements
+ */
 - (instancetype)selectWithIndex:(JFFPredicateWithIndexBlock)predicate;
 
 
@@ -179,25 +196,27 @@ Invokes the block passing in successive elements from self, returning a count of
 - (NSUInteger)count:(JFFPredicateBlock)predicate;
 
 
-
 /**
  Invokes the block passing in successive elements from self, returning the first element for which the block returns a YES value.
  
  @param predicate A predicate that takes an object and returns YES if the object matches a certain condition.
  
  @return - the first object matching the predicate
- *//**
- Invokes the block passing in successive elements from self, returning the first element for which the block returns a YES value.
- 
- @param predicate A predicate that takes an object and returns YES if the object matches a certain condition.
- 
- @return - the first object matching the predicate
+ Note : If none of the objects matches the predicate nil is returned.
  */
  - (id)firstMatch:(JFFPredicateBlock)predicate;
 
-//Invokes the block passing in successive elements from self,
-//returning the last element for which the block returns a YES value
-- (id)lastMatch:(JFFPredicateBlock)predicate;
+
+/**
+ Invokes the block passing in elements from self in the reverse order.
+ The function returns the last element for which the block returns a YES value.
+ 
+ @param predicate A predicate that takes an object and returns YES if the object matches a certain condition.
+ 
+ @return The last object matching the predicate. 
+ Note : If none of the objects matches the predicate nil is returned.
+*/ 
+ - (id)lastMatch:(JFFPredicateBlock)predicate;
 
 
 
@@ -223,13 +242,36 @@ Invokes the block passing in successive elements from self, returning a count of
                  withBlock:(JFFTransformBlock)block;
 
 
+/**
+Splits the array to N shards. The distribution is defined by the **elementIndexBlock**.
 
-//Invokes the block passing parallel in successive elements from self and other NSArray,
-- (instancetype)devideIntoArrayWithSize:(NSUInteger)size
+@param N Number of shards to split the array into.
+@param block A block that defines which element goes to which shard.
+
+@return Array of NSAray shards
+*/
+- (instancetype)devideIntoArrayWithSize:(NSUInteger)N
                       elementIndexBlock:(JFFElementIndexBlock)block;
 
+
+/**
+ Same as [NSArray firstMatch:]
+ 
+ @param predicate A predicate that takes an object and returns YES if the object matches a certain condition.
+ 
+ @return - the first object matching the predicate
+ Note : If none of the objects matches the predicate nil is returned.
+ */
 - (BOOL)any:(JFFPredicateBlock)predicate;
 
+
+/**
+Same as [NSArray select:]
+
+@param predicate - a predicate. It takes an object and returns YES if the object matches a certain condition.
+ 
+ @return - a new NSArray of objects that fit predicate requirements
+*/
 - (BOOL)all:(JFFPredicateBlock)predicate;
 
 @end
