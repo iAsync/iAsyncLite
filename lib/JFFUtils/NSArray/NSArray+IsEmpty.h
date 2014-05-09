@@ -3,7 +3,7 @@
 
 /**
 A category to check whether the array is empty or not.
-This approach is more human friendly comparing to [NSArray lastObject].
+This approach is more human friendly rather than comparing [NSArray lastObject] to nil.
 */
 @interface NSArray (IsEmpty)
 
