@@ -1,6 +1,6 @@
 #import <JFFAsyncOperations/JFFAsyncOperationsBlockDefinitions.h>
-
 #import <Foundation/Foundation.h>
+
 
 @interface JFFBlockOperation : NSObject
 
