@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>JFFPropertyPath Class Reference</title>
+		<title>NSArray(AsyncMap) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">JFFPropertyPath Class Reference</h1>
+				<h1 class="hideInXcode">NSArray(AsyncMap) Category Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -37,22 +37,17 @@
 	
 	
 	
-	<option value="properties">Properties</option>
-	
-	<option value="//api/name/key">&nbsp;&nbsp;&nbsp;&nbsp;key</option>
-	
-	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
-	
-	
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	<option value="//api/name/asyncMap:">&nbsp;&nbsp;&nbsp;&nbsp;- asyncMap:</option>
 	
-	<option value="//api/name/initWithName:key:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithName:key:</option>
+	<option value="//api/name/asyncWaitAllMap:">&nbsp;&nbsp;&nbsp;&nbsp;- asyncWaitAllMap:</option>
+	
+	<option value="//api/name/tolerantFaultAsyncMap:">&nbsp;&nbsp;&nbsp;&nbsp;- tolerantFaultAsyncMap:</option>
 	
 	
 	
@@ -76,23 +71,17 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/key">key</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
-	
-</ul></li>
-
 
 
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asyncMap:">asyncMap:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithName:key:">initWithName:key:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asyncWaitAllMap:">asyncWaitAllMap:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tolerantFaultAsyncMap:">tolerantFaultAsyncMap:</a></span></li>
 	
 </ul></li>
 
@@ -101,7 +90,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="JFFPropertyPath Class Reference" name="top"></a>
+				<a title="NSArray(AsyncMap) Category Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -110,18 +99,15 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">JFFPropertyPath Class Reference</h1>
+						<h1 class="title title-header">NSArray(AsyncMap) Category Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
-</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">JFFPropertyPath.h</td>
+	<td class="specification-value">NSArray+AsyncMap.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -131,7 +117,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>A class to hold information about asynchronously loaded properties.</p>
+						<p>A category to perform map/reduce actions asynchronously in the background thread.</p>
 					</div>
 					
 					
@@ -149,25 +135,19 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/key">&nbsp;&nbsp;key</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initWithName:key:">&ndash;&nbsp;initWithName:key:</a></code>
+		<code><a href="#//api/name/asyncMap:">&ndash;&nbsp;asyncMap:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		<code><a href="#//api/name/asyncWaitAllMap:">&ndash;&nbsp;asyncWaitAllMap:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tolerantFaultAsyncMap:">&ndash;&nbsp;tolerantFaultAsyncMap:</a></code>
 	</span>
 	
 	
@@ -180,89 +160,6 @@
 					
 					
 					
-					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/key" title="key"></a>
-	<h3 class="subsubtitle method-title">key</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>An object for asynchronous operations uniquing. It comes from the user either in [NSObject asyncOperationMergeLoaders:withArgument:] or in [NSObject asyncOperationMergeLoaders:withArgument:]</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) id&lt;NSCopying,NSObject&gt; key</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Note : operations with the same key</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JFFPropertyPath.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/name" title="name"></a>
-	<h3 class="subsubtitle method-title">name</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>A name used in the &ldquo;@property&rdquo; declaration</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *name</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JFFPropertyPath.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
 					
 					
 					
@@ -272,60 +169,19 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/init" title="init"></a>
-	<h3 class="subsubtitle method-title">init</h3>
+	<a name="//api/name/asyncMap:" title="asyncMap:"></a>
+	<h3 class="subsubtitle method-title">asyncMap:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Unsupported initializer.</p>
+		<p>Creates an operation that performs the block with each array element simultaneously.
+The resulting array will be returned in the completion callback of the async operation.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Throws std::runtime_error exception.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JFFPropertyPath.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/initWithName:key:" title="initWithName:key:"></a>
-	<h3 class="subsubtitle method-title">initWithName:key:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>A <a href="#//api/name/name">name</a> used in the &ldquo;@property&rdquo; declaration.
-Note : do not pass nil</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (instancetype)initWithName:(NSString *)<em>name</em> key:(id&lt;NSCopying,NSObject&gt;)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (JFFAsyncOperation)asyncMap:(JFFAsyncOperationBinder)<em>block</em></code></div>
 
     
 	
@@ -333,15 +189,8 @@ Note : do not pass nil</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>name</em></dt>
-			<dd><p>A <a href="#//api/name/name">name</a> used in the &ldquo;@property&rdquo; declaration.
-Note : do not pass nil</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>key</em></dt>
-			<dd><p>An object for asynchronous operations uniquing. It comes from the user in [NSObject asyncOperationMergeLoaders:withArgument:]
-Note : nil can be passed if loaders of the corresponding property should never be merged.</p></dd>
+			<dt><em>block</em></dt>
+			<dd><p>A block to construct an asynchronous operation with the given array element.</p></dd>
 		</dl>
 		
 	</div>
@@ -350,12 +199,18 @@ Note : nil can be passed if loaders of the corresponding property should never b
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A properly initialized object.</p>
+		<p>An asycnhronous operation that performs actions on array elements in parallel.</p>
 	</div>
 	
 	
 	
 	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Note : if the block returns at least one error, the entire operation will be marked as &ldquo;failed&rdquo;.
+The entire operation will also be cancelled.</p>
+	</div>
 	
 	
 	
@@ -365,7 +220,123 @@ Note : nil can be passed if loaders of the corresponding property should never b
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JFFPropertyPath.h</code><br />
+		<code class="declared-in-ref">NSArray+AsyncMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/asyncWaitAllMap:" title="asyncWaitAllMap:"></a>
+	<h3 class="subsubtitle method-title">asyncWaitAllMap:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an operation that performs the block with each array element simultaneously.
+The resulting array will be returned in the completion callback of the async operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (JFFAsyncOperation)asyncWaitAllMap:(JFFAsyncOperationBinder)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>A block to construct an asynchronous operation with the given array element.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An asycnhronous operation that performs actions on array elements in parallel.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Note : if the block returns at least one error, the entire operation will be marked as &ldquo;failed&rdquo;.
+However, all operations will be attempted to execute.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+AsyncMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tolerantFaultAsyncMap:" title="tolerantFaultAsyncMap:"></a>
+	<h3 class="subsubtitle method-title">tolerantFaultAsyncMap:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an operation that performs the block with each array element simultaneously.
+The resulting array will be returned in the completion callback of the async operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (JFFAsyncOperation)tolerantFaultAsyncMap:(JFFAsyncOperationBinder)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>A block to construct an asynchronous operation with the given array element.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An asycnhronous operation that performs actions on array elements in parallel.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Note : if the block returns at least one error, the execution keeps going.
+The operation is considered as failed if all operations have failed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+AsyncMap.h</code><br />
 	</div>				
 	
 	

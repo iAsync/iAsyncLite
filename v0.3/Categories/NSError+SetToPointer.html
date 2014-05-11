@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>JFFPropertyPath Class Reference</title>
+		<title>NSError(SetToPointer) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">JFFPropertyPath Class Reference</h1>
+				<h1 class="hideInXcode">NSError(SetToPointer) Category Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -37,22 +37,13 @@
 	
 	
 	
-	<option value="properties">Properties</option>
-	
-	<option value="//api/name/key">&nbsp;&nbsp;&nbsp;&nbsp;key</option>
-	
-	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
-	
-	
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
-	
-	<option value="//api/name/initWithName:key:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithName:key:</option>
+	<option value="//api/name/setToPointer:">&nbsp;&nbsp;&nbsp;&nbsp;- setToPointer:</option>
 	
 	
 	
@@ -76,23 +67,13 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/key">key</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
-	
-</ul></li>
-
 
 
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithName:key:">initWithName:key:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setToPointer:">setToPointer:</a></span></li>
 	
 </ul></li>
 
@@ -101,7 +82,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="JFFPropertyPath Class Reference" name="top"></a>
+				<a title="NSError(SetToPointer) Category Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -110,18 +91,15 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">JFFPropertyPath Class Reference</h1>
+						<h1 class="title title-header">NSError(SetToPointer) Category Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
-</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">JFFPropertyPath.h</td>
+	<td class="specification-value">NSError+SetToPointer.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -131,7 +109,8 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>A class to hold information about asynchronously loaded properties.</p>
+						<p>This category automates safe error object assignment to the out parameter pointer.
+You can write it in a single statement and get rid of &ldquo;if&rdquo; statements.</p>
 					</div>
 					
 					
@@ -149,25 +128,7 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/key">&nbsp;&nbsp;key</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initWithName:key:">&ndash;&nbsp;initWithName:key:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		<code><a href="#//api/name/setToPointer:">&ndash;&nbsp;setToPointer:</a></code>
 	</span>
 	
 	
@@ -180,89 +141,6 @@
 					
 					
 					
-					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/key" title="key"></a>
-	<h3 class="subsubtitle method-title">key</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>An object for asynchronous operations uniquing. It comes from the user either in [NSObject asyncOperationMergeLoaders:withArgument:] or in [NSObject asyncOperationMergeLoaders:withArgument:]</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) id&lt;NSCopying,NSObject&gt; key</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Note : operations with the same key</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JFFPropertyPath.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/name" title="name"></a>
-	<h3 class="subsubtitle method-title">name</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>A name used in the &ldquo;@property&rdquo; declaration</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *name</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JFFPropertyPath.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
 					
 					
 					
@@ -272,60 +150,18 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/init" title="init"></a>
-	<h3 class="subsubtitle method-title">init</h3>
+	<a name="//api/name/setToPointer:" title="setToPointer:"></a>
+	<h3 class="subsubtitle method-title">setToPointer:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Unsupported initializer.</p>
+		<p>Sets the &ldquo;self&rdquo; error object to the out pointer.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Throws std::runtime_error exception.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JFFPropertyPath.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/initWithName:key:" title="initWithName:key:"></a>
-	<h3 class="subsubtitle method-title">initWithName:key:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>A <a href="#//api/name/name">name</a> used in the &ldquo;@property&rdquo; declaration.
-Note : do not pass nil</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (instancetype)initWithName:(NSString *)<em>name</em> key:(id&lt;NSCopying,NSObject&gt;)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)setToPointer:(out NSError *__autoreleasing *)<em>outError</em></code></div>
 
     
 	
@@ -333,15 +169,8 @@ Note : do not pass nil</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>name</em></dt>
-			<dd><p>A <a href="#//api/name/name">name</a> used in the &ldquo;@property&rdquo; declaration.
-Note : do not pass nil</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>key</em></dt>
-			<dd><p>An object for asynchronous operations uniquing. It comes from the user in [NSObject asyncOperationMergeLoaders:withArgument:]
-Note : nil can be passed if loaders of the corresponding property should never be merged.</p></dd>
+			<dt><em>outError</em></dt>
+			<dd><p>An out parameter to assign the error to.</p></dd>
 		</dl>
 		
 	</div>
@@ -350,7 +179,7 @@ Note : nil can be passed if loaders of the corresponding property should never b
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A properly initialized object.</p>
+		<p>YES - in case of successful assignment. NO - in case &ldquo;outError&rdquo; is NULL.</p>
 	</div>
 	
 	
@@ -365,7 +194,7 @@ Note : nil can be passed if loaders of the corresponding property should never b
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JFFPropertyPath.h</code><br />
+		<code class="declared-in-ref">NSError+SetToPointer.h</code><br />
 	</div>				
 	
 	
