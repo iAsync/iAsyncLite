@@ -3,7 +3,7 @@
 
 /**
 A category to check whether the string is empty or not.
-This approach is more human friendly rather than comparing [NSString count] to zero.
+This approach is more human friendly rather than comparing [NSString length] to zero.
 */
 @interface NSString (IsEmpty)
 
