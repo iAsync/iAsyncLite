@@ -128,6 +128,12 @@
 		7E5EAEEB191FBB68007F7908 /* JStubAsyncOperationConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EAEE7191FBB68007F7908 /* JStubAsyncOperationConstructors.m */; };
 		7E5EAEEC191FBB68007F7908 /* JStubAsyncOperationConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EAEE7191FBB68007F7908 /* JStubAsyncOperationConstructors.m */; };
 		7E5EAEED191FBB68007F7908 /* JStubAsyncOperationConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EAEE7191FBB68007F7908 /* JStubAsyncOperationConstructors.m */; };
+		7E5EAEF0191FDD6F007F7908 /* JAsyncOperationConstructors.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5EAEEE191FDD6F007F7908 /* JAsyncOperationConstructors.h */; };
+		7E5EAEF1191FDD6F007F7908 /* JAsyncOperationConstructors.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5EAEEE191FDD6F007F7908 /* JAsyncOperationConstructors.h */; };
+		7E5EAEF2191FDD6F007F7908 /* JAsyncOperationConstructors.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5EAEEE191FDD6F007F7908 /* JAsyncOperationConstructors.h */; };
+		7E5EAEF3191FDD6F007F7908 /* JAsyncOperationConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EAEEF191FDD6F007F7908 /* JAsyncOperationConstructors.m */; };
+		7E5EAEF4191FDD6F007F7908 /* JAsyncOperationConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EAEEF191FDD6F007F7908 /* JAsyncOperationConstructors.m */; };
+		7E5EAEF5191FDD6F007F7908 /* JAsyncOperationConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EAEEF191FDD6F007F7908 /* JAsyncOperationConstructors.m */; };
 		7E7336A0190C11D700AE47B9 /* JFFMemoryMgmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E73369E190C11D700AE47B9 /* JFFMemoryMgmt.h */; };
 		7E7336A1190C11D700AE47B9 /* JFFMemoryMgmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E73369E190C11D700AE47B9 /* JFFMemoryMgmt.h */; };
 		7E7336A2190C11D700AE47B9 /* JFFMemoryMgmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E73369E190C11D700AE47B9 /* JFFMemoryMgmt.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -297,6 +303,8 @@
 		7E088E1C190C43B300D8A029 /* JUnknownCppExceptionWrapperError.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JUnknownCppExceptionWrapperError.mm; sourceTree = "<group>"; };
 		7E5EAEE6191FBB68007F7908 /* JStubAsyncOperationConstructors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JStubAsyncOperationConstructors.h; sourceTree = "<group>"; };
 		7E5EAEE7191FBB68007F7908 /* JStubAsyncOperationConstructors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JStubAsyncOperationConstructors.m; sourceTree = "<group>"; };
+		7E5EAEEE191FDD6F007F7908 /* JAsyncOperationConstructors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAsyncOperationConstructors.h; sourceTree = "<group>"; };
+		7E5EAEEF191FDD6F007F7908 /* JAsyncOperationConstructors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAsyncOperationConstructors.m; sourceTree = "<group>"; };
 		7E73369E190C11D700AE47B9 /* JFFMemoryMgmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFMemoryMgmt.h; sourceTree = "<group>"; };
 		7E73369F190C11D700AE47B9 /* JFFMemoryMgmt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFMemoryMgmt.m; sourceTree = "<group>"; };
 		7E7336E3190C1B0100AE47B9 /* JGCDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCDAdditions.h; sourceTree = "<group>"; };
@@ -527,6 +535,8 @@
 			children = (
 				7E5EAEE6191FBB68007F7908 /* JStubAsyncOperationConstructors.h */,
 				7E5EAEE7191FBB68007F7908 /* JStubAsyncOperationConstructors.m */,
+				7E5EAEEE191FDD6F007F7908 /* JAsyncOperationConstructors.h */,
+				7E5EAEEF191FDD6F007F7908 /* JAsyncOperationConstructors.m */,
 			);
 			path = FacadeObjects;
 			sourceTree = "<group>";
@@ -631,6 +641,7 @@
 				5391035A14A88BB5007315A3 /* JFFCallbacksBlocksHolder.h in Headers */,
 				7E088E1E190C43B300D8A029 /* JUnknownCppExceptionWrapperError.h in Headers */,
 				5391035C14A88BB5007315A3 /* JFFBlockOperation.h in Headers */,
+				7E5EAEF1191FDD6F007F7908 /* JAsyncOperationConstructors.h in Headers */,
 				7E7336FB190C207900AE47B9 /* JObjcExceptionWrapperError.h in Headers */,
 				5391035D14A88BB5007315A3 /* JFFAsyncOperationUtils.h in Headers */,
 				7E7336E6190C1B0100AE47B9 /* JGCDAdditions.h in Headers */,
@@ -667,6 +678,7 @@
 				7E8F210614F94C6100588C7D /* NSObject+AsyncPropertyReader.h in Headers */,
 				7E8F212514F94C6100588C7D /* JFFAsyncOperations.h in Headers */,
 				7E8F211A14F94C6100588C7D /* JFFAsyncOperationsBlockDefinitions.h in Headers */,
+				7E5EAEF2191FDD6F007F7908 /* JAsyncOperationConstructors.h in Headers */,
 				7E8F212114F94C6100588C7D /* JFFAsyncOperationUtils.h in Headers */,
 				7E3B3A53190D86F900A510E3 /* JFFAsyncOperationHelpers.h in Headers */,
 				7E3B3A46190D86F800A510E3 /* NSArray+AsyncMap.h in Headers */,
@@ -718,6 +730,7 @@
 				651BE1621391913300DD6890 /* JFFAsyncOperationsBlockDefinitions.h in Headers */,
 				651BE1671391928400DD6890 /* JFFAsyncOperationContinuity.h in Headers */,
 				65648BAF1392407F001E163C /* JFFCallbacksBlocksHolder.h in Headers */,
+				7E5EAEF0191FDD6F007F7908 /* JAsyncOperationConstructors.h in Headers */,
 				7E088E14190C3DE500D8A029 /* JCppExceptionWrapperError.h in Headers */,
 				65648BD513924220001E163C /* JFFBlockOperation.h in Headers */,
 				65648C3A1392490F001E163C /* JFFAsyncOperationUtils.h in Headers */,
@@ -915,6 +928,7 @@
 				7EB941FE190D986600221617 /* JFFAsyncOperationHelpers.m in Sources */,
 				5391037314A88BB5007315A3 /* JFFAsyncOperationContinuity.m in Sources */,
 				7EB941FB190D986600221617 /* JFFAsyncOperationsPredefinedBlocks.m in Sources */,
+				7E5EAEF4191FDD6F007F7908 /* JAsyncOperationConstructors.m in Sources */,
 				5391037414A88BB5007315A3 /* JFFCallbacksBlocksHolder.m in Sources */,
 				4CF62FCD16FDBA3800DAE2BB /* JFFAsyncOperationLoadBalancer.m in Sources */,
 				7E7336FE190C207900AE47B9 /* JObjcExceptionWrapperError.mm in Sources */,
@@ -961,6 +975,7 @@
 				7EB94207190D986700221617 /* JFFAsyncOperationHelpers.m in Sources */,
 				7E8F20E514F94C3100588C7D /* JFFAsyncOperationProgressBlockHolder.m in Sources */,
 				7EB94202190D986700221617 /* NSArray+AsyncMap.m in Sources */,
+				7E5EAEF5191FDD6F007F7908 /* JAsyncOperationConstructors.m in Sources */,
 				7E8F9955190D97B200C889C9 /* JFFBaseStrategy.m in Sources */,
 				7E7336A5190C11D700AE47B9 /* JFFMemoryMgmt.m in Sources */,
 				7E8F20E714F94C3100588C7D /* JFFDidFinishAsyncOperationBlockHolder.m in Sources */,
@@ -1007,6 +1022,7 @@
 				1B0857D3145169B3001DDE0A /* JFFCallbacksBlocksHolder.m in Sources */,
 				6572C43814A75CD8008CFCFD /* NSObject+AsyncPropertyReader.m in Sources */,
 				6572C43914A75CDA008CFCFD /* JFFPropertyExtractor.m in Sources */,
+				7E5EAEF3191FDD6F007F7908 /* JAsyncOperationConstructors.m in Sources */,
 				6572C43A14A75CDC008CFCFD /* JFFPropertyPath.mm in Sources */,
 				6572C43B14A75CE1008CFCFD /* JFFObjectRelatedPropertyData.m in Sources */,
 				6572C43C14A75CE3008CFCFD /* NSObject+PropertyExtractor.m in Sources */,
