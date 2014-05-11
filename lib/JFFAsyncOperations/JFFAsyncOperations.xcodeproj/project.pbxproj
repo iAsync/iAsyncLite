@@ -35,7 +35,7 @@
 		4CBBDCBF171741C8004D670D /* JFFAsyncOperationLoadBalancer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65347F9513B7F0BD0002CF73 /* JFFAsyncOperationLoadBalancer.m */; };
 		4CBBDCC0171741DB004D670D /* JFFAsyncOperationLoadBalancerContexts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FB016FDB6FE00DAE2BB /* JFFAsyncOperationLoadBalancerContexts.h */; };
 		4CBBDCC1171741DC004D670D /* JFFAsyncOperationLoadBalancerContexts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FB016FDB6FE00DAE2BB /* JFFAsyncOperationLoadBalancerContexts.h */; };
-		4CBBDCC2171741DC004D670D /* JFFAsyncOperationLoadBalancerContexts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FB016FDB6FE00DAE2BB /* JFFAsyncOperationLoadBalancerContexts.h */; };
+		4CBBDCC2171741DC004D670D /* JFFAsyncOperationLoadBalancerContexts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FB016FDB6FE00DAE2BB /* JFFAsyncOperationLoadBalancerContexts.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4CBBDCC317174217004D670D /* JFFLimitedLoadersQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4031CB163D266B00FE6427 /* JFFLimitedLoadersQueue.m */; };
 		4CBBDCC417174217004D670D /* JFFLimitedLoadersQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4031CB163D266B00FE6427 /* JFFLimitedLoadersQueue.m */; };
 		4CBBDCC517174222004D670D /* JFFActiveLoaderData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF62FAF16FDB6FE00DAE2BB /* JFFActiveLoaderData.m */; };
@@ -110,27 +110,33 @@
 		7E3B3A45190D86F800A510E3 /* JFFAsyncOperationBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0D88C11519F81F00EC4A92 /* JFFAsyncOperationBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E3B3A46190D86F800A510E3 /* NSArray+AsyncMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB5CDE5174F54E100F2B600 /* NSArray+AsyncMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E3B3A47190D86F800A510E3 /* NSDictionary+AsyncMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB5CDE9174F551200F2B600 /* NSDictionary+AsyncMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E3B3A48190D86F800A510E3 /* NSError+ResultOwnerships.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9528FA1500E67900C9B979 /* NSError+ResultOwnerships.h */; };
-		7E3B3A49190D86F800A510E3 /* JFFAsyncOperationAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0E83A71563954B00825E3C /* JFFAsyncOperationAdapter.h */; };
+		7E3B3A48190D86F800A510E3 /* NSError+ResultOwnerships.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9528FA1500E67900C9B979 /* NSError+ResultOwnerships.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E3B3A49190D86F800A510E3 /* JFFAsyncOperationAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0E83A71563954B00825E3C /* JFFAsyncOperationAdapter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E3B3A4A190D86F800A510E3 /* JExceptionMarshallingErrorCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E088E1A190C406F00D8A029 /* JExceptionMarshallingErrorCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E3B3A4B190D86F800A510E3 /* JFFQueueStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79064A16E4977F00CFC696 /* JFFQueueStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E3B3A4C190D86F800A510E3 /* JFFBaseStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6DFB0C1718446500D86975 /* JFFBaseStrategy.h */; };
-		7E3B3A4D190D86F800A510E3 /* JFFBaseLoaderOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FB216FDB6FE00DAE2BB /* JFFBaseLoaderOwner.h */; };
-		7E3B3A4E190D86F800A510E3 /* JFFActiveLoaderData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FAE16FDB6FE00DAE2BB /* JFFActiveLoaderData.h */; };
-		7E3B3A4F190D86F800A510E3 /* JFFContextLoaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FB416FDB6FE00DAE2BB /* JFFContextLoaders.h */; };
-		7E3B3A50190D86F800A510E3 /* JFFPedingLoaderData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FB616FDB6FE00DAE2BB /* JFFPedingLoaderData.h */; };
+		7E3B3A4C190D86F800A510E3 /* JFFBaseStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6DFB0C1718446500D86975 /* JFFBaseStrategy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E3B3A4D190D86F800A510E3 /* JFFBaseLoaderOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FB216FDB6FE00DAE2BB /* JFFBaseLoaderOwner.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E3B3A4E190D86F800A510E3 /* JFFActiveLoaderData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FAE16FDB6FE00DAE2BB /* JFFActiveLoaderData.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E3B3A4F190D86F800A510E3 /* JFFContextLoaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FB416FDB6FE00DAE2BB /* JFFContextLoaders.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E3B3A50190D86F800A510E3 /* JFFPedingLoaderData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF62FB616FDB6FE00DAE2BB /* JFFPedingLoaderData.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E3B3A51190D86F800A510E3 /* JFFLimitedLoadersQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4031CA163D266A00FE6427 /* JFFLimitedLoadersQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E3B3A52190D86F900A510E3 /* JFFQueueExecutionOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79064816E4951500CFC696 /* JFFQueueExecutionOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E3B3A53190D86F900A510E3 /* JFFAsyncOperationHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0FB885150604850056F14E /* JFFAsyncOperationHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E5EAEE8191FBB68007F7908 /* JStubAsyncOperationConstructors.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5EAEE6191FBB68007F7908 /* JStubAsyncOperationConstructors.h */; };
+		7E5EAEE9191FBB68007F7908 /* JStubAsyncOperationConstructors.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5EAEE6191FBB68007F7908 /* JStubAsyncOperationConstructors.h */; };
+		7E5EAEEA191FBB68007F7908 /* JStubAsyncOperationConstructors.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5EAEE6191FBB68007F7908 /* JStubAsyncOperationConstructors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E5EAEEB191FBB68007F7908 /* JStubAsyncOperationConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EAEE7191FBB68007F7908 /* JStubAsyncOperationConstructors.m */; };
+		7E5EAEEC191FBB68007F7908 /* JStubAsyncOperationConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EAEE7191FBB68007F7908 /* JStubAsyncOperationConstructors.m */; };
+		7E5EAEED191FBB68007F7908 /* JStubAsyncOperationConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EAEE7191FBB68007F7908 /* JStubAsyncOperationConstructors.m */; };
 		7E7336A0190C11D700AE47B9 /* JFFMemoryMgmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E73369E190C11D700AE47B9 /* JFFMemoryMgmt.h */; };
 		7E7336A1190C11D700AE47B9 /* JFFMemoryMgmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E73369E190C11D700AE47B9 /* JFFMemoryMgmt.h */; };
-		7E7336A2190C11D700AE47B9 /* JFFMemoryMgmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E73369E190C11D700AE47B9 /* JFFMemoryMgmt.h */; };
+		7E7336A2190C11D700AE47B9 /* JFFMemoryMgmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E73369E190C11D700AE47B9 /* JFFMemoryMgmt.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E7336A3190C11D700AE47B9 /* JFFMemoryMgmt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E73369F190C11D700AE47B9 /* JFFMemoryMgmt.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7E7336A4190C11D700AE47B9 /* JFFMemoryMgmt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E73369F190C11D700AE47B9 /* JFFMemoryMgmt.m */; };
 		7E7336A5190C11D700AE47B9 /* JFFMemoryMgmt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E73369F190C11D700AE47B9 /* JFFMemoryMgmt.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7E7336E5190C1B0100AE47B9 /* JGCDAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336E3190C1B0100AE47B9 /* JGCDAdditions.h */; };
 		7E7336E6190C1B0100AE47B9 /* JGCDAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336E3190C1B0100AE47B9 /* JGCDAdditions.h */; };
-		7E7336E7190C1B0100AE47B9 /* JGCDAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336E3190C1B0100AE47B9 /* JGCDAdditions.h */; };
+		7E7336E7190C1B0100AE47B9 /* JGCDAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336E3190C1B0100AE47B9 /* JGCDAdditions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E7336E8190C1B0100AE47B9 /* JGCDAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E7336E4190C1B0100AE47B9 /* JGCDAdditions.mm */; };
 		7E7336E9190C1B0100AE47B9 /* JGCDAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E7336E4190C1B0100AE47B9 /* JGCDAdditions.mm */; };
 		7E7336EA190C1B0100AE47B9 /* JGCDAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E7336E4190C1B0100AE47B9 /* JGCDAdditions.mm */; };
@@ -142,13 +148,13 @@
 		7E7336FF190C207900AE47B9 /* JObjcExceptionWrapperError.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E7336F9190C207900AE47B9 /* JObjcExceptionWrapperError.mm */; };
 		7E79064D16E4981700CFC696 /* JFFStrategyFifo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79064B16E4981700CFC696 /* JFFStrategyFifo.h */; };
 		7E79064E16E4981700CFC696 /* JFFStrategyFifo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79064B16E4981700CFC696 /* JFFStrategyFifo.h */; };
-		7E79064F16E4981700CFC696 /* JFFStrategyFifo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79064B16E4981700CFC696 /* JFFStrategyFifo.h */; };
+		7E79064F16E4981700CFC696 /* JFFStrategyFifo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79064B16E4981700CFC696 /* JFFStrategyFifo.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E79065016E4981700CFC696 /* JFFStrategyFifo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E79064C16E4981700CFC696 /* JFFStrategyFifo.m */; };
 		7E79065116E4981700CFC696 /* JFFStrategyFifo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E79064C16E4981700CFC696 /* JFFStrategyFifo.m */; };
 		7E79065216E4981700CFC696 /* JFFStrategyFifo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E79064C16E4981700CFC696 /* JFFStrategyFifo.m */; };
 		7E79065516E4984400CFC696 /* JFFQueueState.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79065316E4984400CFC696 /* JFFQueueState.h */; };
 		7E79065616E4984400CFC696 /* JFFQueueState.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79065316E4984400CFC696 /* JFFQueueState.h */; };
-		7E79065716E4984400CFC696 /* JFFQueueState.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79065316E4984400CFC696 /* JFFQueueState.h */; };
+		7E79065716E4984400CFC696 /* JFFQueueState.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79065316E4984400CFC696 /* JFFQueueState.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E79065816E4984400CFC696 /* JFFQueueState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E79065416E4984400CFC696 /* JFFQueueState.m */; };
 		7E79065916E4984400CFC696 /* JFFQueueState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E79065416E4984400CFC696 /* JFFQueueState.m */; };
 		7E79065A16E4984400CFC696 /* JFFQueueState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E79065416E4984400CFC696 /* JFFQueueState.m */; };
@@ -160,13 +166,13 @@
 		7E79066216E49DD900CFC696 /* JFFQueueStrategyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E79065C16E49DD900CFC696 /* JFFQueueStrategyFactory.m */; };
 		7E79066516E49F8000CFC696 /* JFFStrategyStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79066316E49F8000CFC696 /* JFFStrategyStack.h */; };
 		7E79066616E49F8000CFC696 /* JFFStrategyStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79066316E49F8000CFC696 /* JFFStrategyStack.h */; };
-		7E79066716E49F8000CFC696 /* JFFStrategyStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79066316E49F8000CFC696 /* JFFStrategyStack.h */; };
+		7E79066716E49F8000CFC696 /* JFFStrategyStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79066316E49F8000CFC696 /* JFFStrategyStack.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E79066816E49F8000CFC696 /* JFFStrategyStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E79066416E49F8000CFC696 /* JFFStrategyStack.m */; };
 		7E79066916E49F8000CFC696 /* JFFStrategyStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E79066416E49F8000CFC696 /* JFFStrategyStack.m */; };
 		7E79066A16E49F8000CFC696 /* JFFStrategyStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E79066416E49F8000CFC696 /* JFFStrategyStack.m */; };
 		7E79066D16E4A49B00CFC696 /* JFFStrategyRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79066B16E4A49B00CFC696 /* JFFStrategyRandom.h */; };
 		7E79066E16E4A49B00CFC696 /* JFFStrategyRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79066B16E4A49B00CFC696 /* JFFStrategyRandom.h */; };
-		7E79066F16E4A49B00CFC696 /* JFFStrategyRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79066B16E4A49B00CFC696 /* JFFStrategyRandom.h */; };
+		7E79066F16E4A49B00CFC696 /* JFFStrategyRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E79066B16E4A49B00CFC696 /* JFFStrategyRandom.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E79067016E4A49B00CFC696 /* JFFStrategyRandom.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E79066C16E4A49B00CFC696 /* JFFStrategyRandom.mm */; };
 		7E79067116E4A49B00CFC696 /* JFFStrategyRandom.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E79066C16E4A49B00CFC696 /* JFFStrategyRandom.mm */; };
 		7E79067216E4A49B00CFC696 /* JFFStrategyRandom.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E79066C16E4A49B00CFC696 /* JFFStrategyRandom.mm */; };
@@ -183,20 +189,20 @@
 		7E8F20F614F94C3100588C7D /* JFFBlockOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65648BD413924220001E163C /* JFFBlockOperation.mm */; };
 		7E8F20F814F94C3100588C7D /* NSObject+AutoCancelAsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 655ADDDF13B68E45005A6D3F /* NSObject+AutoCancelAsyncOperation.m */; };
 		7E8F20FC14F94C3100588C7D /* JFFAsyncOperationContinuity.m in Sources */ = {isa = PBXBuildFile; fileRef = 651BE1661391928400DD6890 /* JFFAsyncOperationContinuity.m */; };
-		7E8F20FE14F94C6100588C7D /* JFFObjectRelatedPropertyData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D61CD2A13F2BC8A0003AC4A /* JFFObjectRelatedPropertyData.h */; };
-		7E8F210014F94C6100588C7D /* NSObject+PropertyExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D61CD2F13F2BCE40003AC4A /* NSObject+PropertyExtractor.h */; };
+		7E8F20FE14F94C6100588C7D /* JFFObjectRelatedPropertyData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D61CD2A13F2BC8A0003AC4A /* JFFObjectRelatedPropertyData.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E8F210014F94C6100588C7D /* NSObject+PropertyExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D61CD2F13F2BCE40003AC4A /* NSObject+PropertyExtractor.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E8F210214F94C6100588C7D /* JFFPropertyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D9827F713F2B9D5009DD73B /* JFFPropertyPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8F210414F94C6100588C7D /* JFFPropertyExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D9827FF13F2BA10009DD73B /* JFFPropertyExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8F210614F94C6100588C7D /* NSObject+AsyncPropertyReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D9827F913F2B9D5009DD73B /* NSObject+AsyncPropertyReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E8F210814F94C6100588C7D /* JFFCallbacksBlocksHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 65648BAD1392407F001E163C /* JFFCallbacksBlocksHolder.h */; };
-		7E8F210A14F94C6100588C7D /* JFFCancelAsyncOperationBlockHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 65347F6B13B7EEE50002CF73 /* JFFCancelAsyncOperationBlockHolder.h */; };
-		7E8F210C14F94C6100588C7D /* JFFAsyncOperationProgressBlockHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6534804A13B822F00002CF73 /* JFFAsyncOperationProgressBlockHolder.h */; };
-		7E8F210E14F94C6100588C7D /* JFFDidFinishAsyncOperationBlockHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1B3D6D13B88A2700410ECB /* JFFDidFinishAsyncOperationBlockHolder.h */; };
+		7E8F210814F94C6100588C7D /* JFFCallbacksBlocksHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 65648BAD1392407F001E163C /* JFFCallbacksBlocksHolder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E8F210A14F94C6100588C7D /* JFFCancelAsyncOperationBlockHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 65347F6B13B7EEE50002CF73 /* JFFCancelAsyncOperationBlockHolder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E8F210C14F94C6100588C7D /* JFFAsyncOperationProgressBlockHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6534804A13B822F00002CF73 /* JFFAsyncOperationProgressBlockHolder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E8F210E14F94C6100588C7D /* JFFDidFinishAsyncOperationBlockHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1B3D6D13B88A2700410ECB /* JFFDidFinishAsyncOperationBlockHolder.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E8F211814F94C6100588C7D /* JFFAsyncOperationLoadBalancer.h in Headers */ = {isa = PBXBuildFile; fileRef = 65347F9413B7F0BD0002CF73 /* JFFAsyncOperationLoadBalancer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8F211A14F94C6100588C7D /* JFFAsyncOperationsBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 651BE1611391913300DD6890 /* JFFAsyncOperationsBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E8F211B14F94C6100588C7D /* JFFAsyncOperationsPredefinedBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B835B31142CBA2200FC004C /* JFFAsyncOperationsPredefinedBlocks.h */; };
-		7E8F211D14F94C6100588C7D /* JFFBlockOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 65648BD313924220001E163C /* JFFBlockOperation.h */; };
-		7E8F211F14F94C6100588C7D /* NSObject+AutoCancelAsyncOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 655ADDDE13B68E45005A6D3F /* NSObject+AutoCancelAsyncOperation.h */; };
+		7E8F211B14F94C6100588C7D /* JFFAsyncOperationsPredefinedBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B835B31142CBA2200FC004C /* JFFAsyncOperationsPredefinedBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E8F211D14F94C6100588C7D /* JFFBlockOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 65648BD313924220001E163C /* JFFBlockOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E8F211F14F94C6100588C7D /* NSObject+AutoCancelAsyncOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 655ADDDE13B68E45005A6D3F /* NSObject+AutoCancelAsyncOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E8F212114F94C6100588C7D /* JFFAsyncOperationUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 65648C381392490F001E163C /* JFFAsyncOperationUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8F212314F94C6100588C7D /* JFFAsyncOperationContinuity.h in Headers */ = {isa = PBXBuildFile; fileRef = 651BE1651391928400DD6890 /* JFFAsyncOperationContinuity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8F212514F94C6100588C7D /* JFFAsyncOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 65648C5013924A77001E163C /* JFFAsyncOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -289,6 +295,8 @@
 		7E088E1A190C406F00D8A029 /* JExceptionMarshallingErrorCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JExceptionMarshallingErrorCode.h; sourceTree = "<group>"; };
 		7E088E1B190C43B300D8A029 /* JUnknownCppExceptionWrapperError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUnknownCppExceptionWrapperError.h; sourceTree = "<group>"; };
 		7E088E1C190C43B300D8A029 /* JUnknownCppExceptionWrapperError.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JUnknownCppExceptionWrapperError.mm; sourceTree = "<group>"; };
+		7E5EAEE6191FBB68007F7908 /* JStubAsyncOperationConstructors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JStubAsyncOperationConstructors.h; sourceTree = "<group>"; };
+		7E5EAEE7191FBB68007F7908 /* JStubAsyncOperationConstructors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JStubAsyncOperationConstructors.m; sourceTree = "<group>"; };
 		7E73369E190C11D700AE47B9 /* JFFMemoryMgmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFMemoryMgmt.h; sourceTree = "<group>"; };
 		7E73369F190C11D700AE47B9 /* JFFMemoryMgmt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFMemoryMgmt.m; sourceTree = "<group>"; };
 		7E7336E3190C1B0100AE47B9 /* JGCDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGCDAdditions.h; sourceTree = "<group>"; };
@@ -394,6 +402,7 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7E5EAEE5191FBB10007F7908 /* FacadeObjects */,
 				65648C5013924A77001E163C /* JFFAsyncOperations.h */,
 				1B0D88BF1519F80C00EC4A92 /* AsyncOperartionsBuilder */,
 				8D9827F613F2B9AF009DD73B /* CachedAsyncOperations */,
@@ -513,6 +522,15 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		7E5EAEE5191FBB10007F7908 /* FacadeObjects */ = {
+			isa = PBXGroup;
+			children = (
+				7E5EAEE6191FBB68007F7908 /* JStubAsyncOperationConstructors.h */,
+				7E5EAEE7191FBB68007F7908 /* JStubAsyncOperationConstructors.m */,
+			);
+			path = FacadeObjects;
+			sourceTree = "<group>";
+		};
 		7E73369D190C11D700AE47B9 /* Legacy */ = {
 			isa = PBXGroup;
 			children = (
@@ -628,6 +646,7 @@
 				5391036B14A88BB5007315A3 /* JFFObjectRelatedPropertyData.h in Headers */,
 				5391036C14A88BB5007315A3 /* NSObject+PropertyExtractor.h in Headers */,
 				7E7336A1190C11D700AE47B9 /* JFFMemoryMgmt.h in Headers */,
+				7E5EAEE9191FBB68007F7908 /* JStubAsyncOperationConstructors.h in Headers */,
 				7E088E15190C3DE500D8A029 /* JCppExceptionWrapperError.h in Headers */,
 				6532667C14C1EB27004E90B0 /* JFFAsyncOperationsPredefinedBlocks.h in Headers */,
 				7E79064E16E4981700CFC696 /* JFFStrategyFifo.h in Headers */,
@@ -644,6 +663,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E8F212314F94C6100588C7D /* JFFAsyncOperationContinuity.h in Headers */,
+				7E5EAEEA191FBB68007F7908 /* JStubAsyncOperationConstructors.h in Headers */,
 				7E8F210614F94C6100588C7D /* NSObject+AsyncPropertyReader.h in Headers */,
 				7E8F212514F94C6100588C7D /* JFFAsyncOperations.h in Headers */,
 				7E8F211A14F94C6100588C7D /* JFFAsyncOperationsBlockDefinitions.h in Headers */,
@@ -663,8 +683,8 @@
 				7E3B3A44190D86F800A510E3 /* JFFAsyncOperationInterface.h in Headers */,
 				7E3B3A45190D86F800A510E3 /* JFFAsyncOperationBuilder.h in Headers */,
 				7E3B3A4B190D86F800A510E3 /* JFFQueueStrategy.h in Headers */,
-				7E79065F16E49DD900CFC696 /* JFFQueueStrategyFactory.h in Headers */,
 				7E8F211B14F94C6100588C7D /* JFFAsyncOperationsPredefinedBlocks.h in Headers */,
+				7E79065F16E49DD900CFC696 /* JFFQueueStrategyFactory.h in Headers */,
 				7E8F210014F94C6100588C7D /* NSObject+PropertyExtractor.h in Headers */,
 				7E3B3A49190D86F800A510E3 /* JFFAsyncOperationAdapter.h in Headers */,
 				7E7336E7190C1B0100AE47B9 /* JGCDAdditions.h in Headers */,
@@ -717,6 +737,7 @@
 				1B835B33142CBA2200FC004C /* JFFAsyncOperationsPredefinedBlocks.h in Headers */,
 				1B9528FC1500E67900C9B979 /* NSError+ResultOwnerships.h in Headers */,
 				1B0FB887150604860056F14E /* JFFAsyncOperationHelpers.h in Headers */,
+				7E5EAEE8191FBB68007F7908 /* JStubAsyncOperationConstructors.h in Headers */,
 				1B0D88C31519F81F00EC4A92 /* JFFAsyncOperationBuilder.h in Headers */,
 				1B0E83A91563954B00825E3C /* JFFAsyncOperationAdapter.h in Headers */,
 				7E7336FA190C207900AE47B9 /* JObjcExceptionWrapperError.h in Headers */,
@@ -902,6 +923,7 @@
 				7EB941F2190D986600221617 /* JFFObjectRelatedPropertyData.m in Sources */,
 				7E79065916E4984400CFC696 /* JFFQueueState.m in Sources */,
 				7EB941F4190D986600221617 /* JFFPropertyPath.mm in Sources */,
+				7E5EAEEC191FBB68007F7908 /* JStubAsyncOperationConstructors.m in Sources */,
 				7E79066116E49DD900CFC696 /* JFFQueueStrategyFactory.m in Sources */,
 				7EB941F9190D986600221617 /* NSError+ResultOwnerships.m in Sources */,
 				7E79066916E49F8000CFC696 /* JFFStrategyStack.m in Sources */,
@@ -947,6 +969,7 @@
 				7EB941FF190D986700221617 /* JFFAsyncOperationBuilder.m in Sources */,
 				7E8F20F814F94C3100588C7D /* NSObject+AutoCancelAsyncOperation.m in Sources */,
 				7E8F20FC14F94C3100588C7D /* JFFAsyncOperationContinuity.m in Sources */,
+				7E5EAEED191FBB68007F7908 /* JStubAsyncOperationConstructors.m in Sources */,
 				7EB94205190D986700221617 /* JFFAsyncOperationAdapter.mm in Sources */,
 				7E088E19190C3DE500D8A029 /* JCppExceptionWrapperError.mm in Sources */,
 				4CF62FCE16FDBA3800DAE2BB /* JFFAsyncOperationLoadBalancer.m in Sources */,
@@ -992,6 +1015,7 @@
 				1B9528FD1500E67900C9B979 /* NSError+ResultOwnerships.m in Sources */,
 				1B0FB888150604860056F14E /* JFFAsyncOperationHelpers.m in Sources */,
 				1B0D88C41519F81F00EC4A92 /* JFFAsyncOperationBuilder.m in Sources */,
+				7E5EAEEB191FBB68007F7908 /* JStubAsyncOperationConstructors.m in Sources */,
 				1B0E83A51563953300825E3C /* JFFAsyncOperationUtils.mm in Sources */,
 				1B0E83AA1563954B00825E3C /* JFFAsyncOperationAdapter.mm in Sources */,
 				CE4031CD163D266B00FE6427 /* JFFLimitedLoadersQueue.m in Sources */,
