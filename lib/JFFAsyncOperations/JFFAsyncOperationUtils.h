@@ -53,6 +53,8 @@ It won't start executing as long as there are other operations in the queue.
 
 @param loadDataBlock The worker block that returns data object or error (as an out parameter).
 Warning : if you pass nil an exception will be thrown.
+ 
+@param queueName The name of an operation queue. It will be taken from the pool or spawned by the dispatch_queue_create() call.
 
 @return An asynchronous operation.
 */
@@ -64,7 +66,7 @@ OBJC_EXTERN    JFFAsyncOperation barrierAsyncOperationWithSyncOperationAndQueue(
 Creates an asynchronous operation with a synchronous one.
 A synchronous operation block accepts the progress callback.
 
-@param loadDataBlock The worker block that returns data object or error (as an out parameter).
+@param progressLoadDataBlock The worker block that returns data object or error (as an out parameter).
 Warning : if you pass nil an exception will be thrown.
 
 @return An asynchronous operation.
