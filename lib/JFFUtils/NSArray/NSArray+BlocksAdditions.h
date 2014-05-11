@@ -12,13 +12,9 @@
  * iterating
  * filtering array contents
  * transforming the array ( mapping )
- 
- 
- */
-@interface NSArray (BlocksAdditions)
 
-#pragma mark -
-#pragma mark BlocksAdditions
+*/
+@interface NSArray (BlocksAdditions)
 
 
 /**
@@ -99,7 +95,7 @@ Creates a new NSArray containing the values returned by the block.
  @return a new NSArray of mapped objects. If an error occurs, the result of the entire function is nil.
  */
 - (instancetype)map:(JFFMappingWithErrorBlock)block
-              error:(NSError *__autoreleasing *)outError;
+              error:(out NSError *__autoreleasing *)outError;
 
 
 /**
@@ -115,8 +111,8 @@ returns nil the result will contain less records.
  @return a new NSArray of mapped objects. 
  If an error occurs, the result of the entire function is nil.
  */
--(instancetype)mapIgnoringNilError:( JFFMappingWithErrorBlock )bloc
-                             error:( NSError** )outError;
+-(instancetype)mapIgnoringNilError:( JFFMappingWithErrorBlock )block
+                             error:( out NSError** )outError;
 
 
 
@@ -129,8 +125,8 @@ index into account.
 
  @return a new NSArray of mapped objects. If an error occurs, the result of the entire function is nil.
 */
-(instancetype)mapWithIndex:(JFFMappingWithErrorAndIndexBlock)block
-                     error:(out NSError *__autoreleasing *)outError;
+-(instancetype)mapWithIndex:(JFFMappingWithErrorAndIndexBlock)block
+                      error:(out NSError *__autoreleasing *)outError;
 
 
 //Invokes block once for each element of self.

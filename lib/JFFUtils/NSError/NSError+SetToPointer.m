@@ -2,7 +2,7 @@
 
 @implementation NSError (SetToPointer)
 
-- (BOOL)setToPointer:(NSError *__autoreleasing *)outError
+- (BOOL)setToPointer:(out NSError *__autoreleasing *)outError
 {
     if (NULL == outError) {
         return NO;

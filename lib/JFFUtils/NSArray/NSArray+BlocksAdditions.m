@@ -94,7 +94,7 @@
     return [result copy];
 }
 
--(instancetype)mapIgnoringNilError:( JFFMappingWithErrorBlock )block_ error:( NSError** )outError_
+-(instancetype)mapIgnoringNilError:( JFFMappingWithErrorBlock )block_ error:( out NSError** )outError_
 {
     NSParameterAssert( NULL != outError_ );
     NSMutableArray* result_ = [ [ NSMutableArray alloc ] initWithCapacity: [ self count ] ];
