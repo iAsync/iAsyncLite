@@ -1,5 +1,7 @@
 #import "JStubAsyncOperationConstructors.h"
+
 #import "JFFAsyncOperationHelpers.h"
+#import "JFFAsyncOperationsPredefinedBlocks.h"
 
 
 @implementation JStubAsyncOperationConstructors
@@ -25,6 +27,11 @@
 +(JFFAsyncOperation)neverFinishAsyncOperation
 {
     return neverFinishAsyncOperation();
+}
+
++(JFFCancelAsyncOperation)stubCancelAsyncOperationBlock
+{
+    return JFFStubCancelAsyncOperationBlock;
 }
 
 @end

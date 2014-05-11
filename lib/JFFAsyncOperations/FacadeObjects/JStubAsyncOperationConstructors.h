@@ -51,4 +51,10 @@
  */
 +(JFFAsyncOperation)neverFinishAsyncOperation;
 
+
+/**
+ @return An IDLE cancel callback
+ */
++(JFFCancelAsyncOperation)stubCancelAsyncOperationBlock;
+
 @end

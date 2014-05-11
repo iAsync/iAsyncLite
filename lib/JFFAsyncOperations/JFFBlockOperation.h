@@ -2,6 +2,8 @@
 #import <Foundation/Foundation.h>
 
 
+/**
+*/
 @interface JFFBlockOperation : NSObject
 
 + (instancetype)performOperationWithQueueName:(const char*)queueName
