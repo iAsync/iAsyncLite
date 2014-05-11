@@ -12,6 +12,9 @@
 typedef JFFPropertyExtractor *(^JFFPropertyExtractorFactoryBlock)(void);
 
 
+/**
+ A category to simplify asynchronous loading of object's properties.
+ */
 @interface NSObject (AsyncPropertyReader)
 
 /**
@@ -50,11 +53,15 @@ typedef JFFPropertyExtractor *(^JFFPropertyExtractorFactoryBlock)(void);
                                         asyncOperation:(JFFAsyncOperation)asyncOperation
                                 didFinishLoadDataBlock:(JFFDidFinishAsyncOperationHandler)didFinishOperation;
 
+/**
+ */
 - (JFFAsyncOperation)asyncOperationMergeLoaders:(JFFAsyncOperation)asyncOperation
                                    withArgument:(id< NSCopying, NSObject >)argument;
 
 - (BOOL)isLoadingPropertyForPropertyName:(NSString *)name;
 
+/**
+ */
 + (JFFAsyncOperation)asyncOperationMergeLoaders:(JFFAsyncOperation)asyncOperation
                                    withArgument:(id< NSCopying, NSObject >)argument;
 
