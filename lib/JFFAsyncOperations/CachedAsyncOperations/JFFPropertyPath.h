@@ -12,7 +12,7 @@
 @property (nonatomic, readonly) NSString *name;
 
 /**
- An object for asynchronous operations uniquing. It comes from the user in [NSObject asyncOperationMergeLoaders:withArgument:]
+ An object for asynchronous operations uniquing. It comes from the user either in -[NSObject asyncOperationMergeLoaders:withArgument:] or in +[NSObject asyncOperationMergeLoaders:withArgument:]
  
  Note : operations with the same key
  */
