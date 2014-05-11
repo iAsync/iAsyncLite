@@ -1,7 +1,10 @@
 #import <Foundation/Foundation.h>
-
 #include <stdexcept>
 
+
+/**
+ An error object to wrap std::exception thrown in the code of a worker operation.
+ */
 @interface JCppExceptionWrapperError : NSError
 
 /**
@@ -17,20 +20,31 @@
  */
 -(instancetype)initWithDomain:(NSString *)domain
                          code:(NSInteger)code
-                     userInfo:(NSDictionary *)dict __attribute__((noreturn));
+                     userInfo:(NSDictionary *)dict __attribute__((noreturn, unavailable("unsupported initializer")));
 
+/**
+ Unsupported initializer.
+  @return Throws an exception
+ */
+-(instancetype)init __attribute__((noreturn, unavailable("unsupported initializer")));
+
+/**
+ Unsupported initializer.
+ @return Throws an exception
+ */
++(instancetype)new __attribute__((noreturn, unavailable("unsupported initializer")));
 
 /**
  Creates an error from an exception.
  
- @param cppException A constant pointer to a C++ exception.
+ @param cppExceptionPtr A constant pointer to a C++ exception.
  
  @return A properly initialized error.
  */
 -(instancetype)initWithStdException:( const std::exception* )cppExceptionPtr;
 
 /**
- A const pointer to the C++ exception object passed in the constructor.
+ @return A const pointer to the C++ exception object passed in the constructor.
  */
 -(const std::exception*)cppExceptionPtr;
 

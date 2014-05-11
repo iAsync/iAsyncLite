@@ -1,6 +1,9 @@
 #import <Foundation/Foundation.h>
 
 
+/**
+ An error object to wrap NSException thrown in the code of a worker operation.
+ */
 @interface JObjcExceptionWrapperError : NSError
 
 /**
@@ -16,7 +19,21 @@
  */
 -(instancetype)initWithDomain:(NSString *)domain
                          code:(NSInteger)code
-                     userInfo:(NSDictionary *)dict __attribute__((noreturn));
+                     userInfo:(NSDictionary *)dict
+__attribute__((noreturn, unavailable("unsupported initializer")));
+
+
+/**
+ Unsupported initializer.
+ @return Throws an exception
+ */
+-(instancetype)init __attribute__((noreturn, unavailable("unsupported initializer")));
+
+/**
+ Unsupported initializer.
+ @return Throws an exception
+ */
++(instancetype)new __attribute__((noreturn, unavailable("unsupported initializer")));
 
 
 /**

@@ -1,5 +1,9 @@
 #import <Foundation/Foundation.h>
 
+
+/**
+ An error object to wrap unknown C++ exception thrown in the code of a worker operation.
+ */
 @interface JUnknownCppExceptionWrapperError : NSError
 
 /**
@@ -15,6 +19,7 @@
  */
 -(instancetype)initWithDomain:(NSString *)domain
                          code:(NSInteger)code
-                     userInfo:(NSDictionary *)dict __attribute__((noreturn));
+                     userInfo:(NSDictionary *)dict
+__attribute__((noreturn, unavailable("unsupported initializer")));
 
 @end
