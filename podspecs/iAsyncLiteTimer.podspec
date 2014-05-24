@@ -6,7 +6,9 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/iAsync/iAsyncLite"
   s.license      = { :type => 'BSD', :file => 'JFFScheduler.framework/Resources/LICENSE' }
   s.source       = { :http => "https://github.com/iAsync/iAsyncLite/releases/download/v0.3/JFFScheduler.framework.zip" }
+
   s.authors      =  {'Alexander Dodatko' => 'dodikk88.tutor@gmail.com'}
+  s.social_media_url = 'https://twitter.com/dodikk88'
   
   s.ios.platform          = :ios
   s.ios.deployment_target = '6.0'
