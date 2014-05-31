@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "iAsyncLiteScheduler"
-  s.version      = "0.3"
+  s.version      = "0.3.1"
   s.summary      = "iAsync - A better dispatch_async(). Functional programming extensions for Objective-C."
   s.description  = "iAsyncLiteScheduler framework contains async operation definitions and scheduling core functions."
   s.homepage     = "https://github.com/iAsync/iAsyncLite"
@@ -23,5 +23,5 @@ Pod::Spec.new do |s|
   s.ios.frameworks = 'Foundation'
   s.ios.libraries  = 'c++', 'stdc++'
 
-  s.ios.dependency 'iAsyncLiteUtils', '0.3'
+  s.ios.dependency 'iAsyncLiteUtils', '0.3.1'
 end
