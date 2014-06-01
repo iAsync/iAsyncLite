@@ -1,6 +1,17 @@
 #import <JFFAsyncOperations/JFFAsyncOperationsBlockDefinitions.h>
 #import <Foundation/Foundation.h>
 
+
+/**
+ A class to control the flow of asynchronous operations. 
+ Supported features :
+ 
+ * Operation dependencies
+ * Execution in parallel groups
+ * Operations chaining (aka "waterfall execution", aka "monads")
+ * Execution until first success
+ 
+ */
 @interface JAsyncOperationFlow : NSObject
 
 #pragma mark - 
