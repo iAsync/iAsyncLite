@@ -94,7 +94,7 @@ OBJC_EXTERN    JFFAsyncOperation asyncOperationWithAnalyzer(id data, JFFAnalyzer
     
 OBJC_EXTERN    JFFAsyncOperationBinder asyncOperationBinderWithAnalyzer(JFFAnalyzer analyzer);
     
-typedef id (^JFFChangedResultBuilder)(id result);
+
 OBJC_EXTERN    JFFAsyncOperation asyncOperationWithChangedResult(JFFAsyncOperation loader,
                                                       JFFChangedResultBuilder resultBuilder);
 OBJC_EXTERN    JFFAsyncOperation asyncOperationWithChangedProgress(JFFAsyncOperation loader,
@@ -102,7 +102,7 @@ OBJC_EXTERN    JFFAsyncOperation asyncOperationWithChangedProgress(JFFAsyncOpera
     
 OBJC_EXTERN    JFFAsyncOperation asyncOperationResultAsProgress(JFFAsyncOperation loader);
     
-typedef NSError *(^JFFChangedErrorBuilder)(NSError *error);
+
 OBJC_EXTERN    JFFAsyncOperation asyncOperationWithChangedError(JFFAsyncOperation loader,
                                                      JFFChangedErrorBuilder errorBuilder);
     

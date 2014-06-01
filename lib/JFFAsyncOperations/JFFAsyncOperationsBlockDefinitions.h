@@ -37,4 +37,8 @@ typedef void (^JFFDidFinishAsyncOperationHook)(id result,
 
 typedef JFFAsyncOperation (^JFFContinueLoaderWithResult)(id result, NSError *error);
 
+
+typedef id (^JFFChangedResultBuilder)(id result);
+typedef NSError *(^JFFChangedErrorBuilder)(NSError *error);
+
 #endif //__JASYNC__BLOCK_DEFINITIONS_H__
