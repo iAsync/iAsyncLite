@@ -1,10 +1,10 @@
-#import "JAsyncOperationHooks.h"
+#import "JDoneCallbackAsyncOperationHooks.h"
 
 #import "JFFAsyncOperationContinuity.h"
 #import "JFFAsyncOperationHelpers.h"
 
 
-@implementation JAsyncOperationHooks
+@implementation JDoneCallbackAsyncOperationHooks
 
 +(JFFAsyncOperation)asyncOperation:(JFFAsyncOperation)loader
                withDoneActionBlock:(JFFSimpleBlock)doneCallbackHook

@@ -12,7 +12,7 @@
  * Cancellation
  
  */
-@interface JAsyncOperationHooks : NSObject
+@interface JDoneCallbackAsyncOperationHooks : NSObject
 
 /**
  Subscribes the given block to operation completion.
