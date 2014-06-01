@@ -56,4 +56,21 @@ __attribute__((nonnull));
 __attribute__((nonnull));
 
 
+/**
+ 
+ 
+ Note : if either both arguments are nil or both arguments are not nil,
+ 
+ @param loader An asynchronous operation to hook.
+ @param result An object to return
+ @param error An error object to fail with
+ 
+ @return An asynchronous operation.
+ */
++(JFFCancelAsyncOperation)asyncOperation:(JFFAsyncOperation)loader
+                              withResult:(id)result
+                                 orError:(NSError*)error
+__attribute__((nonnull(1)));
+
+
 @end
