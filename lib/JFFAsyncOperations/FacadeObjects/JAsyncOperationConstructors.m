@@ -1,5 +1,7 @@
 #import "JAsyncOperationConstructors.h"
+
 #import "JFFAsyncOperationUtils.h"
+#import "JFFAsyncOperationHelpers.h"
 
 @implementation JAsyncOperationConstructors
 
@@ -22,6 +24,13 @@
        loadDataBlock,
        [ queueName cStringUsingEncoding: NSUTF8StringEncoding ]
     );
+}
+
++(JFFAsyncOperation)asyncOperationWithSyncOperationInCurrentQueue:(JFFSyncOperation)loadDataBlock
+{
+    NSParameterAssert( nil != loadDataBlock );
+    
+    return asyncOperationWithSyncOperationInCurrentQueue( loadDataBlock );
 }
 
 

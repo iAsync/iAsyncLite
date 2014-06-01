@@ -19,6 +19,19 @@
 __attribute__((nonnull));
 
 
+/**
+ Creates an asynchronous operation with a synchronous one.
+ 
+ @param loadDataBlock The worker block that returns data object or error (as an out parameter).
+ Warning : if you pass nil an exception will be thrown.
+ 
+ @return An asynchronous operation.
+ 
+ Warning : Launching a result operation is the same as launching loadDataBlock explicitly. No scheduling is performed.
+ */
++(JFFAsyncOperation)asyncOperationWithSyncOperationInCurrentQueue:(JFFSyncOperation)loadDataBlock
+__attribute__((nonnull));
+
 
 /**
  Creates an asynchronous operation with a synchronous one and shedules it on an operation queue.
