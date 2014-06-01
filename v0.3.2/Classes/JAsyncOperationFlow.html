@@ -1,0 +1,868 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>JAsyncOperationFlow Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">iAsync-Lite </a></h1>
+				<a id="developerHome" href="../index.html">dodikk</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JAsyncOperationFlow Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/failOnFirstErrorParallelGroupOfAsyncOperations:">&nbsp;&nbsp;&nbsp;&nbsp;+ failOnFirstErrorParallelGroupOfAsyncOperations:</option>
+	
+	<option value="//api/name/parallelGroupOfAsyncOperations:">&nbsp;&nbsp;&nbsp;&nbsp;+ parallelGroupOfAsyncOperations:</option>
+	
+	<option value="//api/name/sequenceOfAsyncOperationsArray:">&nbsp;&nbsp;&nbsp;&nbsp;+ sequenceOfAsyncOperationsArray:</option>
+	
+	<option value="//api/name/sequenceOfAsyncOperationsWithAllResults:">&nbsp;&nbsp;&nbsp;&nbsp;+ sequenceOfAsyncOperationsWithAllResults:</option>
+	
+	<option value="//api/name/sequenceOfAsyncOperationsWithSuccessfullResults:">&nbsp;&nbsp;&nbsp;&nbsp;+ sequenceOfAsyncOperationsWithSuccessfullResults:</option>
+	
+	<option value="//api/name/sequenceOfCascadeElements:">&nbsp;&nbsp;&nbsp;&nbsp;+ sequenceOfCascadeElements:</option>
+	
+	<option value="//api/name/sequenceUntilFirstSuccessOfAsyncOperationsArray:">&nbsp;&nbsp;&nbsp;&nbsp;+ sequenceUntilFirstSuccessOfAsyncOperationsArray:</option>
+	
+	<option value="//api/name/waterfallFlowForAsyncOperation:cascadeOperations:">&nbsp;&nbsp;&nbsp;&nbsp;+ waterfallFlowForAsyncOperation:cascadeOperations:</option>
+	
+	<option value="//api/name/waterfallFlowUntilFirstSuccessForAsyncOperation:cascadeOperations:">&nbsp;&nbsp;&nbsp;&nbsp;+ waterfallFlowUntilFirstSuccessForAsyncOperation:cascadeOperations:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/failOnFirstErrorParallelGroupOfAsyncOperations:">failOnFirstErrorParallelGroupOfAsyncOperations:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parallelGroupOfAsyncOperations:">parallelGroupOfAsyncOperations:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sequenceOfAsyncOperationsArray:">sequenceOfAsyncOperationsArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sequenceOfAsyncOperationsWithAllResults:">sequenceOfAsyncOperationsWithAllResults:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sequenceOfAsyncOperationsWithSuccessfullResults:">sequenceOfAsyncOperationsWithSuccessfullResults:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sequenceOfCascadeElements:">sequenceOfCascadeElements:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sequenceUntilFirstSuccessOfAsyncOperationsArray:">sequenceUntilFirstSuccessOfAsyncOperationsArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/waterfallFlowForAsyncOperation:cascadeOperations:">waterfallFlowForAsyncOperation:cascadeOperations:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/waterfallFlowUntilFirstSuccessForAsyncOperation:cascadeOperations:">waterfallFlowUntilFirstSuccessForAsyncOperation:cascadeOperations:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="JAsyncOperationFlow Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JAsyncOperationFlow Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">JAsyncOperationFlow.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A class to control the flow of asynchronous operations.
+Supported features :</p>
+
+<ul>
+<li>Operation dependencies</li>
+<li>Execution in parallel groups</li>
+<li>Operations chaining (aka &ldquo;waterfall execution&rdquo;, aka &ldquo;monads&rdquo;)</li>
+<li>Execution until first success</li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sequenceOfAsyncOperationsArray:">+&nbsp;sequenceOfAsyncOperationsArray:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sequenceOfAsyncOperationsWithAllResults:">+&nbsp;sequenceOfAsyncOperationsWithAllResults:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sequenceOfAsyncOperationsWithSuccessfullResults:">+&nbsp;sequenceOfAsyncOperationsWithSuccessfullResults:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sequenceUntilFirstSuccessOfAsyncOperationsArray:">+&nbsp;sequenceUntilFirstSuccessOfAsyncOperationsArray:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parallelGroupOfAsyncOperations:">+&nbsp;parallelGroupOfAsyncOperations:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/failOnFirstErrorParallelGroupOfAsyncOperations:">+&nbsp;failOnFirstErrorParallelGroupOfAsyncOperations:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/waterfallFlowForAsyncOperation:cascadeOperations:">+&nbsp;waterfallFlowForAsyncOperation:cascadeOperations:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/waterfallFlowUntilFirstSuccessForAsyncOperation:cascadeOperations:">+&nbsp;waterfallFlowUntilFirstSuccessForAsyncOperation:cascadeOperations:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sequenceOfCascadeElements:">+&nbsp;sequenceOfCascadeElements:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/failOnFirstErrorParallelGroupOfAsyncOperations:" title="failOnFirstErrorParallelGroupOfAsyncOperations:"></a>
+	<h3 class="subsubtitle method-title">failOnFirstErrorParallelGroupOfAsyncOperations:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Combines operations from array so that they run one after another.
+An array with results of all operations is returned to the caller.
+If any operation fails then other operations stop executing and an entire operation is marked as failed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (JFFAsyncOperation)failOnFirstErrorParallelGroupOfAsyncOperations:(NSArray *)<em>loaders</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loaders</em></dt>
+			<dd><p>An NSArray of JFFAsyncOperation objects. It cannot be nil or empty.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A composite async operation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JAsyncOperationFlow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parallelGroupOfAsyncOperations:" title="parallelGroupOfAsyncOperations:"></a>
+	<h3 class="subsubtitle method-title">parallelGroupOfAsyncOperations:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Combines operations from array so that they run one after another.
+An array with results of all operations is returned to the caller.
+The results of failed operations are stubbed with NSNull objects.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (JFFAsyncOperation)parallelGroupOfAsyncOperations:(NSArray *)<em>loaders</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loaders</em></dt>
+			<dd><p>An NSArray of JFFAsyncOperation objects. It cannot be nil or empty.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A composite async operation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JAsyncOperationFlow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sequenceOfAsyncOperationsArray:" title="sequenceOfAsyncOperationsArray:"></a>
+	<h3 class="subsubtitle method-title">sequenceOfAsyncOperationsArray:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Combines operations from array so that they run one after another.
+Result of the last operation is returned to the caller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (JFFAsyncOperation)sequenceOfAsyncOperationsArray:(NSArray *)<em>loaders</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loaders</em></dt>
+			<dd><p>An NSArray of JFFAsyncOperation objects. It cannot be nil or empty.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A composite operation that launches loaders in the same order as they are stored in the array</p>
+
+<p>If any operation fails, then
+1. The next operations do not start executing
+2. The <strong>entire sequence</strong> is considered as <strong>failed</strong></p>
+
+<p>If all operations succeed the completion callback gets the result of the last operation in the <strong>loaders</strong> array.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JAsyncOperationFlow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sequenceOfAsyncOperationsWithAllResults:" title="sequenceOfAsyncOperationsWithAllResults:"></a>
+	<h3 class="subsubtitle method-title">sequenceOfAsyncOperationsWithAllResults:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Combines operations from array so that they run one after another.
+Results of all operations are returned to the caller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (JFFAsyncOperation)sequenceOfAsyncOperationsWithAllResults:(NSArray *)<em>loaders</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loaders</em></dt>
+			<dd><p>An NSArray of JFFAsyncOperation objects. It cannot be nil or empty.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A composite operation that launches loaders in the same order as they are stored in the array</p>
+
+<p>If any operation fails, then
+1. The next operations do not start executing
+2. The <strong>entire sequence</strong> is considered as <strong>failed</strong></p>
+
+<p>If all operations succeed the completion callback gets the array with results from all operations in the execution order.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JAsyncOperationFlow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sequenceOfAsyncOperationsWithSuccessfullResults:" title="sequenceOfAsyncOperationsWithSuccessfullResults:"></a>
+	<h3 class="subsubtitle method-title">sequenceOfAsyncOperationsWithSuccessfullResults:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Combines operations from array so that they run one after another.
+Results of all operations are returned to the caller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (JFFAsyncOperation)sequenceOfAsyncOperationsWithSuccessfullResults:(NSArray *)<em>loaders</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loaders</em></dt>
+			<dd><p>An NSArray of JFFAsyncOperation objects. It cannot be nil or empty.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A composite operation that launches loaders in the same order as they are stored in the array.</p>
+
+<p>If any operation fails, then the next operations try executing. The sequence is marked as <strong>failed</strong> if <strong>all operations</strong> are failed.</p>
+
+<p>The completion callback gets the array with results from all succeeded operations in the execution order. Results of failed operations are ignored.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JAsyncOperationFlow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sequenceOfCascadeElements:" title="sequenceOfCascadeElements:"></a>
+	<h3 class="subsubtitle method-title">sequenceOfCascadeElements:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Same as <a href="#//api/name/sequenceOfAsyncOperationsArray:">[JAsyncOperationFlow sequenceOfAsyncOperationsArray:]</a> but operates on JFFAsyncOperationBinder blocks that implement a <strong>monad</strong> concept.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (JFFAsyncOperationBinder)sequenceOfCascadeElements:(NSArray *)<em>cascadeElements</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cascadeElements</em></dt>
+			<dd><p>Cascade elements to combine. It cannot be nil or empty.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A composite element. It accepts the argument of the first element and returns the result of the last one.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JAsyncOperationFlow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sequenceUntilFirstSuccessOfAsyncOperationsArray:" title="sequenceUntilFirstSuccessOfAsyncOperationsArray:"></a>
+	<h3 class="subsubtitle method-title">sequenceUntilFirstSuccessOfAsyncOperationsArray:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Executes operations in the order specified by the array until any of them succeeds. This may be useful when we are uncertain which approach is going to work. For example,</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (JFFAsyncOperation)sequenceUntilFirstSuccessOfAsyncOperationsArray:(NSArray *)<em>loaders</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loaders</em></dt>
+			<dd><p>An NSArray of JFFAsyncOperation objects. It cannot be nil or empty.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A composite async operation.</p>
+
+<p>On success : the completion callback gets the result of the succeeded operation.
+On error   : the completion callback gets an error from the last operation.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<ul>
+<li>Try various authentication approaches</li>
+<li>Checking back end version based on available API and endpoints</li>
+<li>URL scheme autocomplete</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JAsyncOperationFlow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/waterfallFlowForAsyncOperation:cascadeOperations:" title="waterfallFlowForAsyncOperation:cascadeOperations:"></a>
+	<h3 class="subsubtitle method-title">waterfallFlowForAsyncOperation:cascadeOperations:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Chains the operations so that each next operation receives the result of a previous one.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (JFFAsyncOperation)waterfallFlowForAsyncOperation:(JFFAsyncOperation)<em>firstLoader</em> cascadeOperations:(NSArray *)<em>arrayOfBinders</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>firstLoader</em></dt>
+			<dd><p>The first loader in the chain</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>arrayOfBinders</em></dt>
+			<dd><p>Array of JFFAsyncOperationBinder blocks that implement a <strong>monad</strong> concept. It cannot be nil or empty.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A chain of operations. Each next operation receives the result of a previous one.</p>
+
+<p>If all operations succeed the completion callback gets the result of the last operation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JAsyncOperationFlow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/waterfallFlowUntilFirstSuccessForAsyncOperation:cascadeOperations:" title="waterfallFlowUntilFirstSuccessForAsyncOperation:cascadeOperations:"></a>
+	<h3 class="subsubtitle method-title">waterfallFlowUntilFirstSuccessForAsyncOperation:cascadeOperations:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Chains the operations so that each next operation receives the error of a previous one.
+The execution stops on first successful operation or cascade element.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (JFFAsyncOperation)waterfallFlowUntilFirstSuccessForAsyncOperation:(JFFAsyncOperation)<em>firstLoader</em> cascadeOperations:(NSArray *)<em>arrayOfBinders</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>firstLoader</em></dt>
+			<dd><p>The first loader in the chain</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>arrayOfBinders</em></dt>
+			<dd><p>Array of JFFAsyncOperationBinder blocks that implement a <strong>monad</strong> concept. It cannot be nil or empty.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A chain of operations. Each next operation receives the result of a previous one.</p>
+
+<p>If all operations succeed the completion callback gets the result of the last operation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JAsyncOperationFlow.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 dodikk. All rights reserved. (Last updated: 2014-06-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
