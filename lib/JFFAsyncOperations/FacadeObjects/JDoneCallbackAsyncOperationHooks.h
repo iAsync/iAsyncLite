@@ -4,13 +4,7 @@
 
 
 /**
- A class to hook the callbacks of asynchronous operation. All kinds of callbacks can be hooked : 
- 
- * Completion result
- * Completion error
- * Progress
- * Cancellation
- 
+ A class to hook the completion callbacks of asynchronous operation.
  */
 @interface JDoneCallbackAsyncOperationHooks : NSObject
 
