@@ -491,7 +491,7 @@ static JFFAsyncOperation groupOfAsyncOperationsPair(JFFAsyncOperation firstLoade
         
         JFFCancelAsyncOperationHandler cancelCallbackOfFirstLoader = makeCancelHandler(cancelHolder2);
         
-        __block NSNumber *firstLoaderCancelFlag = NO;
+        __block NSNumber *firstLoaderCancelFlag = @(NO);
         JFFCancelAsyncOperationHandler cancelCallbackOfFirstLoaderWrapper = ^void(BOOL canceled) {
             
             firstLoaderCancelFlag = @(canceled);
@@ -644,7 +644,7 @@ static JFFAsyncOperation failOnFirstErrorGroupOfAsyncOperationsPair(JFFAsyncOper
         
         JFFCancelAsyncOperationHandler cancelCallbackOfFirstLoader = makeCancelCallback(cancelHolder2);
         
-        __block NSNumber *firstLoaderCancelFlag = NO;
+        __block NSNumber *firstLoaderCancelFlag = @(NO);
         JFFCancelAsyncOperationHandler cancelCallbackOfFirstLoaderWrapper = ^void(BOOL canceled) {
             
             firstLoaderCancelFlag = @(canceled);

@@ -44,7 +44,7 @@
     return asyncOperationWithChangedError( loader, errorBuilder );
 }
 
-+(JFFCancelAsyncOperation)asyncOperation:(JFFAsyncOperation)loader
++(JFFAsyncOperation)asyncOperation:(JFFAsyncOperation)loader
                               withResult:(id)result
                                  orError:(NSError*)error
 {

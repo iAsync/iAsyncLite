@@ -67,9 +67,9 @@ __attribute__((nonnull));
  
  @return An asynchronous operation.
  */
-+(JFFCancelAsyncOperation)asyncOperation:(JFFAsyncOperation)loader
-                              withResult:(id)result
-                                 orError:(NSError*)error
++(JFFAsyncOperation)asyncOperation:(JFFAsyncOperation)loader
+                        withResult:(id)result
+                           orError:(NSError*)error
 __attribute__((nonnull(1)));
 
 
