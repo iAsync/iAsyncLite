@@ -7,7 +7,7 @@ A better dispatch_async() with functional programming in mind.
 This library is a fork of iAsync. 
 ```
 
-iAsync repository has grown too much and contains lots of utility functions not needed by most of the developers. This fork is an attempt of creating a **lightweigt**, **modular** and **well documented** library.
+iAsync repository has grown too much and contains lots of utility functions not needed by most of the developers. This fork is an attempt of creating a **lightweight**, **modular** and **well documented** library.
 
 The primary goal of the project :
 
