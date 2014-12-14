@@ -33,9 +33,20 @@
             cancel();
         }
         
-        numOfArgs == 1
-        ?objc_msgSend(unretainedSelf, selector, userInfo)
-        :objc_msgSend(unretainedSelf, selector);
+        if (numOfArgs == 1)
+        {
+            typedef void(*MethodWithUserInfo)( id, SEL, id);
+            MethodWithUserInfo selInvoker = (MethodWithUserInfo)objc_msgSend;
+            
+            selInvoker(unretainedSelf, selector, userInfo);
+        }
+        else
+        {
+            typedef void(*MethodWithoutUserInfo)( id, SEL);
+            MethodWithoutUserInfo selInvoker = (MethodWithoutUserInfo)objc_msgSend;
+            
+            selInvoker(unretainedSelf, selector);
+        }
     };
     
     JFFCancelScheduledBlock cancel = [timer addBlock:block
