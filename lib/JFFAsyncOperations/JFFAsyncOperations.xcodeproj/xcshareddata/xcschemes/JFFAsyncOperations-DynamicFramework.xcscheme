@@ -20,20 +20,6 @@
                ReferencedContainer = "container:JFFAsyncOperations.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7E37E5C31A3DA5D3001B08AC"
-               BuildableName = "JFFAsyncOperations-DynamicFrameworkTests.xctest"
-               BlueprintName = "JFFAsyncOperations-DynamicFrameworkTests"
-               ReferencedContainer = "container:JFFAsyncOperations.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
