@@ -152,7 +152,10 @@
 
 + (void)enableInstancesCounting
 {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wgnu-zero-variadic-macro-arguments"
     NSAssert(NO, @"Can not enable enstances counting for this class");
+#pragma clang diagnostic pop
 }
 
 @end
