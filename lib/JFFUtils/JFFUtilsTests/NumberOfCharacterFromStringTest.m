@@ -1,6 +1,6 @@
 #import <XCTest/XCTest.h>
+#import <JFFUtils/JFFUtils.h>
 
-#import "NSString+Search.h"
 
 @interface NumberOfCharacterFromStringTest : XCTestCase
 

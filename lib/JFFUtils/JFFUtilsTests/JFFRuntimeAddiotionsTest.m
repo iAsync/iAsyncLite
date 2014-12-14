@@ -1,5 +1,6 @@
 #import <XCTest/XCTest.h>
 
+#import <JFFUtils/JFFUtils.h>
 #include "JFFRuntimeAdditions.h"
 
 @interface JFFRuntimeAdditionsTest :XCTestCase

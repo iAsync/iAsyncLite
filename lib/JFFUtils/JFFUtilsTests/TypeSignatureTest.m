@@ -1,7 +1,7 @@
 #import <XCTest/XCTest.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-#include "JFFRuntimeAdditions.h"
+#import <JFFUtils/JFFUtils.h>
 
 @interface TypeSignatureTest :XCTestCase
 

@@ -1,8 +1,7 @@
 #import <XCTest/XCTest.h>
 
+#import <JFFUtils/JFFUtils.h>
 #import "JFFOnDeallocBlockOwner.h"
-#import "NSObject+OnDeallocBlock.h"
-
 
 @interface JFFOnDeallocBlockOwnerTest :XCTestCase
 

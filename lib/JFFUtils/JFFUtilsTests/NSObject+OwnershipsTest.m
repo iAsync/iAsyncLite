@@ -1,6 +1,7 @@
 #import <XCTest/XCTest.h>
 
-#include "NSObject+Ownerships.h"
+#import <JFFUtils/JFFUtils.h>
+#import "NSObject+Ownerships.h"
 
 @interface NSObjectOwnershipsExtensionTest :XCTestCase
 

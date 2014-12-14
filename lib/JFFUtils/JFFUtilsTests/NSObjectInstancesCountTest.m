@@ -1,4 +1,5 @@
 #import <XCTest/XCTest.h>
+#import <JFFUtils/JFFUtils.h>
 
 #import "NSObject+InstancesCount.h"
 

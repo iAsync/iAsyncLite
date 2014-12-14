@@ -1,7 +1,5 @@
 #import <XCTest/XCTest.h>
-
-#import "JFFSimpleBlockHolder.h"
-#import "NSObject+OnDeallocBlock.h"
+#import <JFFUtils/JFFUtils.h>
 #import "NSObject+InstancesCount.h"
 
 @interface JFFSimpleBlockHolderTest :XCTestCase

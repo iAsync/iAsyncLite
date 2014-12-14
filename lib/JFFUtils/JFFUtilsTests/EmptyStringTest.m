@@ -1,5 +1,5 @@
 #import <XCTest/XCTest.h>
-#import "NSString+IsEmpty.h"
+#import <JFFUtils/JFFUtils.h>
 
 
 @interface EmptyStringTest : XCTestCase
