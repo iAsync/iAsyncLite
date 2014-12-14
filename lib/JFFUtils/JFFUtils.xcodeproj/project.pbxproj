@@ -32,7 +32,7 @@
 		7E37E6641A3DA939001B08AC /* NSObject+InstancesCount.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EABFD61190D1F4D00D3CCC6 /* NSObject+InstancesCount.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E37E6651A3DA939001B08AC /* NSObject+RuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EABFD53190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E37E6661A3DA985001B08AC /* JFFUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336D8190C136B00AE47B9 /* JFFUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E37E6671A3DAA80001B08AC /* JFFOnDeallocBlockOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13F5190C4AE1004DD39A /* JFFOnDeallocBlockOwner.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E37E6671A3DAA80001B08AC /* JFFOnDeallocBlockOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13F5190C4AE1004DD39A /* JFFOnDeallocBlockOwner.h */; };
 		7E37E6681A3DAA86001B08AC /* JFFSimpleBlockHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13EB190C4918004DD39A /* JFFSimpleBlockHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E37E6691A3DAA86001B08AC /* JFFUtilsBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336E2190C149B00AE47B9 /* JFFUtilsBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E37E66A1A3DAA86001B08AC /* JUContainersHelperBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336DA190C13F200AE47B9 /* JUContainersHelperBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -85,7 +85,7 @@
 		7EB3DD81190D806C00CC690D /* NSObject+InstancesCount.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EABFD61190D1F4D00D3CCC6 /* NSObject+InstancesCount.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7EB3DD82190D806C00CC690D /* NSObject+RuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EABFD53190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7EB3DD83190D806C00CC690D /* JFFUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336D8190C136B00AE47B9 /* JFFUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EB3DD84190D806C00CC690D /* JFFOnDeallocBlockOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13F5190C4AE1004DD39A /* JFFOnDeallocBlockOwner.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7EB3DD84190D806C00CC690D /* JFFOnDeallocBlockOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13F5190C4AE1004DD39A /* JFFOnDeallocBlockOwner.h */; };
 		7EB3DD85190D806C00CC690D /* JFFSimpleBlockHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13EB190C4918004DD39A /* JFFSimpleBlockHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7EB3DD86190D806C00CC690D /* JFFUtilsBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336E2190C149B00AE47B9 /* JFFUtilsBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7EB3DD87190D806C00CC690D /* JUContainersHelperBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336DA190C13F200AE47B9 /* JUContainersHelperBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -827,6 +827,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JFFUtils/JFFUtils-Prefix.pch";
@@ -858,6 +859,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JFFUtils/JFFUtils-Prefix.pch";
@@ -884,6 +886,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JFFUtils/JFFUtils-Prefix.pch";
