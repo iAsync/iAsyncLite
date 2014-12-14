@@ -23,6 +23,15 @@
 		65802B18148BFB920040A93A /* NSObject+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 651BE197139195E500DD6890 /* NSObject+Timer.m */; };
 		7E127085190D91790047360A /* JFFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C4182E0181E6B6700FF3CA0 /* JFFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E127086190D91860047360A /* JFFTimerHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C4182DC181E64A800FF3CA0 /* JFFTimerHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E6921A3DB0CA001B08AC /* JFFTimerHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C4182DC181E64A800FF3CA0 /* JFFTimerHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E6931A3DB0D0001B08AC /* JFFTimerHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4182DD181E64A800FF3CA0 /* JFFTimerHelpers.m */; };
+		7E37E6941A3DB0D9001B08AC /* JFFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C4182E0181E6B6700FF3CA0 /* JFFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E6951A3DB0D9001B08AC /* NSObject+Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 651BE196139195E500DD6890 /* NSObject+Timer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E6961A3DB0D9001B08AC /* JFFScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 651BE1031390559900DD6890 /* JFFScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E6971A3DB0E2001B08AC /* JFFTimer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C4182E1181E6B6700FF3CA0 /* JFFTimer.mm */; };
+		7E37E6981A3DB0E2001B08AC /* NSObject+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 651BE197139195E500DD6890 /* NSObject+Timer.m */; };
+		7E37E6D01A3DD6F4001B08AC /* JFFUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E37E6BD1A3DD6B4001B08AC /* JFFUtils.framework */; };
+		7E37E6D11A3DD71D001B08AC /* JFFAsyncOperations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E37E6CF1A3DD6BD001B08AC /* JFFAsyncOperations.framework */; };
 		7E8F202B14F9484F00588C7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		7E8F203114F9484F00588C7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F202F14F9484F00588C7D /* InfoPlist.strings */; };
 		7E8F203814F9486E00588C7D /* NSObject+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 651BE197139195E500DD6890 /* NSObject+Timer.m */; };
@@ -37,6 +46,86 @@
 		AA747D9F0F9514B9006C5449 /* JFFScheduler_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* JFFScheduler_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E37E6B61A3DD6B4001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E37E6AE1A3DD6B4001B08AC /* JFFUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E7336AF190C134300AE47B9;
+			remoteInfo = JFFUtils;
+		};
+		7E37E6B81A3DD6B4001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E37E6AE1A3DD6B4001B08AC /* JFFUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E7336BF190C134300AE47B9;
+			remoteInfo = JFFUtilsTests;
+		};
+		7E37E6BA1A3DD6B4001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E37E6AE1A3DD6B4001B08AC /* JFFUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7EB3DD60190D7D6E00CC690D;
+			remoteInfo = "JFFUtils-Framework";
+		};
+		7E37E6BC1A3DD6B4001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E37E6AE1A3DD6B4001B08AC /* JFFUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E37E6341A3DA8B8001B08AC;
+			remoteInfo = "JFFUtils-DynamicFramework";
+		};
+		7E37E6BE1A3DD6B4001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E37E6AE1A3DD6B4001B08AC /* JFFUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E37E63E1A3DA8B8001B08AC;
+			remoteInfo = "JFFUtils-DynamicFrameworkTests";
+		};
+		7E37E6C81A3DD6BD001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E37E6C01A3DD6BD001B08AC /* JFFAsyncOperations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = JFFAsyncOperations;
+		};
+		7E37E6CA1A3DD6BD001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E37E6C01A3DD6BD001B08AC /* JFFAsyncOperations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5391037B14A88BB5007315A3;
+			remoteInfo = "JFFAsyncOperations-clang";
+		};
+		7E37E6CC1A3DD6BD001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E37E6C01A3DD6BD001B08AC /* JFFAsyncOperations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E8F20C914F94BDF00588C7D;
+			remoteInfo = JFFAsyncOperationsFW;
+		};
+		7E37E6CE1A3DD6BD001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E37E6C01A3DD6BD001B08AC /* JFFAsyncOperations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E37E5BA1A3DA5D3001B08AC;
+			remoteInfo = "JFFAsyncOperations-DynamicFramework";
+		};
+		7E37E6D21A3DD748001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E37E6C01A3DD6BD001B08AC /* JFFAsyncOperations.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E37E5B91A3DA5D3001B08AC;
+			remoteInfo = "JFFAsyncOperations-DynamicFramework";
+		};
+		7E37E6D41A3DD74C001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E37E6AE1A3DD6B4001B08AC /* JFFUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E37E6331A3DA8B8001B08AC;
+			remoteInfo = "JFFUtils-DynamicFramework";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4C4182DC181E64A800FF3CA0 /* JFFTimerHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFTimerHelpers.h; sourceTree = "<group>"; };
@@ -53,6 +142,12 @@
 		65802B0C148BFB850040A93A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		65802B0D148BFB850040A93A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65802B10148BFB850040A93A /* JFFSchedulerMacOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JFFSchedulerMacOS-Prefix.pch"; sourceTree = "<group>"; };
+		7E37E6791A3DB0AD001B08AC /* JFFScheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JFFScheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E37E67C1A3DB0AD001B08AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E37E6891A3DB0AD001B08AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E37E68A1A3DB0AD001B08AC /* JFFScheduler_DynamicFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFFScheduler_DynamicFrameworkTests.m; sourceTree = "<group>"; };
+		7E37E6AE1A3DD6B4001B08AC /* JFFUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JFFUtils.xcodeproj; path = ../JFFUtils/JFFUtils.xcodeproj; sourceTree = "<group>"; };
+		7E37E6C01A3DD6BD001B08AC /* JFFAsyncOperations.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JFFAsyncOperations.xcodeproj; path = ../JFFAsyncOperations/JFFAsyncOperations.xcodeproj; sourceTree = "<group>"; };
 		7E8F202A14F9484F00588C7D /* JFFScheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = JFFScheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8F202E14F9484F00588C7D /* JFFSchedulerFW-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JFFSchedulerFW-Info.plist"; sourceTree = "<group>"; };
 		7E8F203014F9484F00588C7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -76,6 +171,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				65802B09148BFB850040A93A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E37E6751A3DB0AD001B08AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E37E6D11A3DD71D001B08AC /* JFFAsyncOperations.framework in Frameworks */,
+				7E37E6D01A3DD6F4001B08AC /* JFFUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +209,7 @@
 				65802B07148BFB850040A93A /* libJFFSchedulerMacOS.a */,
 				539103C614A88BD6007315A3 /* libJFFScheduler-clang.a */,
 				7E8F202A14F9484F00588C7D /* JFFScheduler.framework */,
+				7E37E6791A3DB0AD001B08AC /* JFFScheduler.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,11 +217,15 @@
 		0867D691FE84028FC02AAC07 /* JFFScheduler */ = {
 			isa = PBXGroup;
 			children = (
+				7E37E6C01A3DD6BD001B08AC /* JFFAsyncOperations.xcodeproj */,
+				7E37E6AE1A3DD6B4001B08AC /* JFFUtils.xcodeproj */,
 				AA747D9E0F9514B9006C5449 /* JFFScheduler_Prefix.pch */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				65802B0E148BFB850040A93A /* JFFSchedulerMacOS */,
 				7E8F202C14F9484F00588C7D /* JFFSchedulerFW */,
+				7E37E67A1A3DB0AD001B08AC /* JFFScheduler-DynamicFramework */,
+				7E37E6871A3DB0AD001B08AC /* JFFScheduler-DynamicFrameworkTests */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -188,6 +297,62 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7E37E67A1A3DB0AD001B08AC /* JFFScheduler-DynamicFramework */ = {
+			isa = PBXGroup;
+			children = (
+				7E37E67B1A3DB0AD001B08AC /* Supporting Files */,
+			);
+			path = "JFFScheduler-DynamicFramework";
+			sourceTree = "<group>";
+		};
+		7E37E67B1A3DB0AD001B08AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E37E67C1A3DB0AD001B08AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E37E6871A3DB0AD001B08AC /* JFFScheduler-DynamicFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E37E68A1A3DB0AD001B08AC /* JFFScheduler_DynamicFrameworkTests.m */,
+				7E37E6881A3DB0AD001B08AC /* Supporting Files */,
+			);
+			path = "JFFScheduler-DynamicFrameworkTests";
+			sourceTree = "<group>";
+		};
+		7E37E6881A3DB0AD001B08AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E37E6891A3DB0AD001B08AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E37E6AF1A3DD6B4001B08AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E37E6B71A3DD6B4001B08AC /* libJFFUtils.a */,
+				7E37E6B91A3DD6B4001B08AC /* JFFUtilsTests.xctest */,
+				7E37E6BB1A3DD6B4001B08AC /* JFFUtils.framework */,
+				7E37E6BD1A3DD6B4001B08AC /* JFFUtils.framework */,
+				7E37E6BF1A3DD6B4001B08AC /* JFFUtils-DynamicFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E37E6C11A3DD6BD001B08AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E37E6C91A3DD6BD001B08AC /* libJFFAsyncOperations.a */,
+				7E37E6CB1A3DD6BD001B08AC /* libJFFAsyncOperations-clang.a */,
+				7E37E6CD1A3DD6BD001B08AC /* JFFAsyncOperations.framework */,
+				7E37E6CF1A3DD6BD001B08AC /* JFFAsyncOperations.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7E8F202C14F9484F00588C7D /* JFFSchedulerFW */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +388,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E37E6761A3DB0AD001B08AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E37E6941A3DB0D9001B08AC /* JFFTimer.h in Headers */,
+				7E37E6951A3DB0D9001B08AC /* NSObject+Timer.h in Headers */,
+				7E37E6961A3DB0D9001B08AC /* JFFScheduler.h in Headers */,
+				7E37E6921A3DB0CA001B08AC /* JFFTimerHelpers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +462,26 @@
 			productReference = 65802B07148BFB850040A93A /* libJFFSchedulerMacOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		7E37E6781A3DB0AD001B08AC /* JFFScheduler-DynamicFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E37E6901A3DB0AD001B08AC /* Build configuration list for PBXNativeTarget "JFFScheduler-DynamicFramework" */;
+			buildPhases = (
+				7E37E6741A3DB0AD001B08AC /* Sources */,
+				7E37E6751A3DB0AD001B08AC /* Frameworks */,
+				7E37E6761A3DB0AD001B08AC /* Headers */,
+				7E37E6771A3DB0AD001B08AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E37E6D51A3DD74C001B08AC /* PBXTargetDependency */,
+				7E37E6D31A3DD748001B08AC /* PBXTargetDependency */,
+			);
+			name = "JFFScheduler-DynamicFramework";
+			productName = "JFFScheduler-DynamicFramework";
+			productReference = 7E37E6791A3DB0AD001B08AC /* JFFScheduler.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		7E8F202914F9484F00588C7D /* JFFSchedulerFW */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E8F203514F9484F00588C7D /* Build configuration list for PBXNativeTarget "JFFSchedulerFW" */;
@@ -331,6 +527,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					7E37E6781A3DB0AD001B08AC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "JFFScheduler" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -346,17 +547,101 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* JFFScheduler */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7E37E6C11A3DD6BD001B08AC /* Products */;
+					ProjectRef = 7E37E6C01A3DD6BD001B08AC /* JFFAsyncOperations.xcodeproj */;
+				},
+				{
+					ProductGroup = 7E37E6AF1A3DD6B4001B08AC /* Products */;
+					ProjectRef = 7E37E6AE1A3DD6B4001B08AC /* JFFUtils.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* JFFScheduler */,
 				65802B06148BFB850040A93A /* JFFSchedulerMacOS */,
 				539103B914A88BD6007315A3 /* JFFScheduler-clang */,
 				7E8F202914F9484F00588C7D /* JFFSchedulerFW */,
+				7E37E6781A3DB0AD001B08AC /* JFFScheduler-DynamicFramework */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		7E37E6B71A3DD6B4001B08AC /* libJFFUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJFFUtils.a;
+			remoteRef = 7E37E6B61A3DD6B4001B08AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E37E6B91A3DD6B4001B08AC /* JFFUtilsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JFFUtilsTests.xctest;
+			remoteRef = 7E37E6B81A3DD6B4001B08AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E37E6BB1A3DD6B4001B08AC /* JFFUtils.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework.static;
+			path = JFFUtils.framework;
+			remoteRef = 7E37E6BA1A3DD6B4001B08AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E37E6BD1A3DD6B4001B08AC /* JFFUtils.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JFFUtils.framework;
+			remoteRef = 7E37E6BC1A3DD6B4001B08AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E37E6BF1A3DD6B4001B08AC /* JFFUtils-DynamicFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "JFFUtils-DynamicFrameworkTests.xctest";
+			remoteRef = 7E37E6BE1A3DD6B4001B08AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E37E6C91A3DD6BD001B08AC /* libJFFAsyncOperations.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJFFAsyncOperations.a;
+			remoteRef = 7E37E6C81A3DD6BD001B08AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E37E6CB1A3DD6BD001B08AC /* libJFFAsyncOperations-clang.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libJFFAsyncOperations-clang.a";
+			remoteRef = 7E37E6CA1A3DD6BD001B08AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E37E6CD1A3DD6BD001B08AC /* JFFAsyncOperations.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework.static;
+			path = JFFAsyncOperations.framework;
+			remoteRef = 7E37E6CC1A3DD6BD001B08AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E37E6CF1A3DD6BD001B08AC /* JFFAsyncOperations.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JFFAsyncOperations.framework;
+			remoteRef = 7E37E6CE1A3DD6BD001B08AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		7E37E6771A3DB0AD001B08AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E8F202614F9484F00588C7D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,6 +718,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7E37E6741A3DB0AD001B08AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E37E6981A3DB0E2001B08AC /* NSObject+Timer.m in Sources */,
+				7E37E6971A3DB0E2001B08AC /* JFFTimer.mm in Sources */,
+				7E37E6931A3DB0D0001B08AC /* JFFTimerHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E8F202314F9484F00588C7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,6 +749,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E37E6D31A3DD748001B08AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JFFAsyncOperations-DynamicFramework";
+			targetProxy = 7E37E6D21A3DD748001B08AC /* PBXContainerItemProxy */;
+		};
+		7E37E6D51A3DD74C001B08AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JFFUtils-DynamicFramework";
+			targetProxy = 7E37E6D41A3DD74C001B08AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7E8F202F14F9484F00588C7D /* InfoPlist.strings */ = {
@@ -659,6 +967,87 @@
 			};
 			name = Release;
 		};
+		7E37E68C1A3DB0AD001B08AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREFIX_HEADER = JFFScheduler_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "JFFScheduler-DynamicFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = JFFScheduler;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E37E68D1A3DB0AD001B08AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = JFFScheduler_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "JFFScheduler-DynamicFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JFFScheduler;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7E8F203314F9484F00588C7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -743,6 +1132,15 @@
 			buildConfigurations = (
 				65802B14148BFB850040A93A /* Debug */,
 				65802B15148BFB850040A93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E37E6901A3DB0AD001B08AC /* Build configuration list for PBXNativeTarget "JFFScheduler-DynamicFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E37E68C1A3DB0AD001B08AC /* Debug */,
+				7E37E68D1A3DB0AD001B08AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
