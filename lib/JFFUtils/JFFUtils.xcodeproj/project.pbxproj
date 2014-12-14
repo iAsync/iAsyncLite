@@ -7,6 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E37E63F1A3DA8B9001B08AC /* JFFUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E37E6341A3DA8B8001B08AC /* JFFUtils.framework */; };
+		7E37E64F1A3DA8D5001B08AC /* TypeSignatureTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D992190D124F00A412FA /* TypeSignatureTest.m */; };
+		7E37E6501A3DA8D5001B08AC /* NSObject+OwnershipsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D990190D121900A412FA /* NSObject+OwnershipsTest.m */; };
+		7E37E6511A3DA8D5001B08AC /* NSObjectInstancesCountTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD2F190D167700D3CCC6 /* NSObjectInstancesCountTest.m */; };
+		7E37E6521A3DA8D5001B08AC /* NumberOfCharacterFromStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD33190D174700D3CCC6 /* NumberOfCharacterFromStringTest.m */; };
+		7E37E6531A3DA8D5001B08AC /* JFFRuntimeAddiotionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D98C190D11F600A412FA /* JFFRuntimeAddiotionsTest.m */; };
+		7E37E6541A3DA8D5001B08AC /* JFFOnDeallocBlockOwnerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D98A190D11E400A412FA /* JFFOnDeallocBlockOwnerTest.m */; };
+		7E37E6551A3DA8D5001B08AC /* JFFSimpleBlockHolderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D988190D11CF00A412FA /* JFFSimpleBlockHolderTest.m */; };
+		7E37E6561A3DA8D5001B08AC /* EmptyStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2D984190D105300A412FA /* EmptyStringTest.m */; };
+		7E37E6571A3DA911001B08AC /* NSObject+InstancesCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD62190D1F4D00D3CCC6 /* NSObject+InstancesCount.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7E37E6581A3DA91E001B08AC /* NSObject+RuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EABFD54190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7E37E6591A3DA91E001B08AC /* JFFOnDeallocBlockOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13F6190C4AE1004DD39A /* JFFOnDeallocBlockOwner.m */; };
+		7E37E65A1A3DA91E001B08AC /* JFFSimpleBlockHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13EC190C4918004DD39A /* JFFSimpleBlockHolder.m */; };
+		7E37E65B1A3DA91E001B08AC /* NSArray+BlocksAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7336DD190C13FB00AE47B9 /* NSArray+BlocksAdditions.m */; };
+		7E37E65C1A3DA91E001B08AC /* NSArray+IsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7336DF190C13FB00AE47B9 /* NSArray+IsEmpty.m */; };
+		7E37E65D1A3DA91E001B08AC /* NSError+SetToPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E522ABE190D82EE0018AF97 /* NSError+SetToPointer.m */; };
+		7E37E65E1A3DA91E001B08AC /* NSObject+OnDeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13F0190C49F6004DD39A /* NSObject+OnDeallocBlock.m */; };
+		7E37E65F1A3DA91E001B08AC /* NSObject+Ownerships.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13F3190C4A90004DD39A /* NSObject+Ownerships.m */; };
+		7E37E6601A3DA91E001B08AC /* NSString+IsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0C5F0190D04CC00DCB91D /* NSString+IsEmpty.m */; };
+		7E37E6611A3DA91E001B08AC /* NSString+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0C5F2190D04CC00DCB91D /* NSString+Search.m */; };
+		7E37E6621A3DA91E001B08AC /* NSString+PropertyName.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13E9190C48A1004DD39A /* NSString+PropertyName.m */; };
+		7E37E6631A3DA91E001B08AC /* JFFRuntimeAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B13FA190C4B9E004DD39A /* JFFRuntimeAdditions.mm */; };
+		7E37E6641A3DA939001B08AC /* NSObject+InstancesCount.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EABFD61190D1F4D00D3CCC6 /* NSObject+InstancesCount.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E37E6651A3DA939001B08AC /* NSObject+RuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EABFD53190D1E9400D3CCC6 /* NSObject+RuntimeExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E37E6661A3DA985001B08AC /* JFFUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336D8190C136B00AE47B9 /* JFFUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E6671A3DAA80001B08AC /* JFFOnDeallocBlockOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13F5190C4AE1004DD39A /* JFFOnDeallocBlockOwner.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E37E6681A3DAA86001B08AC /* JFFSimpleBlockHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13EB190C4918004DD39A /* JFFSimpleBlockHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E6691A3DAA86001B08AC /* JFFUtilsBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336E2190C149B00AE47B9 /* JFFUtilsBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E66A1A3DAA86001B08AC /* JUContainersHelperBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336DA190C13F200AE47B9 /* JUContainersHelperBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E66B1A3DAA8E001B08AC /* NSArray+BlocksAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336DC190C13FB00AE47B9 /* NSArray+BlocksAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E66C1A3DAA8E001B08AC /* NSArray+IsEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7336DE190C13FB00AE47B9 /* NSArray+IsEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E66D1A3DAA94001B08AC /* NSError+SetToPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E522ABD190D82EE0018AF97 /* NSError+SetToPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E66E1A3DAAA4001B08AC /* NSObject+OnDeallocBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13EF190C49F6004DD39A /* NSObject+OnDeallocBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E66F1A3DAAAA001B08AC /* NSObject+Ownerships.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13F2190C4A90004DD39A /* NSObject+Ownerships.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E37E6701A3DAAB6001B08AC /* NSString+IsEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA0C5EF190D04CC00DCB91D /* NSString+IsEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E6711A3DAAB6001B08AC /* NSString+Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA0C5F1190D04CC00DCB91D /* NSString+Search.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E37E6721A3DAABC001B08AC /* NSString+PropertyName.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13E8190C48A1004DD39A /* NSString+PropertyName.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7E37E6731A3DAAC1001B08AC /* JFFRuntimeAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B13F9190C4B9E004DD39A /* JFFRuntimeAdditions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E522ABF190D82EE0018AF97 /* NSError+SetToPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E522ABD190D82EE0018AF97 /* NSError+SetToPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E522AC0190D82EE0018AF97 /* NSError+SetToPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E522ABE190D82EE0018AF97 /* NSError+SetToPointer.m */; };
 		7E522AC1190D82EE0018AF97 /* NSError+SetToPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E522ABE190D82EE0018AF97 /* NSError+SetToPointer.m */; };
@@ -69,6 +107,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7E37E6401A3DA8B9001B08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E7336A7190C134300AE47B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E37E6331A3DA8B8001B08AC;
+			remoteInfo = "JFFUtils-DynamicFramework";
+		};
 		7E7336C5190C134300AE47B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7E7336A7190C134300AE47B9 /* Project object */;
@@ -91,6 +136,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E37E6341A3DA8B8001B08AC /* JFFUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JFFUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E37E6371A3DA8B8001B08AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E37E63E1A3DA8B8001B08AC /* JFFUtils-DynamicFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JFFUtils-DynamicFrameworkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E37E6441A3DA8B9001B08AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E522ABD190D82EE0018AF97 /* NSError+SetToPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+SetToPointer.h"; sourceTree = "<group>"; };
 		7E522ABE190D82EE0018AF97 /* NSError+SetToPointer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+SetToPointer.m"; sourceTree = "<group>"; };
 		7E7336AF190C134300AE47B9 /* libJFFUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJFFUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +192,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E37E6301A3DA8B8001B08AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E37E63B1A3DA8B8001B08AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E37E63F1A3DA8B9001B08AC /* JFFUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E7336AC190C134300AE47B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,6 +238,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E37E6351A3DA8B8001B08AC /* JFFUtils-DynamicFramework */ = {
+			isa = PBXGroup;
+			children = (
+				7E37E6361A3DA8B8001B08AC /* Supporting Files */,
+			);
+			path = "JFFUtils-DynamicFramework";
+			sourceTree = "<group>";
+		};
+		7E37E6361A3DA8B8001B08AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E37E6371A3DA8B8001B08AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E37E6421A3DA8B9001B08AC /* JFFUtils-DynamicFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E37E6431A3DA8B9001B08AC /* Supporting Files */,
+			);
+			path = "JFFUtils-DynamicFrameworkTests";
+			sourceTree = "<group>";
+		};
+		7E37E6431A3DA8B9001B08AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E37E6441A3DA8B9001B08AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7E522ABC190D82EE0018AF97 /* NSError */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +287,8 @@
 				7E7336B4190C134300AE47B9 /* JFFUtils */,
 				7E7336C8190C134300AE47B9 /* JFFUtilsTests */,
 				7EB3DD62190D7D6E00CC690D /* JFFUtils-Framework */,
+				7E37E6351A3DA8B8001B08AC /* JFFUtils-DynamicFramework */,
+				7E37E6421A3DA8B9001B08AC /* JFFUtils-DynamicFrameworkTests */,
 				7E7336B1190C134300AE47B9 /* Frameworks */,
 				7E7336B0190C134300AE47B9 /* Products */,
 			);
@@ -202,6 +300,8 @@
 				7E7336AF190C134300AE47B9 /* libJFFUtils.a */,
 				7E7336BF190C134300AE47B9 /* JFFUtilsTests.xctest */,
 				7EB3DD60190D7D6E00CC690D /* JFFUtils.framework */,
+				7E37E6341A3DA8B8001B08AC /* JFFUtils.framework */,
+				7E37E63E1A3DA8B8001B08AC /* JFFUtils-DynamicFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -345,6 +445,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7E37E6311A3DA8B8001B08AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E37E6701A3DAAB6001B08AC /* NSString+IsEmpty.h in Headers */,
+				7E37E6651A3DA939001B08AC /* NSObject+RuntimeExtensions.h in Headers */,
+				7E37E66E1A3DAAA4001B08AC /* NSObject+OnDeallocBlock.h in Headers */,
+				7E37E6641A3DA939001B08AC /* NSObject+InstancesCount.h in Headers */,
+				7E37E66D1A3DAA94001B08AC /* NSError+SetToPointer.h in Headers */,
+				7E37E6721A3DAABC001B08AC /* NSString+PropertyName.h in Headers */,
+				7E37E66A1A3DAA86001B08AC /* JUContainersHelperBlocks.h in Headers */,
+				7E37E6691A3DAA86001B08AC /* JFFUtilsBlockDefinitions.h in Headers */,
+				7E37E66C1A3DAA8E001B08AC /* NSArray+IsEmpty.h in Headers */,
+				7E37E6711A3DAAB6001B08AC /* NSString+Search.h in Headers */,
+				7E37E66F1A3DAAAA001B08AC /* NSObject+Ownerships.h in Headers */,
+				7E37E6671A3DAA80001B08AC /* JFFOnDeallocBlockOwner.h in Headers */,
+				7E37E6661A3DA985001B08AC /* JFFUtils.h in Headers */,
+				7E37E6731A3DAAC1001B08AC /* JFFRuntimeAdditions.h in Headers */,
+				7E37E66B1A3DAA8E001B08AC /* NSArray+BlocksAdditions.h in Headers */,
+				7E37E6681A3DAA86001B08AC /* JFFSimpleBlockHolder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7EB3DD5C190D7D6E00CC690D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +494,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7E37E6331A3DA8B8001B08AC /* JFFUtils-DynamicFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E37E64D1A3DA8B9001B08AC /* Build configuration list for PBXNativeTarget "JFFUtils-DynamicFramework" */;
+			buildPhases = (
+				7E37E62F1A3DA8B8001B08AC /* Sources */,
+				7E37E6301A3DA8B8001B08AC /* Frameworks */,
+				7E37E6311A3DA8B8001B08AC /* Headers */,
+				7E37E6321A3DA8B8001B08AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JFFUtils-DynamicFramework";
+			productName = "JFFUtils-DynamicFramework";
+			productReference = 7E37E6341A3DA8B8001B08AC /* JFFUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E37E63D1A3DA8B8001B08AC /* JFFUtils-DynamicFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E37E64E1A3DA8B9001B08AC /* Build configuration list for PBXNativeTarget "JFFUtils-DynamicFrameworkTests" */;
+			buildPhases = (
+				7E37E63A1A3DA8B8001B08AC /* Sources */,
+				7E37E63B1A3DA8B8001B08AC /* Frameworks */,
+				7E37E63C1A3DA8B8001B08AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E37E6411A3DA8B9001B08AC /* PBXTargetDependency */,
+			);
+			name = "JFFUtils-DynamicFrameworkTests";
+			productName = "JFFUtils-DynamicFrameworkTests";
+			productReference = 7E37E63E1A3DA8B8001B08AC /* JFFUtils-DynamicFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7E7336AE190C134300AE47B9 /* JFFUtils */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E7336D2190C134300AE47B9 /* Build configuration list for PBXNativeTarget "JFFUtils" */;
@@ -435,6 +594,12 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = dodikk;
 				TargetAttributes = {
+					7E37E6331A3DA8B8001B08AC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					7E37E63D1A3DA8B8001B08AC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					7E7336BE190C134300AE47B9 = {
 						TestTargetID = 7EB3DD5F190D7D6E00CC690D;
 					};
@@ -455,11 +620,27 @@
 				7E7336AE190C134300AE47B9 /* JFFUtils */,
 				7E7336BE190C134300AE47B9 /* JFFUtilsTests */,
 				7EB3DD5F190D7D6E00CC690D /* JFFUtils-Framework */,
+				7E37E6331A3DA8B8001B08AC /* JFFUtils-DynamicFramework */,
+				7E37E63D1A3DA8B8001B08AC /* JFFUtils-DynamicFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7E37E6321A3DA8B8001B08AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E37E63C1A3DA8B8001B08AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E7336BD190C134300AE47B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,6 +692,41 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7E37E62F1A3DA8B8001B08AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E37E6571A3DA911001B08AC /* NSObject+InstancesCount.m in Sources */,
+				7E37E6581A3DA91E001B08AC /* NSObject+RuntimeExtensions.m in Sources */,
+				7E37E65C1A3DA91E001B08AC /* NSArray+IsEmpty.m in Sources */,
+				7E37E65D1A3DA91E001B08AC /* NSError+SetToPointer.m in Sources */,
+				7E37E6631A3DA91E001B08AC /* JFFRuntimeAdditions.mm in Sources */,
+				7E37E6591A3DA91E001B08AC /* JFFOnDeallocBlockOwner.m in Sources */,
+				7E37E65E1A3DA91E001B08AC /* NSObject+OnDeallocBlock.m in Sources */,
+				7E37E6611A3DA91E001B08AC /* NSString+Search.m in Sources */,
+				7E37E65B1A3DA91E001B08AC /* NSArray+BlocksAdditions.m in Sources */,
+				7E37E65F1A3DA91E001B08AC /* NSObject+Ownerships.m in Sources */,
+				7E37E65A1A3DA91E001B08AC /* JFFSimpleBlockHolder.m in Sources */,
+				7E37E6601A3DA91E001B08AC /* NSString+IsEmpty.m in Sources */,
+				7E37E6621A3DA91E001B08AC /* NSString+PropertyName.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E37E63A1A3DA8B8001B08AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E37E6561A3DA8D5001B08AC /* EmptyStringTest.m in Sources */,
+				7E37E6511A3DA8D5001B08AC /* NSObjectInstancesCountTest.m in Sources */,
+				7E37E64F1A3DA8D5001B08AC /* TypeSignatureTest.m in Sources */,
+				7E37E6521A3DA8D5001B08AC /* NumberOfCharacterFromStringTest.m in Sources */,
+				7E37E6541A3DA8D5001B08AC /* JFFOnDeallocBlockOwnerTest.m in Sources */,
+				7E37E6501A3DA8D5001B08AC /* NSObject+OwnershipsTest.m in Sources */,
+				7E37E6551A3DA8D5001B08AC /* JFFSimpleBlockHolderTest.m in Sources */,
+				7E37E6531A3DA8D5001B08AC /* JFFRuntimeAddiotionsTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E7336AB190C134300AE47B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,6 +785,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7E37E6411A3DA8B9001B08AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E37E6331A3DA8B8001B08AC /* JFFUtils-DynamicFramework */;
+			targetProxy = 7E37E6401A3DA8B9001B08AC /* PBXContainerItemProxy */;
+		};
 		7E7336C6190C134300AE47B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7E7336AE190C134300AE47B9 /* JFFUtils */;
@@ -596,6 +817,148 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7E37E6471A3DA8B9001B08AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JFFUtils/JFFUtils-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JFFUtils-DynamicFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = JFFUtils;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E37E6481A3DA8B9001B08AC /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JFFUtils/JFFUtils-Prefix.pch";
+				INFOPLIST_FILE = "JFFUtils-DynamicFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JFFUtils;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Coverage;
+		};
+		7E37E6491A3DA8B9001B08AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JFFUtils/JFFUtils-Prefix.pch";
+				INFOPLIST_FILE = "JFFUtils-DynamicFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JFFUtils;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E37E64A1A3DA8B9001B08AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_PEDANTIC = NO;
+				INFOPLIST_FILE = "JFFUtils-DynamicFrameworkTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7E37E64B1A3DA8B9001B08AC /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_WARN_PEDANTIC = NO;
+				INFOPLIST_FILE = "JFFUtils-DynamicFrameworkTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Coverage;
+		};
+		7E37E64C1A3DA8B9001B08AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_WARN_PEDANTIC = NO;
+				INFOPLIST_FILE = "JFFUtils-DynamicFrameworkTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		7E7336D0190C134300AE47B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -903,6 +1266,26 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E37E64D1A3DA8B9001B08AC /* Build configuration list for PBXNativeTarget "JFFUtils-DynamicFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E37E6471A3DA8B9001B08AC /* Debug */,
+				7E37E6481A3DA8B9001B08AC /* Coverage */,
+				7E37E6491A3DA8B9001B08AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E37E64E1A3DA8B9001B08AC /* Build configuration list for PBXNativeTarget "JFFUtils-DynamicFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E37E64A1A3DA8B9001B08AC /* Debug */,
+				7E37E64B1A3DA8B9001B08AC /* Coverage */,
+				7E37E64C1A3DA8B9001B08AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7E7336AA190C134300AE47B9 /* Build configuration list for PBXProject "JFFUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
