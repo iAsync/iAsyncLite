@@ -108,7 +108,6 @@ static BOOL findAndTryToPerformNextNativeLoader( void )
 
 static void logBalancerState(JFFContextLoaders* originContextLoaders)
 {
-    return;
     NSLog(@"|||||LOAD BALANCER|||||");
     JFFAsyncOperationLoadBalancerContexts *balancer = sharedBalancer();
     JFFContextLoaders* activeLoaders = [balancer activeContextLoaders];
