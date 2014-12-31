@@ -1,3 +1,8 @@
+[![Carthage Support](https://img.shields.io/badge/Carthage-✓-5f7cae.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Pod Version](http://img.shields.io/cocoapods/v/iAsyncLiteScheduler.svg?style=flat)](http://cocoadocs.org/docsets/iAsyncLiteScheduler/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/iAsyncLiteScheduler.svg?style=flat)](http://cocoadocs.org/docsets/iAsyncLiteScheduler/)
+
+
 iAsyncLite
 ==========
 
